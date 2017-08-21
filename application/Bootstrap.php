@@ -1,15 +1,18 @@
 <?php
 
-class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
+class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
+{
 
     protected $_docRoot;
 
-    protected function _initPath() {
+    protected function _initPath()
+    {
         $this->_docRoot = realpath(APPLICATION_PATH . '/../');
         Zend_Registry::set('docRoot', $this->_docRoot);
     }
 
-    protected function _initLoaderResource() {
+    protected function _initLoaderResource()
+    {
         $resourceLoader = new Zend_Loader_Autoloader_Resource(array(
             'basePath' => $this->_docRoot . '/application',
             'namespace' => 'Genius'
@@ -45,20 +48,22 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
       return new Zend_Log($writer);
       } */
 
-    protected function _initView() {
+    protected function _initView()
+    {
         $view = new Zend_View();
         $view->addHelperPath(
-                'ZendX/JQuery/View/Helper', 'ZendX_JQuery_View_Helper'
+            'ZendX/JQuery/View/Helper', 'ZendX_JQuery_View_Helper'
         );
 
         $view->addHelperPath(
-                APPLICATION_PATH . "/../library/Langs/View/Helper", "Langs_View_Helper"
+            APPLICATION_PATH . "/../library/Langs/View/Helper", "Langs_View_Helper"
         );
 
         return $view;
     }
 
-    protected function _initSetupBaseUrl() {
+    protected function _initSetupBaseUrl()
+    {
         $this->bootstrap('frontcontroller');
         $controller = Zend_Controller_Front::getInstance();
 
@@ -71,7 +76,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
         $baseUrl = $controller->getBaseUrl();
     }
 
-    public function _initRoutes() {
+    public function _initRoutes()
+    {
         $this->bootstrap('FrontController');
         $this->_frontController = $this->getResource('FrontController');
         $router = $this->_frontController->getRouter();
@@ -79,467 +85,487 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
 
         $lang = Genius_Class_Utils::getCurrentLang();
         $langRoute = new Zend_Controller_Router_Route(
-                ':lang/', array(
+            ':lang/', array(
             'lang' => $lang
-                ), array(
-            'lang' => '[a-z]{0,2}'
-                )
+        ), array(
+                'lang' => '[a-z]{0,2}'
+            )
         );
 
         $defaultRoute = new Zend_Controller_Router_Route(
-                ':controller/:action/*', array(
-            'module' => 'default',
-            'controller' => 'index',
-            'action' => 'index'
-                )
+            ':controller/:action/*', array(
+                'module' => 'default',
+                'controller' => 'index',
+                'action' => 'index'
+            )
         );
         $defaultRoute = $langRoute->chain($defaultRoute);
 
         $adminRoute = new Zend_Controller_Router_Route(
-                'admin/:controller/:action/*', array(
-            'module' => 'admin',
-            'controller' => 'index',
-            'action' => 'index'
-                )
+            'admin/:controller/:action/*', array(
+                'module' => 'admin',
+                'controller' => 'index',
+                'action' => 'index'
+            )
         );
 
 
         $product_route = new Zend_Controller_Router_Route_Regex(
-                '([-\w]+)/([-\w]+)/([-\w]+)/([-\w]+)-(\d+)\.html', array(
+            '([-\w]+)/([-\w]+)/([-\w]+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'fiche'
-            , 'action' => 'index'
-                ), array(
+        , 'controller' => 'fiche'
+        , 'action' => 'index'
+        ), array(
             1 => 'group',
             2 => 'marque',
             3 => 'modele',
             4 => 'nom_product',
             5 => 'id_product'
-                ), '%s/%s/%s/%s-%d.html'
+        ), '%s/%s/%s/%s-%d.html'
         );
         $societe_route = new Zend_Controller_Router_Route_Regex(
-                'societe', array(
+            'societe', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'societe'
-                ), array(
-                ), 'societe'
+        , 'controller' => 'page'
+        , 'action' => 'societe'
+        ), array(), 'societe'
         );
         $chariot_mobile_route = new Zend_Controller_Router_Route_Regex(
-                'chariot-mobile-(\d+)\.html', array(
+            'chariot-mobile-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'fiche'
-            , 'action' => 'index'
-                ), array(
+        , 'controller' => 'fiche'
+        , 'action' => 'index'
+        ), array(
             1 => 'id_product'
-                ), 'chariot-mobile-%d.html'
+        ), 'chariot-mobile-%d.html'
         );
         $route_tracabilite = new Zend_Controller_Router_Route_Regex(
-                'tracabilite.html', array(
+            'tracabilite.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'tracabilite'
-                ), array(
-                ), 'tracabilite.html'
+        , 'controller' => 'page'
+        , 'action' => 'tracabilite'
+        ), array(), 'tracabilite.html'
         );
         $route_micro = new Zend_Controller_Router_Route_Regex(
-                'micro.html', array(
+            'micro.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'micro'
-                ), array(
-                ), 'micro.html'
+        , 'controller' => 'page'
+        , 'action' => 'micro'
+        ), array(), 'micro.html'
         );
         $route_imprimantes = new Zend_Controller_Router_Route_Regex(
-                'imprimantes.html', array(
+            'imprimantes.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'imprimantes'
-                ), array(
-                ), 'imprimantes.html'
+        , 'controller' => 'page'
+        , 'action' => 'imprimantes'
+        ), array(), 'imprimantes.html'
         );
         $route_reparationservices = new Zend_Controller_Router_Route_Regex(
-                'reparationservices.html', array(
+            'reparationservices.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'reparationservices'
-                ), array(
-                ), 'reparationservices.html'
+        , 'controller' => 'page'
+        , 'action' => 'reparationservices'
+        ), array(), 'reparationservices.html'
         );
         $route_partenaires = new Zend_Controller_Router_Route_Regex(
-                'marque.html', array(
+            'marque.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'marque'
-                ), array(
-                ), 'partenaires.html'
+        , 'controller' => 'page'
+        , 'action' => 'marque'
+        ), array(), 'partenaires.html'
         );
         $route_extranet = new Zend_Controller_Router_Route_Regex(
-                'extranet', array(
+            'extranet', array(
             'module' => 'default'
-            , 'controller' => 'login'
-            , 'action' => 'index'
-                ), array(
-                ), 'extranet'
+        , 'controller' => 'login'
+        , 'action' => 'index'
+        ), array(), 'extranet'
         );
         $group_route_imprimantes = new Zend_Controller_Router_Route_Regex(
-                'imprimantes/([-\w]+)-(\d+)\.html', array(
+            'imprimantes/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'p1'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'p1'
+        ), array(
             1 => 'group',
             2 => 'id_category_group'
-                ), 'imprimantes/%s-%d'
+        ), 'imprimantes/%s-%d'
         );
         $group_route_micro = new Zend_Controller_Router_Route_Regex(
-                'micro/([-\w]+)-(\d+)\.html', array(
+            'micro/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'm1'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'm1'
+        ), array(
             1 => 'group',
             2 => 'id_category_group'
-                ), 'micro/%s-%d'
+        ), 'micro/%s-%d'
         );
         $group_route_tracabilite = new Zend_Controller_Router_Route_Regex(
-                'tracabilite/([-\w]+)-(\d+)\.html', array(
+            'tracabilite/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'v1'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'v1'
+        ), array(
             1 => 'group',
             2 => 'id_category_group'
-                ), 'tracabilite/%s-%d'
+        ), 'tracabilite/%s-%d'
         );
 
 
         $group_route_imprimantes_marque = new Zend_Controller_Router_Route_Regex(
-                'imprimantes/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'imprimantes/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'p1'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'p1'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'imprimantes/%s-%d/%s-%d'
+        ), 'imprimantes/%s-%d/%s-%d'
         );
         $group_route_micro_marque = new Zend_Controller_Router_Route_Regex(
-                'micro/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'micro/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'm1'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'm1'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'micro/%s-%d/%s-%d'
+        ), 'micro/%s-%d/%s-%d'
         );
         $group_route_tracabilite_marque = new Zend_Controller_Router_Route_Regex(
-                'tracabilite/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'tracabilite/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'v1'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'v1'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'tracabilite/%s-%d/%s-%d'
+        ), 'tracabilite/%s-%d/%s-%d'
         );
 
         $group_route_articlereparation = new Zend_Controller_Router_Route_Regex(
-                'reparation/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'reparation/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlereparation'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlereparation'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'reparation/%s-%d/%s-%d'
+        ), 'reparation/%s-%d/%s-%d'
         );
         $group_route_articlereparation_produit = new Zend_Controller_Router_Route_Regex(
-                'reparation/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'reparation/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlereparation'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlereparation'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category',
             5 => 'nom_produit',
             6 => 'id_product'
-                ), 'reparation/%s-%d/%s-%d/%s-%d'
+        ), 'reparation/%s-%d/%s-%d/%s-%d'
         );
         $group_route_articlevente = new Zend_Controller_Router_Route_Regex(
-                'vente/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'vente/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlevente'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlevente'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'vente/%s-%d/%s-%d'
+        ), 'vente/%s-%d/%s-%d'
         );
         $group_route_articlevente_produit = new Zend_Controller_Router_Route_Regex(
-                'vente/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'vente/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlevente'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlevente'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category',
             5 => 'nom_produit',
             6 => 'id_product'
-                ), 'vente/%s-%d/%s-%d/%s-%d'
+        ), 'vente/%s-%d/%s-%d/%s-%d'
         );
         $group_route_articleechange = new Zend_Controller_Router_Route_Regex(
-                'echange/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'echange/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articleechange'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articleechange'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'echange/%s-%d/%s-%d'
+        ), 'echange/%s-%d/%s-%d'
         );
         $group_route_articleechange_produit = new Zend_Controller_Router_Route_Regex(
-                'echange/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'echange/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articleechange'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articleechange'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category',
             5 => 'nom_produit',
             6 => 'id_product'
-                ), 'echange/%s-%d/%s-%d/%s-%d'
+        ), 'echange/%s-%d/%s-%d/%s-%d'
         );
         $group_route_articlemaintenance = new Zend_Controller_Router_Route_Regex(
-                'maintenance/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'maintenance/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlemaintenance'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlemaintenance'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'maintenance/%s-%d/%s-%d'
+        ), 'maintenance/%s-%d/%s-%d'
         );
         $group_route_articlemaintenance_produit = new Zend_Controller_Router_Route_Regex(
-                'maintenance/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'maintenance/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlemaintenance'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlemaintenance'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category',
             5 => 'nom_produit',
             6 => 'id_product'
-                ), 'maintenance/%s-%d/%s-%d/%s-%d'
+        ), 'maintenance/%s-%d/%s-%d/%s-%d'
         );
         $group_route_articlelocation = new Zend_Controller_Router_Route_Regex(
-                'location/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'location/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlelocation'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlelocation'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'location/%s-%d/%s-%d'
+        ), 'location/%s-%d/%s-%d'
         );
         $group_route_articlelocation_produit = new Zend_Controller_Router_Route_Regex(
-                'location/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'location/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlelocation'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlelocation'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category',
             5 => 'nom_produit',
             6 => 'id_product'
-                ), 'location/%s-%d/%s-%d/%s-%d'
+        ), 'location/%s-%d/%s-%d/%s-%d'
         );
         $group_route_articleaudit = new Zend_Controller_Router_Route_Regex(
-                'audit/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'audit/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articleaudit'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articleaudit'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'audit/%s-%d/%s-%d'
+        ), 'audit/%s-%d/%s-%d'
         );
         $group_route_articleaudit_produit = new Zend_Controller_Router_Route_Regex(
-                'audit/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'audit/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articleaudit'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articleaudit'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category',
             5 => 'nom_produit',
             6 => 'id_product'
-                ), 'audit/%s-%d/%s-%d/%s-%d'
+        ), 'audit/%s-%d/%s-%d/%s-%d'
         );
         $group_route_articlereprise = new Zend_Controller_Router_Route_Regex(
-                'reprise/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'reprise/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlereprise'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlereprise'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category'
-                ), 'reprise/%s-%d/%s-%d'
+        ), 'reprise/%s-%d/%s-%d'
         );
         $group_route_articlereprise_produit = new Zend_Controller_Router_Route_Regex(
-                'reprise/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
+            'reprise/([-\w]+)-(\d+)/([-\w]+)-(\d+)/([-\w]+)-(\d+)\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'articlereprise'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'articlereprise'
+        ), array(
             1 => 'group',
             2 => 'id_category_group',
             3 => 'marque',
             4 => 'id_category',
             5 => 'nom_produit',
             6 => 'id_product'
-                ), 'reprise/%s-%d/%s-%d/%s-%d'
+        ), 'reprise/%s-%d/%s-%d/%s-%d'
         );
         $route_reparation = new Zend_Controller_Router_Route_Regex(
-                'reparation', array(
+            'reparation', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'reparation'
-                ), array(
-                ), 'reparation'
+        , 'controller' => 'page'
+        , 'action' => 'reparation'
+        ), array(), 'reparation'
         );
         $route_vente = new Zend_Controller_Router_Route_Regex(
-                'vente', array(
+            'vente', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'vente'
-                ), array(
-                ), 'vente'
+        , 'controller' => 'page'
+        , 'action' => 'vente'
+        ), array(), 'vente'
         );
         $route_echange = new Zend_Controller_Router_Route_Regex(
-                'echange', array(
+            'echange', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'echange'
-                ), array(
-                ), 'echange'
+        , 'controller' => 'page'
+        , 'action' => 'echange'
+        ), array(), 'echange'
         );
         $route_maintenance = new Zend_Controller_Router_Route_Regex(
-                'maintenance', array(
+            'maintenance', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'maintenance'
-                ), array(
-                ), 'maintenance'
+        , 'controller' => 'page'
+        , 'action' => 'maintenance'
+        ), array(), 'maintenance'
         );
         $route_location = new Zend_Controller_Router_Route_Regex(
-                'location', array(
+            'location', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'location'
-                ), array(
-                ), 'location'
+        , 'controller' => 'page'
+        , 'action' => 'location'
+        ), array(), 'location'
         );
         $route_audit = new Zend_Controller_Router_Route_Regex(
-                'audit', array(
+            'audit', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'audit'
-                ), array(
-                ), 'audit'
+        , 'controller' => 'page'
+        , 'action' => 'audit'
+        ), array(), 'audit'
         );
         $route_reprise = new Zend_Controller_Router_Route_Regex(
-                'reprise', array(
+            'reprise', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'reprise'
-                ), array(
-                ), 'reprise'
+        , 'controller' => 'page'
+        , 'action' => 'reprise'
+        ), array(), 'reprise'
         );
         $route_smartprint = new Zend_Controller_Router_Route_Regex(
-                'smartprint', array(
+            'smartprint', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'smartprint'
-                ), array(
-                ), 'smartprint'
+        , 'controller' => 'page'
+        , 'action' => 'smartprint'
+        ), array(), 'smartprint'
         );
         $route_clichemicro = new Zend_Controller_Router_Route_Regex(
-                '([-\w]+)-micro\.html', array(
+            '([-\w]+)-micro\.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'clichemicro'
-                ), array(
+        , 'controller' => 'page'
+        , 'action' => 'clichemicro'
+        ), array(
             1 => 'prestation',
-                ), '%s-micro.html'
+        ), '%s-micro.html'
         );
 
         $comparaison_route = new Zend_Controller_Router_Route_Regex(
-                '(\d+)-comparaison.html', array(
+            '(\d+)-comparaison.html', array(
             'module' => 'default'
-            , 'controller' => 'comparaison'
-            , 'action' => 'index'
-                ), array(
+        , 'controller' => 'comparaison'
+        , 'action' => 'index'
+        ), array(
             1 => 'id_category_group'
-                ), '%d-comparaison.html'
+        ), '%d-comparaison.html'
         );
-                $route_comparaison_mail = new Zend_Controller_Router_Route_Regex(
-                'link', array(
+        $route_comparaison_mail = new Zend_Controller_Router_Route_Regex(
+            'link', array(
             'module' => 'default'
-            , 'controller' => 'comparaison'
-            , 'action' => 'link'
-                ), array(
-                ), 'link'
+        , 'controller' => 'comparaison'
+        , 'action' => 'link'
+        ), array(), 'link'
         );
-		$route_confirmation_devis = new Zend_Controller_Router_Route_Regex(
-                'confirmation-devis.html', array(
+        $route_confirmation_devis = new Zend_Controller_Router_Route_Regex(
+            'confirmation-devis.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'confirmationdevis'
-                ), array(
-                ), 'confirmation-devis.html'
+        , 'controller' => 'page'
+        , 'action' => 'confirmationdevis'
+        ), array(), 'confirmation-devis.html'
         );
-		$route_confirmation_reparation = new Zend_Controller_Router_Route_Regex(
-                'confirmation-reparation.html', array(
+
+        $route_confirmation_reparation = new Zend_Controller_Router_Route_Regex(
+            'confirmation-reparation.html', array(
             'module' => 'default'
-            , 'controller' => 'page'
-            , 'action' => 'confirmationreparation'
-                ), array(
-                ), 'confirmation-reparation.html'
+        , 'controller' => 'page'
+        , 'action' => 'confirmationreparation'
+        ), array(), 'confirmation-reparation.html'
         );
+
+        $route_show_filtre_article = new Zend_Controller_Router_Route_Regex(
+            'filtre.html', array(
+            'module' => 'default'
+        , 'controller' => 'page'
+        , 'action' => 'showfiltre'
+        ), array(), 'filtre.html'
+        );
+
+        $route_make_filtre_article = new Zend_Controller_Router_Route_Regex(
+            'filtre/apply', array(
+            'module' => 'default'
+        , 'controller' => 'filtre'
+        , 'action' => 'makefiltre'
+        ), array(), 'filtreApply'
+        );
+
+        $route_delete_filtre_article = new Zend_Controller_Router_Route_Regex(
+            'filtre/delete', array(
+            'module' => 'default'
+        , 'controller' => 'filtre'
+        , 'action' => 'deletefiltre'
+        ), array(), 'filtreDelete'
+        );
+
+        $route_show_filtre_article = new Zend_Controller_Router_Route_Regex(
+            'filtre', array(
+            'module' => 'default'
+        , 'controller' => 'page'
+        , 'action' => 'filtre'
+        ), array(), 'filtre'
+        );
+
+        $router->addRoute('filtre_route', $route_show_filtre_article);
+        $router->addRoute('routeDeleteFiltreArticle', $route_delete_filtre_article);
+        $router->addRoute('routeMakeFiltreArticle', $route_make_filtre_article);
+
         $router->addRoute('langRoute', $langRoute);
         $router->addRoute('defaultRoute', $defaultRoute);
         $router->addRoute('adminRoute', $adminRoute);
@@ -584,12 +610,13 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
         $router->addRoute('route_clichemicro', $route_clichemicro);
         $router->addRoute('route_societe', $societe_route);
         $router->addRoute('route_extranet', $route_extranet);
-		$router->addRoute('route_confirmation_devis', $route_confirmation_devis);
-		$router->addRoute('route_confirmation_reparation', $route_confirmation_reparation);
+        $router->addRoute('route_confirmation_devis', $route_confirmation_devis);
+        $router->addRoute('route_confirmation_reparation', $route_confirmation_reparation);
         $this->_frontController->registerPlugin(new Genius_Controller_Plugin_Language());
     }
 
-    protected function _initAutoload() {
+    protected function _initAutoload()
+    {
         $controller = Zend_Controller_Front::getInstance();
 
         // load hooks

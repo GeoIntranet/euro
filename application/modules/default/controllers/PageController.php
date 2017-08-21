@@ -21,6 +21,7 @@ class PageController extends Genius_AbstractController
 		$this->view->headMeta()->appendName('description',"");
 		$this->view->headMeta()->appendName('keyword',"");
 	}
+
 	public function chariotmobileAction()
 	{		
 		$this->view->headTitle()->append('Eurocomputer | Chariot mobile');
@@ -383,6 +384,26 @@ class PageController extends Genius_AbstractController
 			$photocrh_cover_group = UPLOAD_URL . 'images/' . $ppath;
 		}
 		$this->view->photocrh_cover_group = $photocrh_cover_group;
+    }
+
+    public function filtreAction()
+    {
+        $this->view->headTitle()->append('Eurocomputer | Location');
+        $this->view->headMeta()->appendName('description',"");
+        $this->view->headMeta()->appendName('keyword',"");
+
+        $hdw = [
+          'zm400' => [
+              'dpi' => 300,
+          ],
+          'zm600' => [
+              'dpi' => 600,
+          ],
+        ];
+        $this->view->LOL = "Geoffrey";
+        $this->view->hdw =$hdw;
+        var_dump($_SESSION);
+
     }
 	
 	public function articlelocationAction()

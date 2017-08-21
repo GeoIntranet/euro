@@ -18,18 +18,31 @@ Zend_Registry::get('hooks')->trigger('view_head', $this);
 <link href="<?php echo URL_DEFAULT_CSS; ?>style.css?v=8" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo URL_DEFAULT_CSS; ?>responsive.css?v=7" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo URL_DEFAULT_CSS; ?>jquery.nouislider.min.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="<?php echo URL_DEFAULT_CSS; ?>ms.css" rel="stylesheet" type="text/css" media="all" />
+
 <!--Amelioration mega menu-->
 <link href="<?php echo URL_DEFAULT_CSS; ?>amelioration.css" rel="stylesheet" media="all">
 <link href="<?php echo URL_DEFAULT_CSS; ?>yamm.css" rel="stylesheet" media="all">
 <!--Amelioration mega menu-->
+
 <?php if ($controller != 'index'):?>
 <link href="<?php echo PLUGINS_URL; ?>jqueryValidationEngine/css/validationEngine.jquery.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo URL_DEFAULT_CSS; ?>sky-forms.css" type="text/css" media="all">
 <link rel="stylesheet" type="text/css" href="<?php echo URL_DEFAULT_JS; ?>fancyBox/jquery.fancybox.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?php echo URL_DEFAULT_JS; ?>fancyBox/helpers/jquery.fancybox-buttons.css" />
 <?php endif; ?>
+
 <link rel="stylesheet" href="<?php echo URL_DEFAULT_JS; ?>carousel/flexslider.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?php echo THEMES_DEFAULT_URL; ?>js/carousel/skin.css" media="all" />
+
+
+
+
+
+
+
+
 <?php if ($_SERVER['SERVER_ADDR'] != "<?php echo PROJECTS?>"){ ?>
 <base href="<?php echo PROJECTS?>" />
 <?php }else{?>
@@ -49,6 +62,9 @@ if ($controller == 'index' && $action == 'index'){
 $uri = '<?php echo PROJECTS?>';
 ?>
 <link rel="canonical" href="<?php echo PROJECTS?>" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="//sky.walker/themes/default/js/ms.js"></script>
 </head>
 <body class="<?php echo $this->active; ?>">
 <?php echo $this->render('default/header-mega.phtml'); ?> <?php echo $this->layout()->content; ?> <?php echo $this->render('default/footer.phtml'); ?>
@@ -114,6 +130,14 @@ $uri = '<?php echo PROJECTS?>';
 "query-input": "required name=search_term_string"
 }
 }
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $('.multiselect-ui').multiselect({
+            includeSelectAllOption: true
+        });
+    });
 </script>
 </body>
 </html>

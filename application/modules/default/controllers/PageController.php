@@ -400,10 +400,15 @@ class PageController extends Genius_AbstractController
               'dpi' => 600,
           ],
         ];
-        $this->view->LOL = "Geoffrey";
-        $this->view->hdw =$hdw;
-        var_dump($_SESSION);
 
+        $session = new Zend_Session_Namespace();
+        $session->hdw = $hdw ;
+        var_dump($session->input);
+        var_dump($session->post);
+
+
+        $this->view->input = $session->input;
+        $this->view->hdw = $hdw;
     }
 	
 	public function articlelocationAction()

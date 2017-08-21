@@ -18,8 +18,8 @@ $protocol="http";
 date_default_timezone_set('Europe/Paris');
 
 
-defined('PROJECTS')
-|| define('PROJECTS','http://computer.euro');
+defined('PROJECT')
+|| define('PROJECT','http://sky.walker');
 
 
 // define root path
@@ -36,7 +36,7 @@ defined('ADDONS_PATH')
 
 // Define application environment
 defined('APPLICATION_ENV')
-	|| define('APPLICATION_ENV', 'development');
+	|| define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
 // set include path
 set_include_path(realpath(APPLICATION_PATH . '/../library')
 	. PATH_SEPARATOR . get_include_path()
@@ -52,7 +52,7 @@ require_once 'Zend/Session.php';
 Zend_Session::start();
 
 // themes/plugins/upload paths
-define('THEMES_PATH', 'http://computer.euro/public/themes/');
+define('THEMES_PATH', PROJECT .'/public/themes/');
 define('THEMES_ADMIN_PATH', THEMES_PATH . 'admin/');
 define('THEMES_DEFAULT_PATH', THEMES_PATH . 'default/');
 define('PLUGINS_PATH', ROOT_PATH . '/public/plugins/');
@@ -60,7 +60,7 @@ define('UPLOAD_PATH', ROOT_PATH . '/public/upload/');
 define('TEMPLATES_PATH', THEMES_PATH . 'templates/');
 
 // themes/plugins/upload urls
-define('BASE_URL','http://computer.euro');
+define('BASE_URL',PROJECT );
 define('THEMES_URL', BASE_URL . '/themes/');
 define('THEMES_ADMIN_URL', THEMES_URL . 'admin/');
 define('THEMES_DEFAULT_URL', THEMES_URL . 'default/');
@@ -123,7 +123,7 @@ $sess->locale = $lang;
 
 // db prefix
 define('TABLE_PREFIX', 'ec_');
-ini_set('display_errors', 1);
+
 class Application
 {
 

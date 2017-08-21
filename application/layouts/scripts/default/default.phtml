@@ -6,7 +6,7 @@ $front = Zend_Controller_Front::getInstance();
 $request    = $front->getRequest();
 $controller = $request->getControllerName();
 $action     = $request->getActionName();
-$protocol="http";
+$protocol="https";
 echo '<link rel="icon" type="image/png" href='.$protocol.'://'.$_SERVER['HTTP_HOST'].'/themes/default/images/ico.png">';
 Zend_Registry::get('hooks')->trigger('view_head', $this);
 ?>
@@ -36,7 +36,7 @@ Zend_Registry::get('hooks')->trigger('view_head', $this);
 <base href="<?php echo PROJECTS?>" />
 <?php }?>
 <script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-74237721-1","auto"),ga("send","pageview");</script>
-<?php
+<?php 
 echo $this->headLink();
 echo $this->headScript();
 ?>
@@ -50,23 +50,10 @@ $uri = '<?php echo PROJECTS?>';
 ?>
 <link rel="canonical" href="<?php echo PROJECTS?>" />
 </head>
-
 <body class="<?php echo $this->active; ?>">
-
 <?php echo $this->render('default/header-mega.phtml'); ?> <?php echo $this->layout()->content; ?> <?php echo $this->render('default/footer.phtml'); ?>
 <?php Zend_Registry::get('hooks')->trigger('view_footer', $this); ?>
  <?php echo $this->inlineScript(); ?>
-
-
-
-<div class="row">
-    <div class="col-md">
-        text afficher sur une resolution medium
-    </div>
-    <div class="col-sm-only">
-        text afficher quand c'est en version mobile
-    </div>
-</div>
 
 
 

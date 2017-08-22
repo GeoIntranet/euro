@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0c7c8f3-5b0f-47e6-86ed-9c344c9c6127" name="Default" comment="" />
+    <list default="true" id="c0c7c8f3-5b0f-47e6-86ed-9c344c9c6127" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/classes/Filtering.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Filtre.php" afterPath="$PROJECT_DIR$/application/models/Filtre.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,27 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/ContactController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="9" column="5" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="9" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FiltreController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="370">
@@ -60,41 +45,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Filtre.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
+      <file leaf-file-name="FiltreController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="504">
+              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Global.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/Global.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
-              <folding>
-                <element signature="n#getContenu#0;n#Genius_Model_Global#0;n#!!top" expanded="false" />
-                <marker date="1479738867000" expanded="true" signature="157:301" ph="SELECT T.*, ${$table}" />
-                <marker date="1479738867000" expanded="true" signature="509:723" ph="SELECT T.id ${$table}" />
-                <marker date="1479738867000" expanded="true" signature="944:1114" ph="SELECT T.*, ${$table}" />
-                <marker date="1479738867000" expanded="true" signature="1336:1374" ph="SELECT ${$ch... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="1418:1450" ph="SELECT * FRO... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="1674:1712" ph="SELECT ${$ch... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="1756:1788" ph="SELECT * FRO... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="3234:3291" ph="SELECT id, o... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="3797:3888" ph="SELECT id, o... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="4391:4448" ph="SELECT id, o... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="5045:5102" ph="SELECT id, o... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="5698:5778" ph="SELECT id, o... ${$table_name}" />
-                <marker date="1479738867000" expanded="true" signature="6243:6297" ph="SELECT max(o... " />
-                <marker date="1479738867000" expanded="true" signature="6495:6566" ph="SELECT max(o... " />
-                <marker date="1479738867000" expanded="true" signature="6759:6826" ph="SELECT max(o... " />
-                <marker date="1479738867000" expanded="true" signature="6998:7094" ph="SELECT max(o... " />
-                <marker date="1479738867000" expanded="true" signature="7262:7343" ph="SELECT max(o... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -152,7 +108,6 @@
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/page/reparation.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/filtre.phtml.php" />
         <option value="$PROJECT_DIR$/application/modules/default/controllers/PageController.php" />
-        <option value="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
         <option value="$PROJECT_DIR$/public/themes/default/js/ms.js" />
         <option value="$PROJECT_DIR$/public/themes/default/css/ms.css" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/page/filtre.phtml" />
@@ -168,6 +123,9 @@
         <option value="$PROJECT_DIR$/application/layouts/scripts/default/default.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
         <option value="$PROJECT_DIR$/application/models/Filtre.php" />
+        <option value="$PROJECT_DIR$/application/classes/FilteringArticle.php" />
+        <option value="$PROJECT_DIR$/application/classes/Filtering.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
       </list>
     </option>
   </component>
@@ -185,7 +143,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1921" />
     <option name="y" value="23" />
     <option name="width" value="1936" />
@@ -224,22 +182,7 @@
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
@@ -252,6 +195,13 @@
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
@@ -301,7 +251,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/js/ms.js&#10;C:/xampp/htdocs/eurocomputer_/.gitignore&#10;C:/xampp/htdocs/eurocomputer_/init.php.bak&#10;C:/xampp/htdocs/eurocomputer_/application/configs/application.ini&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/page/filtre.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/contact/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/css/ms.css&#10;C:/xampp/htdocs/eurocomputer_/init.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/filtrage/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/ContactController.php&#10;C:/xampp/htdocs/eurocomputer_/application/Bootstrap.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltrageController.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltreController.php" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/js/ms.js&#10;C:/xampp/htdocs/eurocomputer_/application/models/Filtre.php&#10;C:/xampp/htdocs/eurocomputer_/.gitignore&#10;C:/xampp/htdocs/eurocomputer_/init.php.bak&#10;C:/xampp/htdocs/eurocomputer_/application/configs/application.ini&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/page/filtre.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/contact/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/css/ms.css&#10;C:/xampp/htdocs/eurocomputer_/init.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/filtrage/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/ContactController.php&#10;C:/xampp/htdocs/eurocomputer_/application/Bootstrap.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltrageController.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltreController.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -417,17 +367,18 @@
       <workItem from="1499252077161" duration="32000" />
       <workItem from="1503321573760" duration="734000" />
       <workItem from="1503383952808" duration="4971000" />
-      <workItem from="1503401227358" duration="2261000" />
+      <workItem from="1503401227358" duration="3166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57012000" />
+    <option name="totallyTimeSpent" value="57917000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1186" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1186" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29114583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29114583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -463,20 +414,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/layouts/scripts/default/default.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/results/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="85" column="12" lean-forward="true" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/ResultsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -554,13 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/results/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3060">
@@ -617,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4572">
-          <caret line="305" column="25" lean-forward="false" selection-start-line="305" selection-start-column="25" selection-end-line="305" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/page/reparation.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -635,6 +558,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -658,6 +582,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="430" column="30" lean-forward="false" selection-start-line="430" selection-start-column="30" selection-end-line="430" selection-end-column="30" />
+          <folding>
+            <marker date="1503383882705" expanded="true" signature="19242:19249" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="19292:21121" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="20372:20479" ph="..." />
+            <marker date="1503383882705" expanded="true" signature="20990:21053" ph="..." />
+            <marker date="1503383882705" expanded="true" signature="21161:22987" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="22238:22345" ph="..." />
+            <marker date="1503383882705" expanded="true" signature="22856:22919" ph="..." />
+            <marker date="1503383882705" expanded="true" signature="23029:24857" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="24108:24215" ph="..." />
+            <marker date="1503383882705" expanded="true" signature="24726:24789" ph="..." />
+            <marker date="1503383882705" expanded="true" signature="24897:25080" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="25120:25308" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="25353:25541" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="25591:25779" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="25835:26022" ph="{...}" />
+            <marker date="1503383882705" expanded="true" signature="26068:26266" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,6 +623,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61740">
           <caret line="1715" column="17" lean-forward="false" selection-start-line="1715" selection-start-column="17" selection-end-line="1715" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,14 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/layouts/scripts/default/default.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -790,21 +725,6 @@
         <state relative-caret-position="396">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -850,11 +770,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="324">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <marker date="1503406486914" expanded="true" signature="202:217" ph="SELECT MCG.i... " />
+            <marker date="1503406486914" expanded="true" signature="202:228" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+            <marker date="1503406486914" expanded="true" signature="202:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10980">
+          <caret line="305" column="25" lean-forward="false" selection-start-line="305" selection-start-column="25" selection-end-line="305" selection-end-column="25" />
+          <folding>
+            <marker date="1497973371954" expanded="true" signature="5622:5648" ph="SELECT marqu... marques" />
+            <marker date="1497973371954" expanded="true" signature="9733:9977" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="10361:10735" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="10830:11199" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="11677:12012" ph="SELECT cm.id... ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="12660:12794" ph="SELECT pc.id... ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="13754:13999" ph="SELECT p.id ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/Filtering.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

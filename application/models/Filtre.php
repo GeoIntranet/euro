@@ -8,4 +8,14 @@
 
 class Genius_Model_Filtre
 {
+    public static function getArticles() {
+        global $db;
+
+        $sql = "
+		SELECT *
+		FROM ec_filtres 
+		";
+        $data = $db->fetchRow($sql);
+        return $data;
+    }
 }

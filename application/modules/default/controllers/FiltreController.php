@@ -12,7 +12,6 @@ class FiltreController extends Genius_AbstractController
     {
         $session = new Zend_Session_Namespace('input');
 
-
         $this->view->headTitle()->append('Eurocomputer | Contact ');
         $this->view->headMeta()->appendName('description',"Contact Form");
         $this->view->headMeta()->appendName('keyword',"Easy Living | Login Form");
@@ -27,12 +26,19 @@ class FiltreController extends Genius_AbstractController
         $post = $this->getRequest()->getPost();
         $session = new Zend_Session_Namespace('input');
 
-        $session->printer['dpi'] = $post['dpi'];
-        $session->printer['gamme'] = $post['gamme'];
-        $session->printer['opt'] = $post['opt'];
-        $session->printer['use'] = $post['use'];
-        $int = array_flip($post['interface']);
-        $session->printer['interface'] = $int;
+        $filtering = new Genius_Class_FilteringPrinter($post);
+        if($session->input['search'] == 'd') $filtering = new Genius_Class_FilteringDouchette($post);
+        if($session->input['search'] == 't') $filtering = new Genius_Class_FilteringTerminal($post);
+
+        $filtering
+            ->setSession($session)
+            ->handle()
+        ;
+
+        $model = new Genius_Model_Filtre();
+        $art = $model::getArticles();
+        var_dump($model::getArticles());
+        die();
 
         $baseUrl = new Zend_View_Helper_BaseUrl();
         $this->getResponse()->setRedirect($baseUrl->baseUrl().'/filtre');

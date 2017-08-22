@@ -15,7 +15,7 @@ class Genius_Model_Filtre
 		SELECT *
 		FROM ec_filtres 
 		";
-        $data = $db->fetchRow($sql);
+        $data = $db->fetchAll($sql);
         return $data;
     }
 }

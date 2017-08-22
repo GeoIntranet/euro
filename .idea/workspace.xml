@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0c7c8f3-5b0f-47e6-86ed-9c344c9c6127" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/classes/FilteringDouchette.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/classes/FilteringTerminal.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/classes/Filtering.php" afterPath="$PROJECT_DIR$/application/classes/FilteringPrinter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_douchette.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_douchette.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_terminal.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_terminal.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Filtre.php" afterPath="$PROJECT_DIR$/application/models/Filtre.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,6 +35,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Filtre.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <folding>
+                <marker date="1503416366705" expanded="true" signature="202:217" ph="SELECT MCG.i... " />
+                <marker date="1503416366705" expanded="true" signature="202:228" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+                <marker date="1503416366705" expanded="true" signature="202:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FilteringPrinter.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/classes/FilteringPrinter.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,15 +59,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Filtre.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
+      <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="703">
+              <caret line="401" column="53" lean-forward="false" selection-start-line="401" selection-start-column="25" selection-end-line="401" selection-end-column="53" />
               <folding>
-                <marker date="1503406486914" expanded="true" signature="202:217" ph="SELECT MCG.i... " />
-                <marker date="1503406486914" expanded="true" signature="202:228" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
-                <marker date="1503406486914" expanded="true" signature="202:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="5622:5648" ph="SELECT marqu... marques" />
+                <marker date="1497973371954" expanded="true" signature="9733:9977" ph="SELECT p.id ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="10361:10735" ph="SELECT p.id ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="10830:11199" ph="SELECT p.id ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="11677:12012" ph="SELECT cm.id... ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="12660:12794" ph="SELECT pc.id... ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="13754:13999" ph="SELECT p.id ${TABLE_PREFIX}" />
               </folding>
             </state>
           </provider>
@@ -171,7 +182,6 @@
         <option value="$PROJECT_DIR$/public/plugins/multiselect/css/ms.css" />
         <option value="$PROJECT_DIR$/public/plugins/multiselect/js/ms.js" />
         <option value="$PROJECT_DIR$/application/layouts/scripts/default/default.phtml" />
-        <option value="$PROJECT_DIR$/application/models/Filtre.php" />
         <option value="$PROJECT_DIR$/application/classes/FilteringArticle.php" />
         <option value="$PROJECT_DIR$/application/classes/Filtering.php" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" />
@@ -185,6 +195,7 @@
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
         <option value="$PROJECT_DIR$/application/classes/FilteringPrinter.php" />
         <option value="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
+        <option value="$PROJECT_DIR$/application/models/Filtre.php" />
       </list>
     </option>
   </component>
@@ -202,7 +213,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -236,12 +247,6 @@
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
@@ -453,15 +458,15 @@
       <workItem from="1499252077161" duration="32000" />
       <workItem from="1503321573760" duration="734000" />
       <workItem from="1503383952808" duration="4971000" />
-      <workItem from="1503401227358" duration="12115000" />
+      <workItem from="1503401227358" duration="12197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66866000" />
+    <option name="totallyTimeSpent" value="66948000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1186" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1186" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29114583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -815,22 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10980">
-          <caret line="305" column="25" lean-forward="false" selection-start-line="305" selection-start-column="25" selection-end-line="305" selection-end-column="25" />
-          <folding>
-            <marker date="1497973371954" expanded="true" signature="5622:5648" ph="SELECT marqu... marques" />
-            <marker date="1497973371954" expanded="true" signature="9733:9977" ph="SELECT p.id ${TABLE_PREFIX}" />
-            <marker date="1497973371954" expanded="true" signature="10361:10735" ph="SELECT p.id ${TABLE_PREFIX}" />
-            <marker date="1497973371954" expanded="true" signature="10830:11199" ph="SELECT p.id ${TABLE_PREFIX}" />
-            <marker date="1497973371954" expanded="true" signature="11677:12012" ph="SELECT cm.id... ${TABLE_PREFIX}" />
-            <marker date="1497973371954" expanded="true" signature="12660:12794" ph="SELECT pc.id... ${TABLE_PREFIX}" />
-            <marker date="1497973371954" expanded="true" signature="13754:13999" ph="SELECT p.id ${TABLE_PREFIX}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/classes/Upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -915,14 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/classes/FilteringPrinter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="811">
@@ -931,14 +912,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="401" column="53" lean-forward="false" selection-start-line="401" selection-start-column="25" selection-end-line="401" selection-end-column="53" />
+          <folding>
+            <marker date="1497973371954" expanded="true" signature="5622:5648" ph="SELECT marqu... marques" />
+            <marker date="1497973371954" expanded="true" signature="9733:9977" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="10361:10735" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="10830:11199" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="11677:12012" ph="SELECT cm.id... ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="12660:12794" ph="SELECT pc.id... ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="13754:13999" ph="SELECT p.id ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="432">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
           <folding>
-            <marker date="1503406486914" expanded="true" signature="202:217" ph="SELECT MCG.i... " />
-            <marker date="1503406486914" expanded="true" signature="202:228" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
-            <marker date="1503406486914" expanded="true" signature="202:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+            <marker date="1503416366705" expanded="true" signature="202:217" ph="SELECT MCG.i... " />
+            <marker date="1503416366705" expanded="true" signature="202:228" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+            <marker date="1503416366705" expanded="true" signature="202:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
           </folding>
         </state>
       </provider>

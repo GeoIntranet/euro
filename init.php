@@ -19,7 +19,7 @@ date_default_timezone_set('Europe/Paris');
 
 
 defined('PROJECT')
-|| define('PROJECT','http://computer.euro');
+|| define('PROJECT','http://sky.walker');
 
 
 // define root path

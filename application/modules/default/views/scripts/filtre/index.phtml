@@ -1,0 +1,220 @@
+
+<!--<!-- start subheader -->-->
+<?php //echo $this->render($this->subheader);?>
+<!--<!-- end subheader section -->-->
+
+<section class="properties properties_contact">
+    <div class="container">
+        <div class="page_title2">
+            <div class="pagenation">
+                <div class="padding-top">&nbsp;
+                    <a href="/">home</a>
+                    <i>/</i> Recherche</div>
+                <?php echo $this->render('statics/moteur_v1.phtml'); ?>
+            </div>
+        </div>
+        <div class="divider" style="margin-top:1px"></div>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col_blogPost">
+                        <h1>Recherche de materiel</h1>
+                        <div class="divider"></div>
+                        <div class="blogPost">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Imprimantes</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Résolution
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-12">
+                                            <select  class="form-control">
+                                                <option>200dpi</option>
+                                                <option>300dpi</option>
+                                                <option>600dpi</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Gamme
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-12">
+                                            <select  class="form-control">
+                                                <option>portatives</option>
+                                                <option>Bureau</option>
+                                                <option>semi industrielle</option>
+                                                <option>industrielle</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Options
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-12">
+                                            <select  class="form-control">
+                                                <option>Aucunes</option>
+                                                <option>Déchirement</option>
+                                                <option>prédecollage</option>
+                                                <option>coupe</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Utilisation
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-12">
+                                            <select  class="form-control">
+                                                <option>Transfert thermique</option>
+                                                <option>Direct Thermique</option>
+                                                <option>Les deux</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8">
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Inteface de connection
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Serie
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Parralléle
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Usb
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Réseau
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Wifi
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 10px">
+                                <div class="col-lg-8">
+                                    <input type="submit" class="btn btn-primary" value="Filtrer">
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="" class="btn btn-danger" style="width: 100%; padding-top: 6px; padding-bottom: 6px">Reset</a>
+
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-12" >
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h2>Resultat</h2>
+                                            <?php var_dump($this->hdw) ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <?php  echo($this->input) ?>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end col -->
+
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+    <!-- end container -->
+
+
+
+
+
+
+</section>
+<!-- end main content -->
+<!-- end properties -->
+<!-- start call to action -->
+<!-- end call to action -->
+
+
+
+

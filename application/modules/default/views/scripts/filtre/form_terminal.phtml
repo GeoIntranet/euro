@@ -1,0 +1,157 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h4> <i class="fa fa-print" style="margin-right: 15px"> </i><b>TERMINAL</b></h4>
+    </div>
+</div>
+
+<form action="/filtre/apply" method="post">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Résolution
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <select class="form-control" name="dpi">
+                        <option  value="200" <?php echo $this->session['dpi'] == '200' ? 'selected' : ''?> >200dpi</option>
+                        <option  value="300" <?php echo $this->session['dpi'] == '300' ? 'selected' : ''?> >300dpi</option>
+                        <option  value="600" <?php echo $this->session['dpi'] == '600' ? "selected" : ''?> >600dpi</option>
+                    </select>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Gamme
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" >
+                    <select class="form-control" name="gamme">
+                        <option <?php echo $this->session['gamme'] == 'portative' ? 'selected' : ''?> value="portative">portatives</option>
+                        <option <?php echo $this->session['gamme'] == 'bureau' ? 'selected' : ''?> value="bureau">Bureau</option>
+                        <option <?php echo $this->session['gamme'] == 'si' ? 'selected' : ''?> value="si">semi industrielle</option>
+                        <option <?php echo $this->session['gamme'] == 'i' ? 'selected' : ''?> value="i">industrielle</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Options
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <select class="form-control" name="opt">
+                        <option <?php echo $this->session['opt'] == 'none' ? 'selected' : ''?> value="none">Aucunes</option>
+                        <option <?php echo $this->session['opt'] == 'tear' ? 'selected' : ''?> value="tear" >Déchirement</option>
+                        <option <?php echo $this->session['opt'] == 'peel' ? 'selected' : ''?> value="peel">prédecollage( LTS + ré-enrouleur)</option>
+                        <option <?php echo $this->session['opt'] == 'cut' ? 'selected' : ''?> value="cut">coupe</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Utilisation
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <select class="form-control" name="use">
+                        <option <?php echo $this->session['use'] == 'tt' ? 'selected' : ''?> value="tt">Transfert thermique</option>
+                        <option <?php echo $this->session['use'] == 'dt' ? 'selected' : ''?> value="dt">Direct Thermique</option>
+                        <option <?php echo $this->session['use'] == 'both' ? 'selected' : ''?> value="both">Les deux</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Inteface de connection
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->session['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="serie">
+                            Serie
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->session['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="parra">
+                            Parralléle
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->session['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="usb">
+                            Usb
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->session['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="eth">
+                            Réseau
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->session['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="wifi">
+                            Wifi
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 10px">
+        <div class="col-lg-8">
+            <input type="submit" class="btn btn-primary" value="Filtrer">
+        </div>
+
+        <div class="col-lg-4">
+            <a href="/filtre/delete" class="btn btn-danger"
+               style="width: 100%; padding-top: 6px; padding-bottom: 6px">Reset</a>
+        </div>
+    </div>
+
+</form>

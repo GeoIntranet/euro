@@ -15,181 +15,54 @@
         </div>
         <div class="divider" style="margin-top:1px"></div>
 
+        <div class="row">
 
+        </div>
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col_blogPost">
-                        <h1>Recherche de materiel</h1>
+
+                        <h1> <i class="fa fa-search"> </i> Recherche de materiel</h1>
+
                         <div class="divider"></div>
+
                         <div class="blogPost">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h4>Imprimantes</h4>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            Résolution
-                                        </div>
-                                    </div>
-                                    <div class="row" >
-                                        <div class="col-lg-12">
-                                            <select  class="form-control">
-                                                <option>200dpi</option>
-                                                <option>300dpi</option>
-                                                <option>600dpi</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            Gamme
-                                        </div>
-                                    </div>
-                                    <div class="row" >
-                                        <div class="col-lg-12">
-                                            <select  class="form-control">
-                                                <option>portatives</option>
-                                                <option>Bureau</option>
-                                                <option>semi industrielle</option>
-                                                <option>industrielle</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            Options
-                                        </div>
-                                    </div>
-                                    <div class="row" >
-                                        <div class="col-lg-12">
-                                            <select  class="form-control">
-                                                <option>Aucunes</option>
-                                                <option>Déchirement</option>
-                                                <option>prédecollage</option>
-                                                <option>coupe</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            Utilisation
-                                        </div>
-                                    </div>
-                                    <div class="row" >
-                                        <div class="col-lg-12">
-                                            <select  class="form-control">
-                                                <option>Transfert thermique</option>
-                                                <option>Direct Thermique</option>
-                                                <option>Les deux</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8">
-
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            Inteface de connection
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-2">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    Serie
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    Parralléle
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    Usb
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    Réseau
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    Wifi
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                                    <?php
+                                    var_dump($this->session);
+                                    var_dump($this->printer);
+                                    ?>
+                                    <a href="/filtre/form?f=p">IMPRIMANTE</a>
+                                    -
+                                    <a href="/filtre/form?f=d">DOUCHETTE</a>
+                                    -
+                                    <a href="/filtre/form?f=t">TERMINAL</a>
 
                                 </div>
                             </div>
-                            <div class="row" style="padding-top: 10px">
-                                <div class="col-lg-8">
-                                    <input type="submit" class="btn btn-primary" value="Filtrer">
-                                </div>
-                                <div class="col-lg-4">
-                                    <a href="" class="btn btn-danger" style="width: 100%; padding-top: 6px; padding-bottom: 6px">Reset</a>
+                            <hr>
 
-                                </div>
-                            </div>
+
+                            <?php
+                                if(isset($this->session['search']))
+                                {
+                                    if($this->session['search'] == 'p')  include("form_printer.phtml");
+                                    elseif($this->session['search'] == 'd')  include("form_douchette.phtml");
+                                    elseif($this->session['search'] == 't')  include("form_terminal.phtml");
+                                    else include("form_printer.phtml");
+                                }
+                                else
+                                {
+                                    include("form_printer.phtml");
+                                }
+                            ?>
 
                             <hr>
-                            <div class="row">
-                                <div class="col-lg-12" >
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h2>Resultat</h2>
-                                            <?php var_dump($this->hdw) ?>
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <?php  echo($this->input) ?>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                            <?php include("result.phtml"); ?>
 
                         </div>
                     </div>

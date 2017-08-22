@@ -540,6 +540,15 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         ), array(), 'filtreApply'
         );
 
+        $route_make_filtre_form = new Zend_Controller_Router_Route_Regex(
+            'filtre/form', array(
+            'module' => 'default'
+        , 'controller' => 'filtre'
+        , 'action' => 'makefiltreform'
+        ), array(), 'filtreform'
+        );
+
+
         $route_delete_filtre_article = new Zend_Controller_Router_Route_Regex(
             'filtre/delete', array(
             'module' => 'default'
@@ -548,7 +557,9 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         ), array(), 'filtreDelete'
         );
 
+
         $router->addRoute('routeDeleteFiltreArticle', $route_delete_filtre_article);
+        $router->addRoute('routemakeFiltreForm', $route_make_filtre_form);
         $router->addRoute('routeMakeFiltreArticle', $route_make_filtre_article);
 
         $router->addRoute('langRoute', $langRoute);

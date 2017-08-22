@@ -530,13 +530,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         ), array(), 'confirmation-reparation.html'
         );
 
-        $route_show_filtre_article = new Zend_Controller_Router_Route_Regex(
-            'filtre.html', array(
-            'module' => 'default'
-        , 'controller' => 'page'
-        , 'action' => 'showfiltre'
-        ), array(), 'filtre.html'
-        );
+
 
         $route_make_filtre_article = new Zend_Controller_Router_Route_Regex(
             'filtre/apply', array(
@@ -554,15 +548,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         ), array(), 'filtreDelete'
         );
 
-        $route_show_filtre_article = new Zend_Controller_Router_Route_Regex(
-            'filtre', array(
-            'module' => 'default'
-        , 'controller' => 'page'
-        , 'action' => 'filtre'
-        ), array(), 'filtre'
-        );
-
-        $router->addRoute('filtre_route', $route_show_filtre_article);
         $router->addRoute('routeDeleteFiltreArticle', $route_delete_filtre_article);
         $router->addRoute('routeMakeFiltreArticle', $route_make_filtre_article);
 

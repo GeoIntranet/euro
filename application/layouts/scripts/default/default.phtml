@@ -38,11 +38,6 @@ Zend_Registry::get('hooks')->trigger('view_head', $this);
 
 
 
-
-
-
-
-
 <?php if ($_SERVER['SERVER_ADDR'] != "<?php echo PROJECTS?>"){ ?>
 <base href="<?php echo PROJECTS?>" />
 <?php }else{?>
@@ -63,8 +58,6 @@ $uri = '<?php echo PROJECTS?>';
 ?>
 <link rel="canonical" href="<?php echo PROJECTS?>" />
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script type="text/javascript" src="//sky.walker/themes/default/js/ms.js"></script>
 </head>
 <body class="<?php echo $this->active; ?>">
 <?php echo $this->render('default/header-mega.phtml'); ?> <?php echo $this->layout()->content; ?> <?php echo $this->render('default/footer.phtml'); ?>
@@ -132,12 +125,6 @@ $uri = '<?php echo PROJECTS?>';
 }
 </script>
 
-<script type="text/javascript">
-    $(function() {
-        $('.multiselect-ui').multiselect({
-            includeSelectAllOption: true
-        });
-    });
-</script>
+
 </body>
 </html>

@@ -9,27 +9,26 @@
         <div class="row">
             <div class="col-lg-12">
                 <?php foreach ($this->result as $index => $value) : ?>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <?php //var_dump($value) ?>
+
+                    <div class="row" >
+                        <div class="col-lg-2 " >
+                            <img class="euro"
+                                 src="<?php echo  UPLOAD_URL.'images/'.$value['path_folder'].'/'.$value['filename'].'-small-'.$value['id_img'].'.'.$value['format']  ?> " alt="">
                         </div>
-                    </div>
-                    <div class="row" style=" border-bottom: solid 2px indianred">
-                        <div class="col-lg-2" style="padding-bottom: 10px; padding-top: 10px ; border:1px solid">
-                            <img src="<?php echo  UPLOAD_URL.'images/'.$value['path_folder'].'/'.$value['filename'].'-small-'.$value['id_img'].'.'.$value['format']  ?> " alt="">
-                            <?php echo($value['title']) ?>
-                            <br>
-                            
-                        </div>
-                        <div class="col-lg-10" style="padding-bottom: 10px; padding-top: 10px ; border:1px solid">
+                        <div class="col-lg-10" >
                             <div class="row">
-                                <div class="col-lg-12" style="font-size: 0.8em">
+                                <div class="col-lg-12">
+                                    <a href="" class="title"><b><?php echo $value['title']?></b></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12" >
                                     <?php echo(strip_tags($value['text'])) ?>
                                 </div>
                             </div>
                             <br>
                             <div class="row">
-                                <div class="col-lg-12" style="font-size: 0.7em">
+                                <div class="col-lg-12" >
                                     <i>
                                         <?php echo($value['carac_1']) ?> -
                                         <?php echo($value['carac_2']) ?> -
@@ -44,7 +43,7 @@
 
                         </div>
                     </div>
-                    <br>
+                    <hr>
                 <?php endforeach; ?>
 
             </div>

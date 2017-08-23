@@ -2,14 +2,51 @@
     <div class="col-lg-12" >
         <div class="row">
             <div class="col-lg-12">
-                <h2>Resultat</h2>
-                <?php var_dump($this->hdw) ?>
+                <h2>  <b> <?php echo count($this->result)?> </b> <?php echo count($this->result) > 1 ? 'résultats' : 'résultat'  ?></h2>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12">
-                <?php  echo($this->input) ?>
+                <?php foreach ($this->result as $index => $value) : ?>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <?php //var_dump($value) ?>
+                        </div>
+                    </div>
+                    <div class="row" style=" border-bottom: solid 2px indianred">
+                        <div class="col-lg-2" style="padding-bottom: 10px; padding-top: 10px ; border:1px solid">
+                            <img src="<?php echo  UPLOAD_URL.'images/'.$value['path_folder'].'/'.$value['filename'].'-small-'.$value['id_img'].'.'.$value['format']  ?> " alt="">
+                            <?php echo($value['title']) ?>
+                            <br>
+                            
+                        </div>
+                        <div class="col-lg-10" style="padding-bottom: 10px; padding-top: 10px ; border:1px solid">
+                            <div class="row">
+                                <div class="col-lg-12" style="font-size: 0.8em">
+                                    <?php echo(strip_tags($value['text'])) ?>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12" style="font-size: 0.7em">
+                                    <i>
+                                        <?php echo($value['carac_1']) ?> -
+                                        <?php echo($value['carac_2']) ?> -
+                                        <?php echo($value['carac_3']) ?> -
+                                        <?php echo($value['carac_4']) ?> -
+                                        <?php echo($value['carac_5']) ?> -
+                                        <?php echo($value['carac_6']) ?>
+                                    </i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                <?php endforeach; ?>
+
             </div>
         </div>
 

@@ -31,16 +31,17 @@
         <div class="col-lg-4">
             <div class="row">
                 <div class="col-lg-12">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Gamme
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Largeur impression
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12" >
-                    <select class="form-control" name="gamme">
-                        <option <?php echo $this->printer['gamme'] == 'portative' ? 'selected' : ''?> value="portative">portatives</option>
-                        <option <?php echo $this->printer['gamme'] == 'bureau' ? 'selected' : ''?> value="bureau">Bureau</option>
-                        <option <?php echo $this->printer['gamme'] == 'si' ? 'selected' : ''?> value="si">semi industrielle</option>
-                        <option <?php echo $this->printer['gamme'] == 'i' ? 'selected' : ''?> value="i">industrielle</option>
+                <div class="col-lg-12">
+                    <select class="form-control" name="width">
+                        <option <?php echo $this->printer['width'] == '4' ? 'selected' : ''?> value="4" >4" (10cm)</option>
+                        <option <?php echo $this->printer['width'] == '6' ? 'selected' : ''?> value="6">6" (14cm)</option>
+                        <option <?php echo $this->printer['width'] == '8' ? 'selected' : ''?> value="8">8" (16cm)</option>
+                        <option <?php echo $this->printer['width'] == '2' ? 'selected' : ''?> value="2">2" (5cm)</option>
+                        <option <?php echo $this->printer['width'] == '5' ? 'selected' : ''?> value="5">5" (12cm)</option>
                     </select>
                 </div>
             </div>
@@ -49,24 +50,27 @@
         <div class="col-lg-4">
             <div class="row">
                 <div class="col-lg-12">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Options
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Gamme
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <select class="form-control" name="opt">
-                        <option <?php echo $this->printer['opt'] == 'none' ? 'selected' : ''?> value="none">Aucunes</option>
-                        <option <?php echo $this->printer['opt'] == 'tear' ? 'selected' : ''?> value="tear" >Déchirement</option>
-                        <option <?php echo $this->printer['opt'] == 'peel' ? 'selected' : ''?> value="peel">prédecollage( LTS + ré-enrouleur)</option>
-                        <option <?php echo $this->printer['opt'] == 'cut' ? 'selected' : ''?> value="cut">coupe</option>
+                <div class="col-lg-12" >
+                    <select class="form-control" name="gamme">
+                        <option <?php echo $this->printer['gamme'] == 'bureau' ? 'selected' : ''?> value="bureau">Bureau</option>
+                        <option <?php echo $this->printer['gamme'] == 'si' ? 'selected' : ''?> value="si">Semi-Industrielle</option>
+                        <option <?php echo $this->printer['gamme'] == 'i' ? 'selected' : ''?> value="i">Industrielle</option>
+                        <option <?php echo $this->printer['gamme'] == 'portative' ? 'selected' : ''?> value="portative">Portatives</option>
                     </select>
                 </div>
             </div>
         </div>
+
+
     </div>
     <br>
     <div class="row">
-        <div class="col-lg-4">
+
+        <div class="col-lg-3">
             <div class="row">
                 <div class="col-lg-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Utilisation
@@ -84,7 +88,27 @@
             </div>
         </div>
 
-        <div class="col-lg-8">
+        <div class="col-lg-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Options
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <select class="form-control" name="opt">
+                        <option <?php echo $this->printer['opt'] == 'none' ? 'selected' : ''?> value="none">Aucunes</option>
+                        <option <?php echo $this->printer['opt'] == 'tear' ? 'selected' : ''?> value="tear" >Déchirement</option>
+                        <option <?php echo $this->printer['opt'] == 'peel' ? 'selected' : ''?> value="peel">Prédecollage( LTS + ré-enrouleur)</option>
+                        <option <?php echo $this->printer['opt'] == 'cut' ? 'selected' : ''?> value="cut">Coupe</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-6">
 
             <div class="row">
                 <div class="col-lg-12">

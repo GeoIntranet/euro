@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0c7c8f3-5b0f-47e6-86ed-9c344c9c6127" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/classes/Html.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/module/_result_printer.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/multiselect/css/ms.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/multiselect/js/ms.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Filtre.php" afterPath="$PROJECT_DIR$/application/models/Filtre.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init.php" afterPath="$PROJECT_DIR$/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/css/geo/css/app.css" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/css/geo/css/app.css.map" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/css/geo/css/app.scss" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_utility.scss" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_utility.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,10 +31,34 @@
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+            <state relative-caret-position="-504">
+              <caret line="49" column="168" lean-forward="false" selection-start-line="49" selection-start-column="168" selection-end-line="49" selection-end-column="168" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#b#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#922#928#0#HTML" expanded="true" />
+                <element signature="e#928#934#0#HTML" expanded="true" />
+                <element signature="e#934#940#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#1348#1354#0#HTML" expanded="true" />
+                <element signature="e#1354#1360#0#HTML" expanded="true" />
+                <element signature="e#1360#1366#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#b#0;n#span#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#1871#1877#0#HTML" expanded="true" />
+                <element signature="e#1877#1883#0#HTML" expanded="true" />
+                <element signature="e#1883#1889#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#span#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#2297#2303#0#HTML" expanded="true" />
+                <element signature="e#2303#2309#0#HTML" expanded="true" />
+                <element signature="e#2309#2315#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#b#0;n#span#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#2762#2768#0#HTML" expanded="true" />
+                <element signature="e#2768#2774#0#HTML" expanded="true" />
+                <element signature="e#2774#2780#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#span#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#3136#3142#0#HTML" expanded="true" />
+                <element signature="e#3142#3148#0#HTML" expanded="true" />
+                <element signature="e#3148#3154#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +85,7 @@
       <file leaf-file-name="FiltreController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
+            <state relative-caret-position="818">
               <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
@@ -94,39 +105,20 @@
       <file leaf-file-name="result.phtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="41" column="97" lean-forward="true" selection-start-line="41" selection-start-column="97" selection-end-line="41" selection-end-column="97" />
+            <state relative-caret-position="432">
+              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding>
-                <marker date="1503581525579" expanded="true" signature="1701:2002" ph="..." />
-                <marker date="1503581525579" expanded="true" signature="1762:1959" ph="..." />
-                <marker date="1503581525579" expanded="true" signature="2130:2328" ph="..." />
-                <marker date="1503581525579" expanded="true" signature="2186:2328" ph="..." />
-                <marker date="1503581525579" expanded="true" signature="2608:2935" ph="..." />
-                <marker date="1503581525579" expanded="true" signature="2677:2935" ph="..." />
-                <marker date="1503581525579" expanded="true" signature="2715:2935" ph="..." />
-                <marker date="1503581525579" expanded="true" signature="2797:2803" ph=" " />
-                <marker date="1503581525579" expanded="true" signature="2803:2809" ph=" " />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1503584364805" expanded="true" signature="2348:2649" ph="..." />
+                <marker date="1503584364805" expanded="true" signature="2409:2606" ph="..." />
+                <marker date="1503584364805" expanded="true" signature="2777:2975" ph="..." />
+                <marker date="1503584364805" expanded="true" signature="2833:2975" ph="..." />
+                <marker date="1503584364805" expanded="true" signature="3255:3582" ph="..." />
+                <marker date="1503584364805" expanded="true" signature="3324:3582" ph="..." />
+                <marker date="1503584364805" expanded="true" signature="3362:3582" ph="..." />
+                <marker date="1503584364805" expanded="true" signature="3444:3450" ph=" " />
+                <marker date="1503584364805" expanded="true" signature="3450:3456" ph=" " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Html.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/classes/Html.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilteringTerminal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/classes/FilteringTerminal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -236,11 +228,11 @@
         <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/app.scss" />
         <option value="$PROJECT_DIR$/application/models/Filtre.php" />
         <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_utility.scss" />
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
         <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/module/_result_printer.scss" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
         <option value="$PROJECT_DIR$/application/classes/Html.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" />
       </list>
     </option>
@@ -555,12 +547,12 @@
       <workItem from="1503401227358" duration="12394000" />
       <workItem from="1503470216127" duration="15968000" />
       <workItem from="1503503020379" duration="89000" />
-      <workItem from="1503556242675" duration="15569000" />
+      <workItem from="1503556242675" duration="17793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98771000" />
+    <option name="totallyTimeSpent" value="100995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1186" extended-state="6" />
@@ -1002,32 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="176" column="12" lean-forward="false" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="12" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#1;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
@@ -1056,14 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/classes/Html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1072,20 +1030,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="176" column="12" lean-forward="false" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="12" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#form#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="49" column="168" lean-forward="false" selection-start-line="49" selection-start-column="168" selection-end-line="49" selection-end-column="168" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#b#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#922#928#0#HTML" expanded="true" />
+            <element signature="e#928#934#0#HTML" expanded="true" />
+            <element signature="e#934#940#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#1348#1354#0#HTML" expanded="true" />
+            <element signature="e#1354#1360#0#HTML" expanded="true" />
+            <element signature="e#1360#1366#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#b#0;n#span#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#1871#1877#0#HTML" expanded="true" />
+            <element signature="e#1877#1883#0#HTML" expanded="true" />
+            <element signature="e#1883#1889#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#span#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#2297#2303#0#HTML" expanded="true" />
+            <element signature="e#2303#2309#0#HTML" expanded="true" />
+            <element signature="e#2309#2315#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#b#0;n#span#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#2762#2768#0#HTML" expanded="true" />
+            <element signature="e#2768#2774#0#HTML" expanded="true" />
+            <element signature="e#2774#2780#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#span#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#3136#3142#0#HTML" expanded="true" />
+            <element signature="e#3142#3148#0#HTML" expanded="true" />
+            <element signature="e#3148#3154#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="41" column="97" lean-forward="true" selection-start-line="41" selection-start-column="97" selection-end-line="41" selection-end-column="97" />
+        <state relative-caret-position="432">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1503581525579" expanded="true" signature="1701:2002" ph="..." />
-            <marker date="1503581525579" expanded="true" signature="1762:1959" ph="..." />
-            <marker date="1503581525579" expanded="true" signature="2130:2328" ph="..." />
-            <marker date="1503581525579" expanded="true" signature="2186:2328" ph="..." />
-            <marker date="1503581525579" expanded="true" signature="2608:2935" ph="..." />
-            <marker date="1503581525579" expanded="true" signature="2677:2935" ph="..." />
-            <marker date="1503581525579" expanded="true" signature="2715:2935" ph="..." />
-            <marker date="1503581525579" expanded="true" signature="2797:2803" ph=" " />
-            <marker date="1503581525579" expanded="true" signature="2803:2809" ph=" " />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1503584364805" expanded="true" signature="2348:2649" ph="..." />
+            <marker date="1503584364805" expanded="true" signature="2409:2606" ph="..." />
+            <marker date="1503584364805" expanded="true" signature="2777:2975" ph="..." />
+            <marker date="1503584364805" expanded="true" signature="2833:2975" ph="..." />
+            <marker date="1503584364805" expanded="true" signature="3255:3582" ph="..." />
+            <marker date="1503584364805" expanded="true" signature="3324:3582" ph="..." />
+            <marker date="1503584364805" expanded="true" signature="3362:3582" ph="..." />
+            <marker date="1503584364805" expanded="true" signature="3444:3450" ph=" " />
+            <marker date="1503584364805" expanded="true" signature="3450:3456" ph=" " />
           </folding>
         </state>
       </provider>

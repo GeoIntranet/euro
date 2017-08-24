@@ -18,29 +18,36 @@
 
                                         <?php if($this->session['search'] == 'p') : ?>
                                            <span class="wrapper-choice-selected ">
-                                               <b >IMPRIMANTE</b>
+                                               <b > <i class="fa fa-print" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp; IMPRIMANTE</b>
                                            </span>
                                         <?php else : ?>
                                            <span class="wrapper-choice-unselected ">
-                                               <a href="/filtre/form?f=p" class="link-blue"><b>IMPRIMANTE</b></a>
+                                               <a href="/filtre/form?f=p" class="link-blue">
+                                                   <b><i class="fa fa-print" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;
+                                                       zIMPRIMANTE</b>
+                                               </a>
                                            </span>
                                         <?php endif ?>
 
                                        <?php if($this->session['search'] == 'd') : ?>
                                            <span class="wrapper-choice-selected ">
-                                               <b >DOUCHETTE</b>
+                                               <b> <i class="fa fa-qrcode" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp; DOUCHETTE</b>
                                            </span>
                                        <?php else : ?>
-                                           <span class="wrapper-choice-unselected "> <a href="/filtre/form?f=d" class="link-blue"><b>DOUCHETTE</b></a>  </span>
+                                           <span class="wrapper-choice-unselected ">
+                                               <a href="/filtre/form?f=d" class="link-blue">
+                                                   <b><i class="fa fa-qrcode " style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp; DOUCHETTE</b>
+                                               </a>
+                                           </span>
                                        <?php endif ?>
 
                                        <?php if($this->session['search'] == 't') : ?>
                                            <span class="wrapper-choice-selected ">
-                                               <b >TERMINAL</b>
+                                               <b> <i class="fa fa-mobile" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;  TERMINAL</b>
                                            </span>
                                        <?php else : ?>
                                            <span class="wrapper-choice-unselected ">
-                                               <a href="/filtre/form?f=t" class="link-blue"><b>TERMINAL</b></a>
+                                               <a href="/filtre/form?f=t" class="link-blue"><b> <i class="fa fa-mobile" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;  TERMINAL</b></a>
                                            </span>
 
                                        <?php endif ?>

@@ -11,6 +11,20 @@
             </div>
         </div>
 
+        <?php if(! count($this->result)) : ?>
+            <div class="row" style="padding-bottom: 50px">
+                <div class="col-lg-12">
+                    <br>
+                    <i class="fa fa-exclamation-triangle " aria-hidden="true"></i> Aucun produits ne correspond a vos <u>critères</u>.
+                    <br>
+                    <br>
+                    <p>N'hesiter pas a nous <a href="/contact">contacter</a> afin que l'on vous oriente vers le materiel le plus approprié a vos besoins.</p>
+
+                    <p>Notre equipe Commercial & Technique sont a votre dispositions</p>
+            </div>
+
+        <?php endif ?>
+
         <div class="row">
             <div class="col-lg-12">
                 <?php foreach ($this->result as $index => $value) : ?>

@@ -14,8 +14,6 @@ class FiltreController extends Genius_AbstractController
         $this->view->search = $session->search;
         $this->view->subheader = "statics/subheader.phtml";
 
-        var_dump($session->inputDouchette);
-        var_dump($session->resultDouchette);
     }
 
     /**
@@ -23,17 +21,15 @@ class FiltreController extends Genius_AbstractController
      */
     public function makefiltreAction()
     {
-        // Les input choix user
-        $post = $this->getRequest()->getPost();
 
         // Instance de la session
         $session = new Zend_Session_Namespace('filtre');
 
         // Instance de la classe qui vas gerer a tout filtrer et faire
         // La recherche dans la base de donnée
-        $filtering = new Genius_Class_FilteringPrinter($post);
-        if($session->search == 'd') $filtering = new Genius_Class_FilteringDouchette($post);
-        if($session->search == 't') $filtering = new Genius_Class_FilteringTerminal($post);
+        $filtering = new Genius_Class_FilteringPrinter($_POST);
+        if($session->search == 'd') $filtering = new Genius_Class_FilteringDouchette($_POST);
+        if($session->search == 't') $filtering = new Genius_Class_FilteringTerminal($_POST);
 
         //Gestion du filtre ----
         $filtering
@@ -43,10 +39,8 @@ class FiltreController extends Genius_AbstractController
             ->setResult()
         ;
 
-
         $baseUrl = new Zend_View_Helper_BaseUrl();
         $this->getResponse()->setRedirect($baseUrl->baseUrl().'/filtre');
-
     }
 
     /**

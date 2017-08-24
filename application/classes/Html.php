@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gvalero
- * Date: 24/08/2017
- * Time: 15:27
- */
 
 class Genius_Class_Html
 {

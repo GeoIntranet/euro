@@ -1,15 +1,15 @@
 <div class="row">
     <div class="col-lg-12">
-        <h4> <i class="fa fa-print" style="margin-right: 15px"> </i><b>DOUCHETTE</b></h4>
+        <h4> <i class="fa fa-print" style="margin-right: 15px"> </i><b>Douchette</b></h4>
     </div>
 </div>
 
 <form action="/filtre/apply" method="post">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-2 col-sm-3 col-xs-4">
             <div class="row">
                 <div class="col-lg-12">
-
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Type
                 </div>
             </div>
             <div class="row">
@@ -18,55 +18,55 @@
             <div class="row">
                 <div class="col-lg-12">
 
+                    <select class="form-control" name="type">
+                        <option  value="filaire" <?php echo $this->input['type'] == 'filaire' ? 'selected' : ''?> >Filaire</option>
+                        <option  value="nofilaire" <?php echo $this->input['type'] == 'nofilaire' ? 'selected' : ''?> >Sans-fils</option>
+                        <option  value="fixe" <?php echo $this->input['type'] == 'fixe' ? 'selected' : ''?> >Fixe</option>
+                        <option  value="divers" <?php echo $this->input['type'] == 'divers' ? 'selected' : ''?> >Accesoire</option>
+                    </select>
 
-                    
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-3 col-sm-3 col-xs-4">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 visible-md visible-lg visible-sm">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Scanner
+                </div>
+                <div class="col-lg-12 visible-xs">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Scanner  </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <select class="form-control" name="laser">
+                        <option <?php echo $this->input['laser'] == '1std' ? 'selected' : ''?> value="1std">1d std</option>
+                        <option <?php echo $this->input['laser'] == '1ext' ? 'selected' : ''?> value="1ext">1d ext range</option>
+                        <option <?php echo $this->input['laser'] == '1lg' ? 'selected' : ''?> value="1lg">1d long range</option>
+                        <option <?php echo $this->input['laser'] == '2std' ? 'selected' : ''?> value="2std">2d std</option>
+                        <option <?php echo $this->input['laser'] == '2lg' ? 'selected' : ''?> value="2lg">2d long range</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-3 col-xs-4">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Gamme
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12" >
-
+                <div class="col-lg-12 col-sm-12 col-xs-12" >
+                    <select class="form-control" name="gamme">
+                        <option <?php echo $this->input['gamme'] == 'si' ? 'selected' : ''?> value="si">Semi-Industrielle</option>
+                        <option <?php echo $this->input['gamme'] == 'i' ? 'selected' : ''?> value="i">Industrielle</option>
+                    </select>
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-4">
-            <div class="row">
-                <div class="col-lg-12">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Options
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="row">
-                <div class="col-lg-12">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Utilisation
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-8">
-
+        <div class="col-lg-4 col-sm-3 visible-lg ">
             <div class="row">
                 <div class="col-lg-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Inteface de connection
@@ -74,40 +74,48 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-2">
 
+                <div class="col-lg-6">
+                    <div class="checkbox">
+                        <label>
+                            <input
+                                <?php echo isset($this->input['interface']['bluetooh']) ? 'checked' : ''?>
+                                    type="checkbox" name="interface[]" value="bluetooh">
+                            Bluetooh
+                        </label>
+                    </div>
                 </div>
 
-                <div class="col-lg-2">
-
-                </div>
-
-                <div class="col-lg-2">
-
-                </div>
-
-                <div class="col-lg-2">
-
-                </div>
-
-                <div class="col-lg-2">
-
+                <div class="col-lg-6">
+                    <div class="checkbox">
+                        <label>
+                            <input
+                                <?php echo isset($this->input['interface']['radio']) ? 'checked' : ''?>
+                                    type="checkbox" name="interface[]" value="radio">
+                            Radio
+                        </label>
+                    </div>
                 </div>
 
             </div>
-
         </div>
-    </div>
 
+    </div>
+    <br>
+
+
+
+
+    <!--BOUTTON DE VALIDATION-->
     <div class="row" style="padding-top: 10px">
-        <div class="col-lg-8">
-            <input type="submit" class="btn btn-primary" value="Filtrer">
+        <div class="col-lg-8 col-sm-8 col-xs-8">
+            <input type="submit" class="btn btn-euro-blue " value="Filtrer">
         </div>
 
-        <div class="col-lg-4">
-            <a href="/filtre/delete" class="btn btn-danger"
-               style="width: 100%; padding-top: 6px; padding-bottom: 6px">Reset</a>
+        <div class="col-lg-4 col-sm-4 col-xs-4">
+            <a href="filtre/delete" class="btn btn-euro-pink"
+            >Reset</a>
         </div>
     </div>
-
+    <!--BOUTTON DE VALIDATION-->
 </form>

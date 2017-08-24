@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gvalero
- * Date: 22/08/2017
- * Time: 17:19
- */
 
 class Genius_Class_FilteringTerminal
 {

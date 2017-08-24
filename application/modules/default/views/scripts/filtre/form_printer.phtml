@@ -19,9 +19,9 @@
                 <div class="col-lg-12">
 
                     <select class="form-control" name="dpi">
-                        <option  value="200" <?php echo $this->printer['dpi'] == '200' ? 'selected' : ''?> >200dpi</option>
-                        <option  value="300" <?php echo $this->printer['dpi'] == '300' ? 'selected' : ''?> >300dpi</option>
-                        <option  value="600" <?php echo $this->printer['dpi'] == '600' ? "selected" : ''?> >600dpi</option>
+                        <option  value="200" <?php echo $this->input['dpi'] == '200' ? 'selected' : ''?> >200dpi</option>
+                        <option  value="300" <?php echo $this->input['dpi'] == '300' ? 'selected' : ''?> >300dpi</option>
+                        <option  value="600" <?php echo $this->input['dpi'] == '600' ? "selected" : ''?> >600dpi</option>
                     </select>
                     
                 </div>
@@ -39,11 +39,11 @@
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
                     <select class="form-control" name="width">
-                        <option <?php echo $this->printer['width'] == '4' ? 'selected' : ''?> value="4" >4" (10cm)</option>
-                        <option <?php echo $this->printer['width'] == '6' ? 'selected' : ''?> value="6">6" (14cm)</option>
-                        <option <?php echo $this->printer['width'] == '8' ? 'selected' : ''?> value="8">8" (16cm)</option>
-                        <option <?php echo $this->printer['width'] == '2' ? 'selected' : ''?> value="2">2" (5cm)</option>
-                        <option <?php echo $this->printer['width'] == '5' ? 'selected' : ''?> value="5">5" (12cm)</option>
+                        <option <?php echo $this->input['width'] == '4' ? 'selected' : ''?> value="4" >4" (10cm)</option>
+                        <option <?php echo $this->input['width'] == '6' ? 'selected' : ''?> value="6">6" (14cm)</option>
+                        <option <?php echo $this->input['width'] == '8' ? 'selected' : ''?> value="8">8" (16cm)</option>
+                        <option <?php echo $this->input['width'] == '2' ? 'selected' : ''?> value="2">2" (5cm)</option>
+                        <option <?php echo $this->input['width'] == '5' ? 'selected' : ''?> value="5">5" (12cm)</option>
                     </select>
                 </div>
             </div>
@@ -58,10 +58,10 @@
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-xs-12" >
                     <select class="form-control" name="gamme">
-                        <option <?php echo $this->printer['gamme'] == 'bureau' ? 'selected' : ''?> value="bureau">Bureau</option>
-                        <option <?php echo $this->printer['gamme'] == 'si' ? 'selected' : ''?> value="si">Semi-Industrielle</option>
-                        <option <?php echo $this->printer['gamme'] == 'i' ? 'selected' : ''?> value="i">Industrielle</option>
-                        <option <?php echo $this->printer['gamme'] == 'portative' ? 'selected' : ''?> value="portative">Portatives</option>
+                        <option <?php echo $this->input['gamme'] == 'bureau' ? 'selected' : ''?> value="bureau">Bureau</option>
+                        <option <?php echo $this->input['gamme'] == 'si' ? 'selected' : ''?> value="si">Semi-Industrielle</option>
+                        <option <?php echo $this->input['gamme'] == 'i' ? 'selected' : ''?> value="i">Industrielle</option>
+                        <option <?php echo $this->input['gamme'] == 'portative' ? 'selected' : ''?> value="portative">Portatives</option>
                     </select>
                 </div>
             </div>
@@ -84,9 +84,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <select class="form-control" name="use">
-                        <option <?php echo $this->printer['use'] == 'tt' ? 'selected' : ''?> value="tt">Transfert thermique</option>
-                        <option <?php echo $this->printer['use'] == 'dt' ? 'selected' : ''?> value="dt">Direct Thermique</option>
-                        <option <?php echo $this->printer['use'] == 'both' ? 'selected' : ''?> value="both">Les deux</option>
+                        <option <?php echo $this->input['use'] == 'tt' ? 'selected' : ''?> value="tt">Transfert thermique</option>
+                        <option <?php echo $this->input['use'] == 'dt' ? 'selected' : ''?> value="dt">Direct Thermique</option>
+                        <option <?php echo $this->input['use'] == 'both' ? 'selected' : ''?> value="both">Les deux</option>
 
                     </select>
                 </div>
@@ -104,10 +104,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <select class="form-control" name="opt">
-                        <option <?php echo $this->printer['opt'] == 'none' ? 'selected' : ''?> value="none">Aucunes</option>
-                        <option <?php echo $this->printer['opt'] == 'tear' ? 'selected' : ''?> value="tear" >Déchirement</option>
-                        <option <?php echo $this->printer['opt'] == 'peel' ? 'selected' : ''?> value="peel">Prédecollage( LTS + ré-enrouleur)</option>
-                        <option <?php echo $this->printer['opt'] == 'cut' ? 'selected' : ''?> value="cut">Coupe</option>
+                        <option <?php echo $this->input['opt'] == 'none' ? 'selected' : ''?> value="none">Aucunes</option>
+                        <option <?php echo $this->input['opt'] == 'tear' ? 'selected' : ''?> value="tear" >Déchirement</option>
+                        <option <?php echo $this->input['opt'] == 'peel' ? 'selected' : ''?> value="peel">Prédecollage( LTS + ré-enrouleur)</option>
+                        <option <?php echo $this->input['opt'] == 'cut' ? 'selected' : ''?> value="cut">Coupe</option>
                     </select>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                 <div class="col-lg-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="serie">
+                            <input <?php echo isset($this->input['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="serie">
                             Serie
                         </label>
                     </div>
@@ -135,7 +135,7 @@
                 <div class="col-lg-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="parra">
+                            <input <?php echo isset($this->input['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="parra">
                             Parralléle
                         </label>
                     </div>
@@ -144,7 +144,7 @@
                 <div class="col-lg-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="usb">
+                            <input <?php echo isset($this->input['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="usb">
                             Usb
                         </label>
                     </div>
@@ -153,7 +153,7 @@
                 <div class="col-lg-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="eth">
+                            <input <?php echo isset($this->input['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="eth">
                             Réseau
                         </label>
                     </div>
@@ -162,7 +162,7 @@
                 <div class="col-lg-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="wifi">
+                            <input <?php echo isset($this->input['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="wifi">
                             Wifi
                         </label>
                     </div>
@@ -188,7 +188,7 @@
                 <div class="col-md-2 col-sm-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="serie">
+                            <input <?php echo isset($this->input['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="serie">
                             Serie
                         </label>
                     </div>
@@ -197,7 +197,7 @@
                 <div class="col-md-2 col-sm-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="parra">
+                            <input <?php echo isset($this->input['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="parra">
                             Parralléle
                         </label>
                     </div>
@@ -206,7 +206,7 @@
                 <div class="col-md-2 col-sm-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="usb">
+                            <input <?php echo isset($this->input['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="usb">
                             Usb
                         </label>
                     </div>
@@ -215,7 +215,7 @@
                 <div class="col-md-2 col-sm-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="eth">
+                            <input <?php echo isset($this->input['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="eth">
                             Réseau
                         </label>
                     </div>
@@ -224,7 +224,7 @@
                 <div class="col-md-2 col-sm-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="wifi">
+                            <input <?php echo isset($this->input['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="wifi">
                             Wifi
                         </label>
                     </div>
@@ -249,7 +249,7 @@
                 <div class="col-xs-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="serie">
+                            <input <?php echo isset($this->input['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="serie">
                             Serie
                         </label>
                     </div>
@@ -258,7 +258,7 @@
                 <div class="col-xs-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="parra">
+                            <input <?php echo isset($this->input['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="parra">
                             Parralléle
                         </label>
                     </div>
@@ -267,7 +267,7 @@
                 <div class="col-xs-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="usb">
+                            <input <?php echo isset($this->input['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="usb">
                             Usb
                         </label>
                     </div>
@@ -276,7 +276,7 @@
                 <div class="col-xs-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="eth">
+                            <input <?php echo isset($this->input['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="eth">
                             Réseau
                         </label>
                     </div>
@@ -285,7 +285,7 @@
                 <div class="col-xs-2">
                     <div class="checkbox">
                         <label>
-                            <input <?php echo isset($this->printer['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="wifi">
+                            <input <?php echo isset($this->input['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="wifi">
                             Wifi
                         </label>
                     </div>

@@ -17,9 +17,9 @@
 
                             <div class="row">
                                 <div class="col-lg-12 col-xs-12">
-                                   <?php if(isset($this->session['search'])):?>
+                                   <?php if(isset($this->search)):?>
 
-                                        <?php if($this->session['search'] == 'p') : ?>
+                                        <?php if($this->search == 'p') : ?>
                                            <span class="wrapper-choice-selected ">
                                                <b > <i class="fa fa-print" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp; IMPRIMANTE</b>
                                            </span>
@@ -27,12 +27,12 @@
                                            <span class="wrapper-choice-unselected ">
                                                <a href="/filtre/form?f=p" class="link-blue">
                                                    <b><i class="fa fa-print" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;
-                                                       zIMPRIMANTE</b>
+                                                       IMPRIMANTE</b>
                                                </a>
                                            </span>
                                         <?php endif ?>
 
-                                       <?php if($this->session['search'] == 'd') : ?>
+                                       <?php if($this->search == 'd') : ?>
                                            <span class="wrapper-choice-selected ">
                                                <b> <i class="fa fa-qrcode" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp; DOUCHETTE</b>
                                            </span>
@@ -44,7 +44,7 @@
                                            </span>
                                        <?php endif ?>
 
-                                       <?php if($this->session['search'] == 't') : ?>
+                                       <?php if($this->search == 't') : ?>
                                            <span class="wrapper-choice-selected ">
                                                <b> <i class="fa fa-mobile" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;  TERMINAL</b>
                                            </span>
@@ -62,11 +62,11 @@
                                 </div>
                             </div>
                             <hr>
-                            <?php if(isset($this->session['search']))
+                            <?php if(isset($this->search))
                                 {
-                                    if($this->session['search'] == 'p')  include("form_printer.phtml");
-                                    elseif($this->session['search'] == 'd')  include("form_douchette.phtml");
-                                    elseif($this->session['search'] == 't')  include("form_terminal.phtml");
+                                    if($this->search == 'p')  include("form_printer.phtml");
+                                    elseif($this->search == 'd')  include("form_douchette.phtml");
+                                    elseif($this->search == 't')  include("form_terminal.phtml");
                                     else include("form_printer.phtml");
                                 }
                                 else

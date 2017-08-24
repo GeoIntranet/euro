@@ -1,100 +1,85 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gvalero
- * Date: 22/08/2017
- * Time: 12:35
- */
 
 class FiltreController extends Genius_AbstractController
 {
     public function indexAction()
     {
-        $session = new Zend_Session_Namespace('input');
+        $session = new Zend_Session_Namespace('filtre');
+        $dispatcher = new Genius_Class_dispatchFilter($session);
 
-       isset($session->input['search']) ? $session->input['search'] = $session->input['search'] : $session->input['search'] ='p';
+        $dispatcher->result();
 
-        $this->view->headTitle()->append('Eurocomputer | Contact ');
-        $this->view->headMeta()->appendName('description',"Contact Form");
-        $this->view->headMeta()->appendName('keyword',"Easy Living | Login Form");
-        $this->view->result = $session->result;
-        $this->view->obj = $this;
-
-        if( $session->printer == null) {
-            global $db;
-            $result = new Genius_Model_Filtre();
-            $result = $result->select();
-            $result = $db->query($result)->fetchAll();
-            $this->view->result = $result;
-        }
-
-
-        //Image Product
-        //$photocover_product = Genius_Model_Product::getProductImageCoverById(16);
-        //$path = (!empty($photocover_product)) ? $photocover_product['path_folder'] . '/' . $photocover_product['filename'] . '-small-' . $photocover_product['id_image'] . '.' . $photocover_product['format'] : '';
-        //$photocrh_cover = THEMES_DEFAULT_URL . 'images/non_dispo.png';
-        //if (file_exists(UPLOAD_PATH . 'images/' . $path) && is_file(UPLOAD_PATH . 'images/' . $path)) {
-        //    $photocrh_cover = UPLOAD_URL . 'images/' . $path;
-        //}
-        //var_dump($path);
-        //var_dump($photocover_product);
-        //die();
-
-        $this->view->printer = $session->printer;
-        $this->view->session = $session->input;
+        $this->view->result = $dispatcher->getResult();
+        $this->view->input = $dispatcher->getInput();
+        $this->view->search = $session->search;
         $this->view->subheader = "statics/subheader.phtml";
+
+        var_dump($session->inputDouchette);
+        var_dump($session->resultDouchette);
     }
 
+    /**
+     * Applique le filtre en fonction de la section choisit et des inputs
+     */
     public function makefiltreAction()
     {
         // Les input choix user
         $post = $this->getRequest()->getPost();
 
         // Instance de la session
-        $session = new Zend_Session_Namespace('input');
+        $session = new Zend_Session_Namespace('filtre');
 
         // Instance de la classe qui vas gerer a tout filtrer et faire
         // La recherche dans la base de donnée
         $filtering = new Genius_Class_FilteringPrinter($post);
+        if($session->search == 'd') $filtering = new Genius_Class_FilteringDouchette($post);
+        if($session->search == 't') $filtering = new Genius_Class_FilteringTerminal($post);
 
-        if($session->input['search'] == 'd') $filtering = new Genius_Class_FilteringDouchette($post);
-        if($session->input['search'] == 't') $filtering = new Genius_Class_FilteringTerminal($post);
-
-        $result = $filtering
+        //Gestion du filtre ----
+        $filtering
             ->setSession($session)
             ->handle()
             ->search()
+            ->setResult()
         ;
-        $session->result = $result;
+
 
         $baseUrl = new Zend_View_Helper_BaseUrl();
         $this->getResponse()->setRedirect($baseUrl->baseUrl().'/filtre');
 
     }
 
+    /**
+     * Change de section Imprimante / Douchette / Terminal
+     */
     public function makefiltreformAction()
     {
-        $session = new Zend_Session_Namespace('input');
-        $session->input['search'] = $_GET['f'];
+        $session = new Zend_Session_Namespace('filtre');
+        $session->search = $_GET['f'];
 
         $baseUrl = new Zend_View_Helper_BaseUrl();
         $this->getResponse()->setRedirect($baseUrl->baseUrl().'/filtre');
 
     }
 
-
+    /**
+     * Reset des resultat
+     */
     public function deletefiltreAction()
     {
-        $session = new Zend_Session_Namespace('input');
-        unset($session->result);
+        $session = new Zend_Session_Namespace('filtre');
 
-        if ($session->input['search'] == 'p' ) unset($session->printer) ;
-        elseif($session->input['search'] == 'd' )  unset($session->douchette) ;
-        elseif($session->input['search'] == 't' )  unset($session->terminal) ;
+        unset($session->resultPrinter);
+        unset($session->resultDouchette);
+        unset($session->resultTerminal);
+
+        if ($session->search == 'p' ) unset($session->inputPrinter) ;
+        elseif($session->search == 'd' )  unset($session->inputDouchette) ;
+        elseif($session->search == 't' )  unset($session->inputTerminal) ;
         else{
-            unset($session->printer) ;
-            unset($session->douchette);
-            unset($session->terminal);
+            unset($session->inputPrinter) ;
+            unset($session->inputDouchette);
+            unset($session->inputTerminal);
         }
 
         $baseUrl = new Zend_View_Helper_BaseUrl();

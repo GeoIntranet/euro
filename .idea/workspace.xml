@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0c7c8f3-5b0f-47e6-86ed-9c344c9c6127" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="Product.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/application/models/Product.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="618">
+                    <caret line="256" column="119" lean-forward="false" selection-start-line="256" selection-start-column="102" selection-end-line="256" selection-end-column="119" />
+                    <folding>
+                      <marker date="1497618033000" expanded="true" signature="1913:2290" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="2506:2871" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="3094:3472" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="3690:4056" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="4209:4436" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="4575:4802" ph="SELECT p.id,... ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="6053:6262" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="6384:6486" ph="SELECT c.id,... ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="6620:6731" ph="SELECT cg.id... ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="8016:8606" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="8825:9415" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="11504:12354" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="12648:12816" ph="SELECT pc.* ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="13683:14187" ph="SELECT p.id,... ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="14581:15833" ph="SELECT * FRO... id" />
+                      <marker date="1497618033000" expanded="true" signature="14635:15119" ph="SELECT p.id ${TABLE_PREFIX}" />
+                      <marker date="1497618033000" expanded="true" signature="15208:15690" ph="SELECT p.id ${TABLE_PREFIX}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="form_printer.phtml" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="936">
+                    <caret line="61" column="139" lean-forward="false" selection-start-line="61" selection-start-column="139" selection-end-line="61" selection-end-column="139" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Bootstrap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/Bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4032">
+              <caret line="112" column="16" lean-forward="false" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="16" />
+              <folding>
+                <marker date="1503409829862" expanded="true" signature="22864:23016" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Filtre.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1188">
+              <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <folding>
+                <marker date="1503494056859" expanded="true" signature="203:218" ph="SELECT MCG.i... " />
+                <marker date="1503494056859" expanded="true" signature="203:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+                <marker date="1503494056859" expanded="true" signature="203:230" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="387" column="14" lean-forward="false" selection-start-line="387" selection-start-column="14" selection-end-line="387" selection-end-column="14" />
+              <folding>
+                <marker date="1497973371954" expanded="true" signature="5622:5648" ph="SELECT marqu... marques" />
+                <marker date="1497973371954" expanded="true" signature="9733:9977" ph="SELECT p.id ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="10361:10735" ph="SELECT p.id ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="10830:11199" ph="SELECT p.id ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="11677:12012" ph="SELECT cm.id... ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="12660:12794" ph="SELECT pc.id... ${TABLE_PREFIX}" />
+                <marker date="1497973371954" expanded="true" signature="13754:13999" ph="SELECT p.id ${TABLE_PREFIX}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+              <folding>
+                <marker date="1503503036003" expanded="true" signature="6426:6474" ph="SELECT * FRO... ${TABLE_PREFIX}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+              <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>the</find>
+      <find>societe</find>
+      <find>DEVIS</find>
+      <find>Confiez-nous vos terminaux</find>
+      <find>://sky.walker</find>
+      <find>Results</find>
+      <find>www.eurocomputer.fr</find>
+      <find>ResultsController</find>
+      <find>search</find>
+      <find>var_dump</find>
+      <find>display_errors</find>
+      <find>allM</find>
+      <find>bt-devis</find>
+      <find>ses</find>
+      <find>conta</find>
+      <find>filtre</find>
+      <find>box</find>
+      <find>pro</find>
+      <find>product</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\eurocomputer</dir>
+      <dir>C:\xampp\htdocs\eurocomputer_</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/layouts/scripts/default/default/header.phtml" />
+        <option value="$PROJECT_DIR$/application/layouts/scripts/default/default_save.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/results/index.phtml" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/application/configs/application.ini" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/page/tracabilite.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/statics/moteur_v1.phtml" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/amelioration.css" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/ResultsController.php" />
+        <option value="$PROJECT_DIR$/application/models/Search.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/page/reparation.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/filtre.phtml.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/PageController.php" />
+        <option value="$PROJECT_DIR$/public/themes/default/js/ms.js" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/ms.css" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/page/filtre.phtml" />
+        <option value="$PROJECT_DIR$/application/configs/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/contact/index.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtrage/index.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/FiltrageController.php" />
+        <option value="$PROJECT_DIR$/public/plugins/multiselect/css/ms.css" />
+        <option value="$PROJECT_DIR$/public/plugins/multiselect/js/ms.js" />
+        <option value="$PROJECT_DIR$/application/layouts/scripts/default/default.phtml" />
+        <option value="$PROJECT_DIR$/application/classes/FilteringArticle.php" />
+        <option value="$PROJECT_DIR$/application/classes/Filtering.php" />
+        <option value="$PROJECT_DIR$/application/Bootstrap.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_douchette.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_terminal.phtml" />
+        <option value="$PROJECT_DIR$/application/classes/FilteringTerminal.php" />
+        <option value="$PROJECT_DIR$/application/classes/FilteringDouchette.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
+        <option value="$PROJECT_DIR$/application/classes/FilteringPrinter.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/FicheController.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
+        <option value="$PROJECT_DIR$/application/models/Filtre.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml" />
+        <option value="$PROJECT_DIR$/init.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1186" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="filtre" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="multiselect" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="multiselect" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="multiselect" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/js/ms.js&#10;C:/xampp/htdocs/eurocomputer_/application/models/Filtre.php&#10;C:/xampp/htdocs/eurocomputer_/.gitignore&#10;C:/xampp/htdocs/eurocomputer_/init.php.bak&#10;C:/xampp/htdocs/eurocomputer_/application/configs/application.ini&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/page/filtre.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/contact/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/css/ms.css&#10;C:/xampp/htdocs/eurocomputer_/init.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/filtrage/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/ContactController.php&#10;C:/xampp/htdocs/eurocomputer_/application/Bootstrap.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltrageController.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltreController.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\eurocomputer_\application\modules\default\views\scripts\filtre" />
+      <recent name="C:\xampp\htdocs\eurocomputer_\application\modules\default\views\scripts\filtrage" />
+      <recent name="C:\xampp\htdocs\eurocomputer_\application\configs" />
+      <recent name="C:\xampp\htdocs\eurocomputer_" />
+      <recent name="C:\xampp\htdocs\europ\application\modules\default\controllers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0c7c8f3-5b0f-47e6-86ed-9c344c9c6127" name="Default" comment="" />
+      <created>1497632070211</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1497632070211</updated>
+      <workItem from="1497632071437" duration="11137000" />
+      <workItem from="1497702050087" duration="18000" />
+      <workItem from="1497702082803" duration="11331000" />
+      <workItem from="1497787511935" duration="5260000" />
+      <workItem from="1497853827319" duration="11562000" />
+      <workItem from="1497967584118" duration="1054000" />
+      <workItem from="1497969777151" duration="3506000" />
+      <workItem from="1498043915241" duration="336000" />
+      <workItem from="1498482654615" duration="1741000" />
+      <workItem from="1498564050687" duration="27000" />
+      <workItem from="1499086806177" duration="763000" />
+      <workItem from="1499089177445" duration="2279000" />
+      <workItem from="1499252077161" duration="32000" />
+      <workItem from="1503321573760" duration="734000" />
+      <workItem from="1503383952808" duration="4971000" />
+      <workItem from="1503401227358" duration="12394000" />
+      <workItem from="1503470216127" duration="15968000" />
+      <workItem from="1503503020379" duration="89000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="83202000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1186" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29114583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17083333" sideWeight="0.21441281" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5982063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="16" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1188">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/page/tracabilite.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="21" column="63" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/amelioration.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/statics/moteur_v1.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/page/reparation.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/ResultsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/Global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/filtre.phtml.php" />
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/page/societe.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="430" column="30" lean-forward="false" selection-start-line="430" selection-start-column="30" selection-end-line="430" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/ms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="65" column="1" lean-forward="false" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/js/ms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61740">
+          <caret line="1715" column="17" lean-forward="false" selection-start-line="1715" selection-start-column="17" selection-end-line="1715" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/layouts/scripts/default/default/header-mega.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="55" column="22" lean-forward="false" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2052">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/configs/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/configs/application.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtrage/index.phtml" />
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/page/filtre.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/contact/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="117" column="80" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/multiselect/js/ms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61740">
+          <caret line="1715" column="17" lean-forward="false" selection-start-line="1715" selection-start-column="17" selection-end-line="1715" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/layouts/scripts/default/default.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/multiselect/css/ms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="n#getContenu#0;n#Genius_Model_Global#0;n#!!top" expanded="false" />
+            <marker date="1479738867000" expanded="true" signature="157:301" ph="SELECT T.*, ${$table}" />
+            <marker date="1479738867000" expanded="true" signature="509:723" ph="SELECT T.id ${$table}" />
+            <marker date="1479738867000" expanded="true" signature="944:1114" ph="SELECT T.*, ${$table}" />
+            <marker date="1479738867000" expanded="true" signature="1336:1374" ph="SELECT ${$ch... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="1418:1450" ph="SELECT * FRO... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="1674:1712" ph="SELECT ${$ch... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="1756:1788" ph="SELECT * FRO... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="3234:3291" ph="SELECT id, o... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="3797:3888" ph="SELECT id, o... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="4391:4448" ph="SELECT id, o... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="5045:5102" ph="SELECT id, o... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="5698:5778" ph="SELECT id, o... ${$table_name}" />
+            <marker date="1479738867000" expanded="true" signature="6243:6297" ph="SELECT max(o... " />
+            <marker date="1479738867000" expanded="true" signature="6495:6566" ph="SELECT max(o... " />
+            <marker date="1479738867000" expanded="true" signature="6759:6826" ph="SELECT max(o... " />
+            <marker date="1479738867000" expanded="true" signature="6998:7094" ph="SELECT max(o... " />
+            <marker date="1479738867000" expanded="true" signature="7262:7343" ph="SELECT max(o... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_terminal.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_douchette.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3348">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/FilteringTerminal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/FilteringDouchette.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="157" column="45" lean-forward="true" selection-start-line="157" selection-start-column="45" selection-end-line="157" selection-end-column="45" />
+          <folding>
+            <marker date="1490907214000" expanded="true" signature="799:923" ph="SELECT title... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="1098:1757" ph="SELECT c.id ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="1958:2651" ph="SELECT c.id ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="2851:3484" ph="SELECT c.id ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="3699:4006" ph="SELECT c.id,... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="5410:5547" ph="SELECT title... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="5716:6067" ph="SELECT c.is_... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="6511:6682" ph="SELECT * FRO... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="7105:7777" ph="SELECT cm.ti... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="7978:8077" ph="SELECT id_pa... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="8188:8302" ph="SELECT id_mo... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="8572:8910" ph="SELECT c.id,... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="9272:9795" ph="SELECT c.id ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="10064:10493" ph="SELECT c.id,... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="10909:11429" ph="SELECT c.id ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="11591:12322" ph="SELECT cg.id... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="12503:12945" ph="SELECT c.id,... ${TABLE_PREFIX}" />
+            <marker date="1490907214000" expanded="true" signature="13142:13577" ph="SELECT c.id,... ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1491309380000" expanded="true" signature="793:922" ph="SELECT title... ${TABLE_PREFIX}" />
+            <marker date="1491309380000" expanded="true" signature="1066:1135" ph="SELECT id FR... ${TABLE_PREFIX}" />
+            <marker date="1491309380000" expanded="true" signature="1312:1981" ph="SELECT c.id ${TABLE_PREFIX}" />
+            <marker date="1491309380000" expanded="true" signature="2183:2818" ph="SELECT c.id ${TABLE_PREFIX}" />
+            <marker date="1491309380000" expanded="true" signature="3018:3281" ph="SELECT cg.id... ${TABLE_PREFIX}" />
+            <marker date="1491309380000" expanded="true" signature="3478:3771" ph="SELECT cg.id... ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FicheController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="50" column="62" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="50" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4032">
+          <caret line="112" column="16" lean-forward="false" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="16" />
+          <folding>
+            <marker date="1503409829862" expanded="true" signature="22864:23016" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/FilteringPrinter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <marker date="1503494056859" expanded="true" signature="203:218" ph="SELECT MCG.i... " />
+            <marker date="1503494056859" expanded="true" signature="203:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+            <marker date="1503494056859" expanded="true" signature="203:230" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1385">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <marker date="1457008142000" expanded="true" signature="132:440" ph="SELECT t.*, ${TABLE_PREFIX}" />
+            <marker date="1457008142000" expanded="true" signature="699:725" ph="SELECT * FRO... ${$t}" />
+            <marker date="1457008142000" expanded="true" signature="788:976" ph="SELECT t.* ,... ${$t}" />
+            <marker date="1457008142000" expanded="true" signature="1556:1977" ph="SELECT i.id ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Immobiliers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <marker date="1453728590000" expanded="true" signature="127:851" ph="SELECT SQL_C... ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Annonces.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <marker date="1453728577000" expanded="true" signature="128:792" ph="SELECT a.*, ${TABLE_PREFIX}" />
+            <marker date="1453728577000" expanded="true" signature="969:1690" ph="SELECT a.*, ${TABLE_PREFIX}" />
+            <marker date="1453728577000" expanded="true" signature="1868:2647" ph="SELECT a.*, ${TABLE_PREFIX}" />
+            <marker date="1453728577000" expanded="true" signature="2842:3690" ph="SELECT a.*, ${TABLE_PREFIX}" />
+            <marker date="1453728577000" expanded="true" signature="3886:4268" ph="SELECT APP.p... ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="18" column="123" lean-forward="false" selection-start-line="18" selection-start-column="123" selection-end-line="18" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="256" column="119" lean-forward="false" selection-start-line="256" selection-start-column="102" selection-end-line="256" selection-end-column="119" />
+          <folding>
+            <marker date="1497618033000" expanded="true" signature="1913:2290" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="2506:2871" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="3094:3472" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="3690:4056" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="4209:4436" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="4575:4802" ph="SELECT p.id,... ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="6053:6262" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="6384:6486" ph="SELECT c.id,... ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="6620:6731" ph="SELECT cg.id... ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="8016:8606" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="8825:9415" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="11504:12354" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="12648:12816" ph="SELECT pc.* ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="13683:14187" ph="SELECT p.id,... ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="14581:15833" ph="SELECT * FRO... id" />
+            <marker date="1497618033000" expanded="true" signature="14635:15119" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497618033000" expanded="true" signature="15208:15690" ph="SELECT p.id ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="61" column="139" lean-forward="false" selection-start-line="61" selection-start-column="139" selection-end-line="61" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="387" column="14" lean-forward="false" selection-start-line="387" selection-start-column="14" selection-end-line="387" selection-end-column="14" />
+          <folding>
+            <marker date="1497973371954" expanded="true" signature="5622:5648" ph="SELECT marqu... marques" />
+            <marker date="1497973371954" expanded="true" signature="9733:9977" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="10361:10735" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="10830:11199" ph="SELECT p.id ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="11677:12012" ph="SELECT cm.id... ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="12660:12794" ph="SELECT pc.id... ${TABLE_PREFIX}" />
+            <marker date="1497973371954" expanded="true" signature="13754:13999" ph="SELECT p.id ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <marker date="1503503036003" expanded="true" signature="6426:6474" ph="SELECT * FRO... ${TABLE_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -40,6 +40,7 @@ class Genius_Model_Filtre
             ->joinLeft('ec_images', 'ec_images_relations.id_image = ec_images.id',['id_img' => 'id','filename','path_folder','format'])
             ->where('ec_images_relations.id_module=7')
             ->where('ec_images_relations.image_cover =1')
+            ->order('ec_filtres.top DESC')
         ;
 
 

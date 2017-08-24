@@ -2,7 +2,12 @@
     <div class="col-lg-12" >
         <div class="row">
             <div class="col-lg-12">
-                <h2>  <b> <?php echo count($this->result)?> </b> <?php echo count($this->result) > 1 ? 'résultats' : 'résultat'  ?></h2>
+                <h2>
+                    <b>
+                        <?php echo count($this->result) ?>
+                    </b>
+                    <?php echo count($this->result) > 1 ? 'résultats' : 'résultat' ?>
+                </h2>
             </div>
         </div>
 
@@ -10,40 +15,56 @@
             <div class="col-lg-12">
                 <?php foreach ($this->result as $index => $value) : ?>
 
-                    <div class="row" >
-                        <div class="col-lg-2 " >
+                    <div class="row">
+                        <div class=" col-sm-2 col-lg-2 wrapper-image-product">
                             <img class="euro"
                                  src="<?php echo  UPLOAD_URL.'images/'.$value['path_folder'].'/'.$value['filename'].'-small-'.$value['id_img'].'.'.$value['format']  ?> " alt="">
                         </div>
-                        <div class="col-lg-10" >
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <a href="" class="title"><b><?php echo $value['title']?></b></a>
+                        <div class="col-lg-10 col-sm-10" >
+                            <div class="row wrapper-title-product">
+                                <div class="col-lg-6">
+                                    <a class="title-filtre-product"
+                                       href="imprimante/marque/<?php echo $value['carac_6'].'/'.str_replace('+','',$value['title']).'-'.$value['product_id'].'.html'?>" >
+                                          <?php echo substr($value['search'],0,strpos($value['search'], ' ')) ?> - <b class="underligned"><?php echo $value['title'] ?></b>
+                                    </a>
                                 </div>
+                                <?php if($value['top'] == 1): ?>
+                                    <div class="col-lg-6 wrapper-top-product">
+                                        <div class="right ">
+                                            <b class="topvente">MEILLEUR VENTE</b>   <span class="logovente"><i class="fa fa-star white"> </i></span>
+                                        </div>
+                                    </div>
+                                <?php endif ?>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12" >
-                                    <?php echo(strip_tags($value['text'])) ?>
+                                    <?php
+                                    $text = strip_tags(substr($value['text'],0,1000),'<strong>');
+                                    echo (new Genius_Class_Html)::filtre($text,500);
+                                    ?>...
+
                                 </div>
                             </div>
                             <br>
                             <div class="row">
-                                <div class="col-lg-12" >
-                                    <i>
-                                        <?php echo($value['carac_1']) ?> -
-                                        <?php echo($value['carac_2']) ?> -
-                                        <?php echo($value['carac_3']) ?> -
-                                        <?php echo($value['carac_4']) ?> -
-                                        <?php echo($value['carac_5']) ?> -
-                                        <?php echo($value['carac_6']) ?>
-                                    </i>
+                                <div class="col-lg-12 product-spec">
+                                    <i class="fa fa-crop "> </i>
+                                    Caractèristiques &nbsp;&nbsp;
+                                    <i class="fa fa-angle-right"> </i>
+
+                                    <?php echo($value['carac_1']) ?> -
+                                    <?php echo($value['carac_2']) ?> -
+                                    <?php echo($value['carac_3']) ?> -
+                                    <?php echo($value['carac_4']) ?> -
+                                    <?php echo($value['carac_5']) ?> -
+                                    <?php echo($value['carac_6']) ?>
 
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <hr>
+                    <hr class="euro">
                 <?php endforeach; ?>
 
             </div>

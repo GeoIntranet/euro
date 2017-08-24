@@ -12,27 +12,36 @@ class FiltreController extends Genius_AbstractController
     {
         $session = new Zend_Session_Namespace('input');
 
+       isset($session->input['search']) ? $session->input['search'] = $session->input['search'] : $session->input['search'] ='p';
+
         $this->view->headTitle()->append('Eurocomputer | Contact ');
         $this->view->headMeta()->appendName('description',"Contact Form");
         $this->view->headMeta()->appendName('keyword',"Easy Living | Login Form");
+        $this->view->result = $session->result;
+        $this->view->obj = $this;
 
-        //Image Product
-
-        $photocover_product = Genius_Model_Product::getProductImageCoverById(16);
-        $path = (!empty($photocover_product)) ? $photocover_product['path_folder'] . '/' . $photocover_product['filename'] . '-small-' . $photocover_product['id_image'] . '.' . $photocover_product['format'] : '';
-        $photocrh_cover = THEMES_DEFAULT_URL . 'images/non_dispo.png';
-        if (file_exists(UPLOAD_PATH . 'images/' . $path) && is_file(UPLOAD_PATH . 'images/' . $path)) {
-            $photocrh_cover = UPLOAD_URL . 'images/' . $path;
+        if( $session->printer == null) {
+            global $db;
+            $result = new Genius_Model_Filtre();
+            $result = $result->select();
+            $result = $db->query($result)->fetchAll();
+            $this->view->result = $result;
         }
 
+
+        //Image Product
+        //$photocover_product = Genius_Model_Product::getProductImageCoverById(16);
+        //$path = (!empty($photocover_product)) ? $photocover_product['path_folder'] . '/' . $photocover_product['filename'] . '-small-' . $photocover_product['id_image'] . '.' . $photocover_product['format'] : '';
+        //$photocrh_cover = THEMES_DEFAULT_URL . 'images/non_dispo.png';
+        //if (file_exists(UPLOAD_PATH . 'images/' . $path) && is_file(UPLOAD_PATH . 'images/' . $path)) {
+        //    $photocrh_cover = UPLOAD_URL . 'images/' . $path;
+        //}
         //var_dump($path);
         //var_dump($photocover_product);
         //die();
 
         $this->view->printer = $session->printer;
         $this->view->session = $session->input;
-        $this->view->result = $session->result;
-
         $this->view->subheader = "statics/subheader.phtml";
     }
 

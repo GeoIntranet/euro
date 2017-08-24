@@ -19,11 +19,8 @@ date_default_timezone_set('Europe/Paris');
 
 
 defined('PROJECT')
-<<<<<<< HEAD
 || define('PROJECT','http://192.168.1.16');
-=======
-|| define('PROJECT','http://sky.walker');
->>>>>>> master
+
 
 
 // define root path

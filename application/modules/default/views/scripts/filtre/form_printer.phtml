@@ -6,7 +6,7 @@
 
 <form action="/filtre/apply" method="post">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-4">
             <div class="row">
                 <div class="col-lg-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Résolution
@@ -28,14 +28,14 @@
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-4">
             <div class="row">
                 <div class="col-lg-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Largeur impression
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-12">
                     <select class="form-control" name="width">
                         <option <?php echo $this->printer['width'] == '4' ? 'selected' : ''?> value="4" >4" (10cm)</option>
                         <option <?php echo $this->printer['width'] == '6' ? 'selected' : ''?> value="6">6" (14cm)</option>
@@ -47,14 +47,14 @@
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-4">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Gamme
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12" >
+                <div class="col-lg-12 col-sm-12" >
                     <select class="form-control" name="gamme">
                         <option <?php echo $this->printer['gamme'] == 'bureau' ? 'selected' : ''?> value="bureau">Bureau</option>
                         <option <?php echo $this->printer['gamme'] == 'si' ? 'selected' : ''?> value="si">Semi-Industrielle</option>
@@ -68,9 +68,12 @@
 
     </div>
     <br>
+
+
     <div class="row">
 
-        <div class="col-lg-3">
+        <!--UTILISATION-->
+        <div class="col-lg-3 col-sm-6">
             <div class="row">
                 <div class="col-lg-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Utilisation
@@ -87,8 +90,10 @@
                 </div>
             </div>
         </div>
+        <!--UTILISATION-->
 
-        <div class="col-lg-3">
+        <!--OPTION-->
+        <div class="col-lg-3 col-sm-6">
             <div class="row">
                 <div class="col-lg-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Options
@@ -105,11 +110,10 @@
                 </div>
             </div>
         </div>
+        <!--OPTION-->
 
-
-
-        <div class="col-lg-6">
-
+        <!--INTERFACE LG -->
+        <div class="col-lg-6 col-sm-6 visible-lg">
             <div class="row">
                 <div class="col-lg-12">
                     <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Inteface de connection
@@ -163,19 +167,83 @@
                 </div>
 
             </div>
-
         </div>
+        <!--INTERFACE LG -->
+
     </div>
 
+    <!--INTERFACE MD -->
+    <div class="row  visible-sm visible-md">
+        <br>
+        <div class="col-md-12  col-sm-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Inteface de connection
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-sm-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->printer['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="serie">
+                            Serie
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->printer['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interface[]" value="parra">
+                            Parralléle
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->printer['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="usb">
+                            Usb
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->printer['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="eth">
+                            Réseau
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-2">
+                    <div class="checkbox">
+                        <label>
+                            <input <?php echo isset($this->printer['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interface[]" value="wifi">
+                            Wifi
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--INTERFACE MD-->
+
+
+    <!--BOUTTON DE VALIDATION-->
     <div class="row" style="padding-top: 10px">
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-sm-8 ">
             <input type="submit" class="btn btn-euro-blue" value="Filtrer">
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-4 ">
             <a href="filtre/delete" class="btn btn-euro-pink"
               >Reset</a>
         </div>
     </div>
-
+    <!--BOUTTON DE VALIDATION-->
 </form>

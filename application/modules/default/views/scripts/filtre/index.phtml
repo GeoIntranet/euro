@@ -16,9 +16,6 @@
         <div class="divider" style="margin-top:1px"></div>
 
         <div class="row">
-
-        </div>
-        <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col_blogPost">
@@ -30,11 +27,6 @@
                         <div class="blogPost">
                             <div class="row">
                                 <div class="col-lg-12">
-
-                                    <?php
-                                    //var_dump($this->session);
-                                    //var_dump($this->printer);
-                                    ?>
                                     <a href="/filtre/form?f=p">IMPRIMANTE</a>
                                     -
                                     <a href="/filtre/form?f=d">DOUCHETTE</a>
@@ -44,10 +36,7 @@
                                 </div>
                             </div>
                             <hr>
-
-
-                            <?php
-                                if(isset($this->session['search']))
+                            <?php if(isset($this->session['search']))
                                 {
                                     if($this->session['search'] == 'p')  include("form_printer.phtml");
                                     elseif($this->session['search'] == 'd')  include("form_douchette.phtml");
@@ -57,11 +46,8 @@
                                 else
                                 {
                                     include("form_printer.phtml");
-                                }
-                            ?>
-
+                                } ?>
                             <hr>
-
                             <?php include("result.phtml"); ?>
 
                         </div>
@@ -88,6 +74,6 @@
 <!-- start call to action -->
 <!-- end call to action -->
 
-
+<link href="<?php echo URL_DEFAULT_CSS; ?>geo/css/app.css" rel="stylesheet" type="text/css" media="all" />
 
 

@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0c7c8f3-5b0f-47e6-86ed-9c344c9c6127" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init.php" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/_reset.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/_variable.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/app.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_form.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_image.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_utility.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/layouts/scripts/default/default.phtml" afterPath="$PROJECT_DIR$/application/layouts/scripts/default/default.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" />
+>>>>>>> master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,6 +26,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DockManager">
     <window id="2">
       <content type="file-editors">
@@ -77,11 +92,23 @@
               <caret line="112" column="16" lean-forward="false" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="16" />
               <folding>
                 <marker date="1503409829862" expanded="true" signature="22864:23016" ph="..." />
+=======
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FiltreController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="83" column="78" lean-forward="false" selection-start-line="83" selection-start-column="78" selection-end-line="83" selection-end-column="78" />
+              <folding>
+                <marker date="1503506631508" expanded="true" signature="3162:3168" ph="{...}" />
+>>>>>>> master
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Filtre.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,11 +118,61 @@
                 <marker date="1503494056859" expanded="true" signature="203:218" ph="SELECT MCG.i... " />
                 <marker date="1503494056859" expanded="true" signature="203:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
                 <marker date="1503494056859" expanded="true" signature="203:230" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+=======
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_printer.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="171" column="57" lean-forward="false" selection-start-line="171" selection-start-column="57" selection-end-line="171" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.phtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="20" column="59" lean-forward="false" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Filtre.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216">
+              <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <folding>
+                <marker date="1503506631498" expanded="true" signature="203:229" ph="SELECT * FRO... ec_filtres" />
+>>>>>>> master
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Search.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,10 +187,19 @@
                 <marker date="1497973371954" expanded="true" signature="12660:12794" ph="SELECT pc.id... ${TABLE_PREFIX}" />
                 <marker date="1497973371954" expanded="true" signature="13754:13999" ph="SELECT p.id ${TABLE_PREFIX}" />
               </folding>
+=======
+      <file leaf-file-name="_utility.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/component/_utility.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+              <folding />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="init.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/init.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,16 +208,32 @@
               <folding>
                 <marker date="1503503036003" expanded="true" signature="6426:6474" ph="SELECT * FRO... ${TABLE_PREFIX}" />
               </folding>
+=======
+      <file leaf-file-name="_image.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/component/_image.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1260">
               <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
               <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+=======
+      <file leaf-file-name="default.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/layouts/scripts/default/default.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -142,8 +244,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="CSS File" />
         <option value="JavaScript File" />
+=======
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -165,9 +272,12 @@
       <find>ses</find>
       <find>conta</find>
       <find>filtre</find>
+<<<<<<< HEAD
       <find>box</find>
       <find>pro</find>
       <find>product</find>
+=======
+>>>>>>> master
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\eurocomputer</dir>
@@ -197,13 +307,19 @@
         <option value="$PROJECT_DIR$/public/themes/default/css/ms.css" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/page/filtre.phtml" />
         <option value="$PROJECT_DIR$/application/configs/.gitignore" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/.gitignore" />
+=======
+>>>>>>> master
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/contact/index.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtrage/index.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/controllers/FiltrageController.php" />
         <option value="$PROJECT_DIR$/public/plugins/multiselect/css/ms.css" />
         <option value="$PROJECT_DIR$/public/plugins/multiselect/js/ms.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/application/layouts/scripts/default/default.phtml" />
+=======
+>>>>>>> master
         <option value="$PROJECT_DIR$/application/classes/FilteringArticle.php" />
         <option value="$PROJECT_DIR$/application/classes/Filtering.php" />
         <option value="$PROJECT_DIR$/application/Bootstrap.php" />
@@ -212,6 +328,7 @@
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_terminal.phtml" />
         <option value="$PROJECT_DIR$/application/classes/FilteringTerminal.php" />
         <option value="$PROJECT_DIR$/application/classes/FilteringDouchette.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
         <option value="$PROJECT_DIR$/application/classes/FilteringPrinter.php" />
         <option value="$PROJECT_DIR$/application/modules/default/controllers/FicheController.php" />
@@ -220,6 +337,26 @@
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml" />
         <option value="$PROJECT_DIR$/init.php" />
+=======
+        <option value="$PROJECT_DIR$/application/classes/FilteringPrinter.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/init.php" />
+        <option value="$PROJECT_DIR$/application/models/Filtre.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php" />
+        <option value="$PROJECT_DIR$/public/plugins/geo/css/form.css" />
+        <option value="$PROJECT_DIR$/application/layouts/scripts/default/default.phtml" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/test.scss" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/_variable.scss" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/_reset.scss" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/app.css" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_form.scss" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_utility.scss" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/app.scss" />
+        <option value="$PROJECT_DIR$/public/themes/default/css/geo/css/component/_image.scss" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -239,9 +376,15 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
+<<<<<<< HEAD
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1186" />
+=======
+    <option name="y" value="-7" />
+    <option name="width" value="1680" />
+    <option name="height" value="1020" />
+>>>>>>> master
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -259,12 +402,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+>>>>>>> master
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
@@ -282,10 +429,24 @@
             <path>
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> master
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
@@ -309,14 +470,36 @@
             <path>
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> master
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> master
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
@@ -324,8 +507,13 @@
               <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> master
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
@@ -334,6 +522,7 @@
               <item name="filtre" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="eurocomputer_" type="b2602c69:ProjectViewProjectNode" />
               <item name="eurocomputer_" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
@@ -366,11 +555,79 @@
               <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="multiselect" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="geo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="geo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="geo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="europ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="europ" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="geo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app.scss" type="620a8d5e:NestingTreeNode" />
+>>>>>>> master
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,6 +638,19 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/js/ms.js&#10;C:/xampp/htdocs/eurocomputer_/application/models/Filtre.php&#10;C:/xampp/htdocs/eurocomputer_/.gitignore&#10;C:/xampp/htdocs/eurocomputer_/init.php.bak&#10;C:/xampp/htdocs/eurocomputer_/application/configs/application.ini&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/page/filtre.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/contact/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/css/ms.css&#10;C:/xampp/htdocs/eurocomputer_/init.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/filtrage/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/ContactController.php&#10;C:/xampp/htdocs/eurocomputer_/application/Bootstrap.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltrageController.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltreController.php" />
+=======
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node_modules/yuicompressor/build/yuicompressor-2.4.8.jar" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/../eurocomputer_/public/plugins/multiselect/js/ms.js&#10;C:/xampp/htdocs/europ/application/modules/default/views/scripts/filtre/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/models/Filtre.php&#10;C:/xampp/htdocs/eurocomputer_/.gitignore&#10;C:/xampp/htdocs/eurocomputer_/init.php.bak&#10;C:/xampp/htdocs/eurocomputer_/application/configs/application.ini&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/page/filtre.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/contact/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/public/plugins/multiselect/css/ms.css&#10;C:/xampp/htdocs/eurocomputer_/init.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/views/scripts/filtrage/index.phtml&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/ContactController.php&#10;C:/xampp/htdocs/eurocomputer_/application/Bootstrap.php&#10;C:/xampp/htdocs/europ/.gitignore&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltrageController.php&#10;C:/xampp/htdocs/eurocomputer_/application/modules/default/controllers/FiltreController.php" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+>>>>>>> master
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -390,6 +660,12 @@
       <recent name="C:\xampp\htdocs\eurocomputer_" />
       <recent name="C:\xampp\htdocs\europ\application\modules\default\controllers" />
     </key>
+<<<<<<< HEAD
+=======
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\europ\public\themes\default\css" />
+    </key>
+>>>>>>> master
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -496,13 +772,21 @@
       <workItem from="1499252077161" duration="32000" />
       <workItem from="1503321573760" duration="734000" />
       <workItem from="1503383952808" duration="4971000" />
+<<<<<<< HEAD
       <workItem from="1503401227358" duration="12394000" />
       <workItem from="1503470216127" duration="15968000" />
       <workItem from="1503503020379" duration="89000" />
+=======
+      <workItem from="1503401227358" duration="12197000" />
+      <workItem from="1503422225784" duration="1407000" />
+      <workItem from="1503506607476" duration="2475000" />
+      <workItem from="1503509100171" duration="3119000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="83202000" />
   </component>
   <component name="ToolWindowManager">
@@ -519,6 +803,25 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="73949000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1696" height="1036" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21964286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5982063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77002054" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> master
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -528,7 +831,10 @@
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17083333" sideWeight="0.21441281" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5982063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> master
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -545,6 +851,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -617,6 +924,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/filtre.phtml.php" />
+=======
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/page/societe.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -635,6 +944,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <marker date="1503506631508" expanded="true" signature="3162:3168" ph="{...}" />
+          </folding>
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -659,6 +974,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/init.php.bak">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2052">
@@ -673,6 +989,10 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/init.php.bak" />
+    <entry file="file://$PROJECT_DIR$/application/configs/.gitignore" />
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/application/configs/application.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -680,6 +1000,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -688,6 +1009,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/ContactController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -710,6 +1033,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/plugins/multiselect/js/ms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61740">
@@ -762,7 +1086,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="37" column="21" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
-          <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/public/plugins/multiselect/js/ms.js" />
+    <entry file="file://$PROJECT_DIR$/public/plugins/multiselect/css/ms.css" />
+    <entry file="file://$PROJECT_DIR$/application/models/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -770,10 +1114,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="558" column="0" lean-forward="false" selection-start-line="558" selection-start-column="0" selection-end-line="558" selection-end-column="0" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/application/classes/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
+=======
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_douchette.phtml" />
+    <entry file="file://$PROJECT_DIR$/application/classes/FilteringTerminal.php" />
+    <entry file="file://$PROJECT_DIR$/application/classes/FilteringDouchette.php" />
+    <entry file="file://$PROJECT_DIR$/application/classes/FilteringPrinter.php" />
+    <entry file="file://$PROJECT_DIR$/application/models/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14436">
+          <caret line="401" column="53" lean-forward="false" selection-start-line="401" selection-start-column="25" selection-end-line="401" selection-end-column="53" />
+>>>>>>> master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_terminal.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -867,10 +1239,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-864">
           <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+=======
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/FiltreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="83" column="78" lean-forward="false" selection-start-line="83" selection-start-column="78" selection-end-line="83" selection-end-column="78" />
+          <folding>
+            <marker date="1503506631508" expanded="true" signature="3162:3168" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/login/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="68" column="15" lean-forward="true" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/liste/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5423">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/page/confirmationreparation.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/page/articlereprise.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1715">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/marque/micro.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2507">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/marque/tracabilite.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2399">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/layouts/scripts/default/default.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -879,10 +1317,19 @@
             <marker date="1503494056859" expanded="true" signature="203:218" ph="SELECT MCG.i... " />
             <marker date="1503494056859" expanded="true" signature="203:229" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
             <marker date="1503494056859" expanded="true" signature="203:230" ph="SELECT MCG.i... ${TABLE_PREFIX}" />
+=======
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2412">
+          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="19" />
+          <folding>
+            <marker date="1503506631556" expanded="true" signature="6424:6472" ph="SELECT * FRO... ${TABLE_PREFIX}" />
+>>>>>>> master
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/models/Image.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1385">
@@ -941,10 +1388,62 @@
         <state relative-caret-position="1260">
           <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
           <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+=======
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/test.scss" />
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/test.css" />
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_terminal.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/_variable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/app.css.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/component/_form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/app.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+>>>>>>> master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/models/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="618">
@@ -968,17 +1467,62 @@
             <marker date="1497618033000" expanded="true" signature="14635:15119" ph="SELECT p.id ${TABLE_PREFIX}" />
             <marker date="1497618033000" expanded="true" signature="15208:15690" ph="SELECT p.id ${TABLE_PREFIX}" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/component/_image.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/default/css/geo/css/component/_utility.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/form_printer.phtml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="936">
           <caret line="61" column="139" lean-forward="false" selection-start-line="61" selection-start-column="139" selection-end-line="61" selection-end-column="139" />
+=======
+        <state relative-caret-position="625">
+          <caret line="171" column="57" lean-forward="false" selection-start-line="171" selection-start-column="57" selection-end-line="171" selection-end-column="57" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/models/Search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -991,10 +1535,19 @@
             <marker date="1497973371954" expanded="true" signature="11677:12012" ph="SELECT cm.id... ${TABLE_PREFIX}" />
             <marker date="1497973371954" expanded="true" signature="12660:12794" ph="SELECT pc.id... ${TABLE_PREFIX}" />
             <marker date="1497973371954" expanded="true" signature="13754:13999" ph="SELECT p.id ${TABLE_PREFIX}" />
+=======
+    <entry file="file://$PROJECT_DIR$/application/models/Filtre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <marker date="1503506631498" expanded="true" signature="203:229" ph="SELECT * FRO... ec_filtres" />
+>>>>>>> master
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -1002,6 +1555,13 @@
           <folding>
             <marker date="1503503036003" expanded="true" signature="6426:6474" ph="SELECT * FRO... ${TABLE_PREFIX}" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/filtre/result.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="59" lean-forward="false" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding />
+>>>>>>> master
         </state>
       </provider>
     </entry>

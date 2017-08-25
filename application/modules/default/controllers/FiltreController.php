@@ -9,10 +9,16 @@ class FiltreController extends Genius_AbstractController
 
         $dispatcher->result();
 
+
+
         $this->view->result = $dispatcher->getResult();
         $this->view->input = $dispatcher->getInput();
         $this->view->search = $session->search;
         $this->view->subheader = "statics/subheader.phtml";
+
+        var_dump($session->inputTerminalCount);
+        var_dump($session->inputTerminalInit);
+
 
     }
 

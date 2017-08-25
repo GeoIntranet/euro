@@ -3,6 +3,8 @@
 class Genius_Class_FilteringTerminal
 {
     public $result;
+    public $inputTerminalCount;
+    public $inputTerminal;
     public $session;
     private $post;
 
@@ -14,6 +16,8 @@ class Genius_Class_FilteringTerminal
     public function __construct($post)
     {
         $this->post = $post;
+        $this->inputTerminalCount = 0;
+        $this->inputTerminalInit = 8;
         $this->result = [];
     }
 
@@ -42,6 +46,15 @@ class Genius_Class_FilteringTerminal
         $this->session->inputTerminal['lcd'] = $this->post['lcd'];
         $this->session->inputTerminal['clavier'] = $this->post['clavier'];
         $this->session->inputTerminal['scanner'] = $this->post['scanner'];
+
+        //$arg = count($int) ? 1 : 0;
+        //$this->inputTerminalCount = count($this->session->inputTerminal ) - 1 + $arg;
+        //var_dump(count($this->session->inputTerminal ));
+        //var_dump($this->session->inputTerminal);
+        //var_dump(count($arg));
+        //die();
+        $this->session->inputTerminalCount = $this->inputTerminalCount ;
+        $this->session->inputTerminalInit = $this->inputTerminalInit ;
 
         return $this;
     }
@@ -115,7 +128,7 @@ class Genius_Class_FilteringTerminal
         if(isset($this->session->inputTerminal['com']['wifi']))  $model = $model->where('wifi = 1') ;
         if(isset($this->session->inputTerminal['com']['narrow']))  $model = $model->where('narrowband = 1') ;
 
-        
+
 
         $result = $db->query($model)->fetchAll();
 

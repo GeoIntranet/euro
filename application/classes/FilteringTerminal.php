@@ -126,7 +126,7 @@ class Genius_Class_FilteringTerminal
          */
         if(isset($this->session->inputTerminal['com']['bluetooh']))  $model = $model->where('bluetooh = 1') ;
         if(isset($this->session->inputTerminal['com']['wifi']))  $model = $model->where('wifi = 1') ;
-        if(isset($this->session->inputTerminal['com']['narrow']))  $model = $model->where('narrowband = 1') ;
+        if(isset($this->session->inputTerminal['com']['narrow']))  $model = $model->where('narrow = 1') ;
 
 
 

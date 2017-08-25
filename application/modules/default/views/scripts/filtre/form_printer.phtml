@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <select class="form-control" name="dpi">
-                        <option  value="na" <?php echo $this->input['dpi'] == 'na' ? 'selected' : ''?> >Non renseigner</option>
+                        <option  value="na" <?php echo $this->input['dpi'] == 'na' ? 'selected' : ''?> >N.R</option>
                         <option  value="200" <?php echo $this->input['dpi'] == '200' ? 'selected' : ''?> >200dpi</option>
                         <option  value="300" <?php echo $this->input['dpi'] == '300' ? 'selected' : ''?> >300dpi</option>
                         <option  value="600" <?php echo $this->input['dpi'] == '600' ? "selected" : ''?> >600dpi</option>
@@ -39,12 +39,17 @@
                     <?php endif ?>
                 </div>
                 <div class="col-lg-12 visible-xs">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Largeur  </div>
+                    <?php if($this->input['width'] <> 'na' && $this->input['width'] <> null): ?>
+                        <b style="color: mediumseagreen">  <i class="fa fa-check-circle" style="margin-right: 5px"> </i> Largeur</b>
+                    <?php else: ?>
+                        <i class="fa fa-angle-right" style="margin-right: 15px"> </i> Largeur
+                    <?php endif ?>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
                     <select class="form-control" name="width">
-                        <option <?php echo $this->input['width'] == 'na' ? 'selected' : ''?> value="na" >Non renseigner</option>
+                        <option <?php echo $this->input['width'] == 'na' ? 'selected' : ''?> value="na" >N.R</option>
                         <option <?php echo $this->input['width'] == '4' ? 'selected' : ''?> value="4" >4" (10cm)</option>
                         <option <?php echo $this->input['width'] == '6' ? 'selected' : ''?> value="6">6" (14cm)</option>
                         <option <?php echo $this->input['width'] == '8' ? 'selected' : ''?> value="8">8" (16cm)</option>
@@ -69,7 +74,7 @@
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-xs-12" >
                     <select class="form-control" name="gamme">
-                        <option <?php echo $this->input['gamme'] == 'na' ? 'selected' : ''?> value="na">Non renseigner</option>
+                        <option <?php echo $this->input['gamme'] == 'na' ? 'selected' : ''?> value="na">N.R</option>
                         <option <?php echo $this->input['gamme'] == 'bureau' ? 'selected' : ''?> value="bureau">Bureau</option>
                         <option <?php echo $this->input['gamme'] == 'si' ? 'selected' : ''?> value="si">Semi-Industrielle</option>
                         <option <?php echo $this->input['gamme'] == 'i' ? 'selected' : ''?> value="i">Industrielle</option>
@@ -100,7 +105,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <select class="form-control" name="use">
-                        <option <?php echo $this->input['use'] == 'na' ? 'selected' : ''?> value="na">Non renseigner</option>
+                        <option <?php echo $this->input['use'] == 'na' ? 'selected' : ''?> value="na">N.R</option>
                         <option <?php echo $this->input['use'] == 'tt' ? 'selected' : ''?> value="tt">Transfert thermique</option>
                         <option <?php echo $this->input['use'] == 'dt' ? 'selected' : ''?> value="dt">Direct Thermique</option>
                         <option <?php echo $this->input['use'] == 'both' ? 'selected' : ''?> value="both">Les deux</option>
@@ -125,7 +130,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <select class="form-control" name="opt">
-                        <option <?php echo $this->input['opt'] == 'na' ? 'selected' : ''?> value="na">Non renseigner</option>
+                        <option <?php echo $this->input['opt'] == 'na' ? 'selected' : ''?> value="na">N.R</option>
                         <option <?php echo $this->input['opt'] == 'tear' ? 'selected' : ''?> value="tear" >Déchirement</option>
                         <option <?php echo $this->input['opt'] == 'peel' ? 'selected' : ''?> value="peel">Prédecollage( LTS + ré-enrouleur)</option>
                         <option <?php echo $this->input['opt'] == 'cut' ? 'selected' : ''?> value="cut">Coupe</option>
@@ -134,22 +139,21 @@
             </div>
         </div>
         <!--OPTION-->
-
+        <div class="row visible-xs visible-sm visible-md " style="padding-bottom: 20px">&nbsp; </div>
         <!--INTERFACE LG -->
-        <div class="col-lg-6 col-sm-6 visible-lg ">
+        <div class="col-lg-6 col-sm-12 col-xs-12 ">
             <div class="row">
-                <div class="col-lg-12">
-
+                <div class="col-lg-12  col-xs-12">
                     <?php if($this->input['interface'] <> 'na' && $this->input['interface'] <> null): ?>
-                        <b style="color: mediumseagreen">  <i class="fa fa-check-circle" style="margin-right: 5px"> </i>  Inteface de connection</b>
+                        <b style="color: mediumseagreen">  <i class="fa fa-check-circle" style="margin-right: 5px"> </i>  Interaface de connection</b>
                     <?php else: ?>
-                        <i class="fa fa-angle-right" style="margin-right: 15px"> </i>  Inteface de connection
+                        <i class="fa fa-angle-right" style="margin-right: 15px"> </i>  Interface de connection
                     <?php endif ?>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-2">
                     <div class="checkbox">
                         <label>
                             <input <?php echo isset($this->input['interface']['serie']) ? 'checked' : ''?>  type="checkbox" name="interfacep[]" value="serie">
@@ -158,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-2">
                     <div class="checkbox">
                         <label>
                             <input <?php echo isset($this->input['interface']['parra']) ? 'checked' : ''?>  type="checkbox" name="interfacep[]" value="parra">
@@ -167,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-2">
                     <div class="checkbox">
                         <label>
                             <input <?php echo isset($this->input['interface']['usb']) ? 'checked' : ''?> type="checkbox" name="interfacep[]" value="usb">
@@ -176,7 +180,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-2">
                     <div class="checkbox">
                         <label>
                             <input <?php echo isset($this->input['interface']['eth']) ? 'checked' : ''?> type="checkbox" name="interfacep[]" value="eth">
@@ -185,7 +189,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-2">
                     <div class="checkbox">
                         <label>
                             <input <?php echo isset($this->input['interface']['wifi']) ? 'checked' : ''?> type="checkbox" name="interfacep[]" value="wifi">

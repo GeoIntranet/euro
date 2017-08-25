@@ -9,7 +9,11 @@
         <div class="col-lg-2 col-sm-3 col-xs-4">
             <div class="row">
                 <div class="col-lg-12">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Type
+                    <?php if($this->input['type'] <> 'nr' && $this->input['type'] <> null): ?>
+                        <b style="color: mediumseagreen">  <i class="fa fa-check-circle" style="margin-right: 5px"> </i> Type</b>
+                    <?php else: ?>
+                        <i class="fa fa-angle-right" style="margin-right: 15px"> </i> Type
+                    <?php endif ?>
                 </div>
             </div>
             <div class="row">
@@ -19,6 +23,7 @@
                 <div class="col-lg-12">
 
                     <select class="form-control" name="type">
+                        <option  value="nr" <?php echo $this->input['type'] == 'nr' ? 'selected' : ''?> >N.R</option>
                         <option  value="filaire" <?php echo $this->input['type'] == 'filaire' ? 'selected' : ''?> >Filaire</option>
                         <option  value="nofilaire" <?php echo $this->input['type'] == 'nofilaire' ? 'selected' : ''?> >Sans-fils</option>
                         <option  value="fixe" <?php echo $this->input['type'] == 'fixe' ? 'selected' : ''?> >Fixe</option>
@@ -32,14 +37,18 @@
         <div class="col-lg-3 col-sm-3 col-xs-4">
             <div class="row">
                 <div class="col-lg-12 visible-md visible-lg visible-sm">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Scanner
+                    <?php if($this->input['laser'] <> 'nr' && $this->input['laser'] <> null): ?>
+                        <b style="color: mediumseagreen">  <i class="fa fa-check-circle" style="margin-right: 5px"> </i> Scanner</b>
+                    <?php else: ?>
+                        <i class="fa fa-angle-right" style="margin-right: 15px"> </i> Scanner
+                    <?php endif ?>
                 </div>
-                <div class="col-lg-12 visible-xs">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Scanner  </div>
+
             </div>
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
                     <select class="form-control" name="laser">
+                        <option <?php echo $this->input['laser'] == 'nr' ? 'selected' : ''?> value="nr"> N.R </option>
                         <option <?php echo $this->input['laser'] == '1std' ? 'selected' : ''?> value="1std">1d std</option>
                         <option <?php echo $this->input['laser'] == '1ext' ? 'selected' : ''?> value="1ext">1d ext range</option>
                         <option <?php echo $this->input['laser'] == '1lg' ? 'selected' : ''?> value="1lg">1d long range</option>
@@ -53,12 +62,17 @@
         <div class="col-lg-3 col-sm-3 col-xs-4">
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Gamme
+                    <?php if($this->input['gamme'] <> 'nr' && $this->input['gamme'] <> null): ?>
+                        <b style="color: mediumseagreen">  <i class="fa fa-check-circle" style="margin-right: 5px"> </i> Gamme</b>
+                    <?php else: ?>
+                        <i class="fa fa-angle-right" style="margin-right: 15px"> </i> Gamme
+                    <?php endif ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-xs-12" >
                     <select class="form-control" name="gamme">
+                        <option <?php echo $this->input['gamme'] == 'nr' ? 'selected' : ''?> value="nr">N.R</option>
                         <option <?php echo $this->input['gamme'] == 'si' ? 'selected' : ''?> value="si">Semi-Industrielle</option>
                         <option <?php echo $this->input['gamme'] == 'i' ? 'selected' : ''?> value="i">Industrielle</option>
                     </select>
@@ -69,7 +83,11 @@
         <div class="col-lg-4 col-sm-3 visible-lg ">
             <div class="row">
                 <div class="col-lg-12">
-                    <i class="fa fa-angle-right" style="margin-right: 15px"> </i>Inteface de connection
+                    <?php if($this->input['interface'] <> 'nr' && $this->input['interface'] <> null): ?>
+                        <b style="color: mediumseagreen">  <i class="fa fa-check-circle" style="margin-right: 5px"> </i>  Interface de connection</b>
+                    <?php else: ?>
+                        <i class="fa fa-angle-right" style="margin-right: 15px"> </i>  Interface de connection
+                    <?php endif ?>
                 </div>
             </div>
 

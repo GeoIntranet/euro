@@ -87,7 +87,15 @@ class Genius_Class_dispatchFilter
      */
     private function terminalResult()
     {
-        return 'result';
+        if($this->session->resultTerminal === []) return $this->session->resultTerminal;
+
+        if($this->session->resultTerminal === null) {
+            global $db;
+            $result = new Genius_Model_FiltreTerminal();
+            $result = $result->select();
+            $result = $db->query($result)->fetchAll();
+            $this->session->resultTerminal = $result;
+        }
     }
 
     /**

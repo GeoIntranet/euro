@@ -108,7 +108,7 @@ class Genius_Class_FilteringTerminal
         /**
          * Filtre CLAVIER materiel
          */
-        if($this->session->inputTerminal['clavier'] == 'nume') $model = $model->where('numeric = 1');
+        if($this->session->inputTerminal['clavier'] == 'nume') $model = $model->where('nume = 1');
         if($this->session->inputTerminal['clavier'] == 'alpha') $model = $model->where('alpha_numeric = 1');
         if($this->session->inputTerminal['clavier'] == 'hybrid') $model = $model->where('hybrid = 1');
 
@@ -127,8 +127,6 @@ class Genius_Class_FilteringTerminal
         if(isset($this->session->inputTerminal['com']['bluetooh']))  $model = $model->where('bluetooh = 1') ;
         if(isset($this->session->inputTerminal['com']['wifi']))  $model = $model->where('wifi = 1') ;
         if(isset($this->session->inputTerminal['com']['narrow']))  $model = $model->where('narrow = 1') ;
-
-
 
         $result = $db->query($model)->fetchAll();
 

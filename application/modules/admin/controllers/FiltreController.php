@@ -6,7 +6,7 @@
  * Time: 16:26
  */
 
-class Admin_FilterController extends Genius_AbstractController
+class Admin_FiltreController extends Genius_AbstractController
 {
     public function init()
     {

@@ -32,6 +32,7 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
 
     public function allAction()
     {
+
         $printers = Genius_Model_Filtre::all();
 
         $paginator = Zend_Paginator::factory($printers)->setItemCountPerPage(18);
@@ -64,6 +65,12 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
         $do = $this->_getParam('id');
         var_dump($do);
 
+    }
+
+    public function updateAction()
+    {
+        var_dump($this->_getAllParams());
+        die();
     }
 
 }

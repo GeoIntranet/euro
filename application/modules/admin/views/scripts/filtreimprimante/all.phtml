@@ -109,84 +109,84 @@
             </form>
         </div>
     <?php } ?>
-
+    <br>
     <?php if (count($this->paginator)): ?>
-    <table class="table table-bordered">
+    <table class="table table-bordered " style="font-size: 0.90em">
         <thead>
-        <tr>
+        <tr class="tr-hover">
             <th class="center " >id</th>
-            <th class="center " >Nom</th>
-            <th class="center "  colspan="5">Largeur impression</th>
-            <th class="center "  colspan="3">Resolution</th>
-            <th class="center "  colspan="4">Gamme</th>
-            <th class="center "  colspan="3">Option</th>
-            <th class="center "  colspan="2">DT/TT</th>
+            <th class="center borderr2" >Nom</th>
+            <th class="center borderr2"  colspan="5">Largeur impression</th>
+            <th class="center borderr2"  colspan="3">Resolution</th>
+            <th class="center borderr2"  colspan="4">Gamme</th>
+            <th class="center borderr2"  colspan="3">Option</th>
+            <th class="center borderr2"  colspan="2">DT/TT</th>
             <th class="center "  colspan="5">connection</th>
         </tr>
         </thead>
         <thead>
         <tr>
-            <th class="center " ></th>
-            <th class="center " ></th>
+            <th class="borderr2" colspan="2"></th>
 
             <th class="center ">2"</th>
             <th class="center ">4"</th>
             <th class="center ">5"</th>
             <th class="center ">6"</th>
-            <th class="center ">8"</th>
+            <th class="center borderr2">8"</th>
 
             <th class="center ">200</th>
             <th class="center ">300</th>
-            <th class="center ">600</th>
+            <th class="center borderr2">600</th>
 
             <th class="center ">port</th>
             <th class="center ">bureau</th>
             <th class="center ">s_indu</th>
-            <th class="center ">indu</th>
+            <th class="center borderr2">indu</th>
 
             <th class="center ">peelof</th>
             <th class="center ">cutter</th>
-            <th class="center ">tear</th>
+            <th class="center borderr2">tear</th>
 
             <th class="center ">dt</th>
-            <th class="center ">tt</th>
+            <th class="center borderr2">tt</th>
 
             <th class="center"> eth</th>
             <th class="center">usb</th>
             <th class="center"> serie</th>
             <th class="center"> wifi</th>
-            <th class="center"> parra</th>
+            <th class="center "> parra</th>
 
         </tr>
         </thead>
         <tbody>
             <?php foreach ($this->paginator as $index => $item): ?>
                 <tr>
+
                     <td class="center">   <?php echo $item['product_id']?></td>
 
-                    <td class="center"> <?php echo $item['name']; ?></td>
+                    <td class="center borderr2"> <?php echo $item['name']; ?></td>
 
-                    <td class="center"> <?php echo $item['2p']; ?></td>
+                    <td class="center"><a href="/admin/filtreimprimante/update/n/2p/id/<?php echo $item['id'] ?>/val/<?php echo $item['2p'] ?>"><?php echo $item['2p']; ?></a></td>
                     <td class="center"> <?php echo $item['4p']; ?></td>
                     <td class="center"> <?php echo $item['5p']; ?></td>
                     <td class="center"> <?php echo $item['6p']; ?></td>
-                    <td class="center"> <?php echo $item['8p']; ?></td>
+                    <td class="center borderr2"> <?php echo $item['8p']; ?></td>
 
                     <td class="center"> <?php echo $item['200dpi']; ?></td>
                     <td class="center"> <?php echo $item['300dpi']; ?></td>
-                    <td class="center"> <?php echo $item['600dpi']; ?></td>
+                    <td class="center borderr2"> <?php echo $item['600dpi']; ?></td>
 
                     <td class="center"> <?php echo $item['portable']; ?></td>
                     <td class="center"> <?php echo $item['bureau']; ?></td>
                     <td class="center"> <?php echo $item['s_indu']; ?></td>
-                    <td class="center"> <?php echo $item['indu']; ?></td>
+                    <td class="center borderr2"> <?php echo $item['indu']; ?></td>
 
                     <td class="center"> <?php echo $item['peel']; ?></td>
                     <td class="center"> <?php echo $item['cutter']; ?></td>
-                    <td class="center"> <?php echo $item['tear']; ?></td>
+                    <td class="center borderr2"> <?php echo $item['tear']; ?></td>
 
                     <td class="center"> <?php echo $item['dt']; ?></td>
-                    <td class="center"> <?php echo $item['tt']; ?></td>
+                    <td class="center borderr2"> <?php echo $item['tt']; ?></td>
 
                     <td class="center"> <?php echo $item['eth']; ?></td>
                     <td class="center"> <?php echo $item['usb']; ?></td>

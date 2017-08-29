@@ -22,7 +22,9 @@
         ->prependStylesheet("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700")
 
         // bootstrap
-        ->prependStylesheet(THEMES_ADMIN_URL . 'css/bootstrap.css');
+        ->prependStylesheet(THEMES_ADMIN_URL . 'css/bootstrap.css')
+
+    ;
 
     echo $this->headLink() . "\n";
 
@@ -71,7 +73,9 @@
         ->prependFile(THEMES_ADMIN_URL . 'js/jquery.min.js', 'text/javascript');
 
     echo $this->headScript() . "\n";
-?> 
+
+?>
+    <link href="<?php echo URL_DEFAULT_CSS; ?>geo/css/app.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 
 <body>

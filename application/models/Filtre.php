@@ -36,6 +36,16 @@ class Genius_Model_Filtre
         return $data;
     }
 
+    public static function find($id) {
+
+        global $db;
+        $sql = $db
+            ->select()
+            ->from('ec_filtres')
+            ->where("ec_filtres.id = $id")
+        ;
+        return $sql;
+    }
     public function select(){
         global $db ;
         

@@ -22,6 +22,20 @@ class Genius_Model_Filtre
         return $data;
     }
 
+    public static function all() {
+
+        global $db;
+
+        $sql = "
+		SELECT *
+		FROM ec_filtres 
+		";
+
+        $data = $db->fetchAll($sql);
+
+        return $data;
+    }
+
     public function select(){
         global $db ;
         

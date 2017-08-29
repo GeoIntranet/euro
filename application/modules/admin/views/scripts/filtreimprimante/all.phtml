@@ -1,0 +1,247 @@
+<!-- Content wrapper -->
+<div class="wrapper ">
+
+    <?php echo Genius_Class_Snippets::breadcrumb($this->translate('Configuration du site'), '/admin/siteconfiguration'); ?>
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-title">
+            <h2><?php echo $this->translate('ALL VIEW PRINTER FILTRE'); ?></h2>
+        </div>
+    </div>
+    <!-- /page header -->
+
+    <div class="line"></div>
+
+    <?php
+    if (!empty($this->configs)) {
+        $configs = $this->configs[0];
+        ?>
+        <div class="span12">
+            <form method="post" action="" id="configure-form" class="form-horizontal form-to-validate">
+                <input type="hidden" value="1" id="id" name="SiteConfiguration[id]">
+
+                <fieldset>
+                    <div class="widget row-fluid mt30">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <h6><?php echo $this->translate('Informations générales'); ?></h6>
+                            </div>
+                        </div>
+
+                        <div class="well">
+                            <div class="control-group">
+                                <label class="control-label" for="siteweb"><span class="text-error">*</span> Website:</label>
+                                <div class="controls"><input type="text" class="validate[required] span12" value="<?php echo $configs['siteweb']; ?>" id="siteweb" class="validate[required]" name="SiteConfiguration[siteweb]" /></div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="adresse"><span class="text-error">*</span> Adresse :</label>
+                                <div class="controls"><input type="text" class="validate[required] span12" value="<?php echo $configs['adresse']; ?>" id="adresse" name="SiteConfiguration[adresse]" /></div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="email"><span class="text-error">*</span> Email:</label>
+                                <div class="controls"><input type="text" class="validate[required] span12" value="<?php echo $configs['email']; ?>" id="email" class="validate[required,custom[email]]" name="SiteConfiguration[email]" /></div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="phone"><span class="text-error">*</span> Téléphone :</label>
+                                <div class="controls"><input type="text" class="validate[required] span12" value="<?php echo $configs['phone']; ?>" id="phone" name="SiteConfiguration[phone]" /></div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="fax"><span class="text-error">*</span> Fax :</label>
+                                <div class="controls"><input type="text" class="validate[required] span12" value="<?php echo $configs['fax']; ?>" id="fax" name="SiteConfiguration[fax]" /></div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="title"><span class="text-error">*</span> Title:</label>
+                                <div class="controls"><input type="text" class="validate[required] span12" value="<?php echo $configs['title']; ?>" id="title" name="SiteConfiguration[title]" class="validate[required]"></div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="slogan">Catchword:</label>
+                                <div class="controls"><input type="text" class="span12" value="<?php echo $configs['slogan']; ?>" id="slogan" name="SiteConfiguration[slogan]" /></div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="transition_slider">Transition slider : (millisec)</label>
+                                <div class="controls"><input type="text" class="span12" value="<?php echo $configs['transition_slider']; ?>" id="transition_slider" name="SiteConfiguration[transition_slider]" /></div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="pause_slider">Pause Slider : (millisec)</label>
+                                <div class="controls"><input type="text" class="span12" value="<?php echo $configs['pause_slider']; ?>" id="pause_slider" name="SiteConfiguration[pause_slider]" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget row-fluid mt30">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <h6><?php echo $this->translate('Mode maintenance'); ?></h6>
+                            </div>
+                        </div>
+
+                        <div class="well">
+                            <div class="control-group">
+                                <label class="control-label" for="mode_maintenance"> Mode maintenance:</label>
+                                <div class="controls">
+                                    <select class="styled" name="SiteConfiguration[mode_maintenance]" style="opacity: 0;">
+                                        <option value="0" <?php echo ($configs['mode_maintenance'] == 0) ? 'selected="selected"' : ''; ?>>
+                                            <?php echo $this->translate('Non'); ?>
+                                        </option>
+
+                                        <option value="1" <?php echo ($configs['mode_maintenance'] == 1) ? 'selected="selected"' : ''; ?>>
+                                            <?php echo $this->translate('Oui'); ?>
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="line mt30"></div>
+
+                <div class="form-actions align-left nobordertop form-actions-bg">
+                    <button class="btn btn-primary" type="submit"><?php echo $this->translate("Enregistrer"); ?></button>
+                </div>
+
+                <div class="line mb30"></div>
+            </form>
+        </div>
+    <?php } ?>
+
+    <?php if (count($this->paginator)): ?>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th class="center " >id</th>
+            <th class="center " >Nom</th>
+            <th class="center "  colspan="5">Largeur impression</th>
+            <th class="center "  colspan="3">Resolution</th>
+            <th class="center "  colspan="4">Gamme</th>
+            <th class="center "  colspan="3">Option</th>
+            <th class="center "  colspan="2">DT/TT</th>
+            <th class="center "  colspan="5">connection</th>
+        </tr>
+        </thead>
+        <thead>
+        <tr>
+            <th class="center " ></th>
+            <th class="center " ></th>
+
+            <th class="center ">2"</th>
+            <th class="center ">4"</th>
+            <th class="center ">5"</th>
+            <th class="center ">6"</th>
+            <th class="center ">8"</th>
+
+            <th class="center ">200</th>
+            <th class="center ">300</th>
+            <th class="center ">600</th>
+
+            <th class="center ">port</th>
+            <th class="center ">bureau</th>
+            <th class="center ">s_indu</th>
+            <th class="center ">indu</th>
+
+            <th class="center ">peelof</th>
+            <th class="center ">cutter</th>
+            <th class="center ">tear</th>
+
+            <th class="center ">dt</th>
+            <th class="center ">tt</th>
+
+            <th class="center"> eth</th>
+            <th class="center">usb</th>
+            <th class="center"> serie</th>
+            <th class="center"> wifi</th>
+            <th class="center"> parra</th>
+
+        </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($this->paginator as $index => $item): ?>
+                <tr>
+                    <td class="center">   <?php echo $item['product_id']?></td>
+
+                    <td class="center"> <?php echo $item['name']; ?></td>
+
+                    <td class="center"> <?php echo $item['2p']; ?></td>
+                    <td class="center"> <?php echo $item['4p']; ?></td>
+                    <td class="center"> <?php echo $item['5p']; ?></td>
+                    <td class="center"> <?php echo $item['6p']; ?></td>
+                    <td class="center"> <?php echo $item['8p']; ?></td>
+
+                    <td class="center"> <?php echo $item['200dpi']; ?></td>
+                    <td class="center"> <?php echo $item['300dpi']; ?></td>
+                    <td class="center"> <?php echo $item['600dpi']; ?></td>
+
+                    <td class="center"> <?php echo $item['portable']; ?></td>
+                    <td class="center"> <?php echo $item['bureau']; ?></td>
+                    <td class="center"> <?php echo $item['s_indu']; ?></td>
+                    <td class="center"> <?php echo $item['indu']; ?></td>
+
+                    <td class="center"> <?php echo $item['peel']; ?></td>
+                    <td class="center"> <?php echo $item['cutter']; ?></td>
+                    <td class="center"> <?php echo $item['tear']; ?></td>
+
+                    <td class="center"> <?php echo $item['dt']; ?></td>
+                    <td class="center"> <?php echo $item['tt']; ?></td>
+
+                    <td class="center"> <?php echo $item['eth']; ?></td>
+                    <td class="center"> <?php echo $item['usb']; ?></td>
+                    <td class="center"> <?php echo $item['serie']; ?></td>
+                    <td class="center"> <?php echo $item['wifi']; ?></td>
+                    <td class="center"> <?php echo $item['parra']; ?></td>
+
+
+
+                </tr>
+            <?php endforeach; ?>
+
+        </tbody>
+
+    </table>
+    <?php endif; ?>
+
+    <br><br><br><br>
+
+</div>
+
+<div class="right">
+    <div class="paginate">
+        <?php if($i == $this->previous < 1) : ?>
+            <a href="/admin/filtreimprimante/all/page/<?php echo $this->previous ?>" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        <?php else :?>
+            <a href="" aria-label="Previous">
+                <span aria-hidden="true">x</span>
+            </a>
+
+        <?php endif ?>
+
+
+        <?php for($i = 1 ; $i <= $this->total ; $i++): ?>
+            <?php if($i == $this->current) : ?>
+                <a href="#" class="active" ><?php echo $i ?></a>
+            <?php else :?>
+                <a href="/admin/filtreimprimante/all/page/<?php echo $i ?>" ><?php echo $i ?></a>
+            <?php endif ?>
+        <?php endfor ?>
+
+        <?php if($i == $this->next <= $this->total) : ?>
+            <a href="/admin/filtreimprimante/all/page/<?php echo $this->next ?>" aria-label="Previous">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        <?php else :?>
+            <a href="" aria-label="next">
+                <span aria-hidden="true">x</span>
+            </a>
+
+        <?php endif ?>
+
+    </div>
+</div>
+<!-- /content wrapper -->
+<link href="<?php echo URL_DEFAULT_CSS; ?>geo/css/app.css" rel="stylesheet" type="text/css" media="all" />

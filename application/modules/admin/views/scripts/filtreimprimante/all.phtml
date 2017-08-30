@@ -157,6 +157,9 @@
             <th class="center"> wifi</th>
             <th class="center borderr2"> parra</th>
 
+            <th class="center borderr2"> visible</th>
+            <th class="center borderr2"> pertinence</th>
+
             <th class="center borderr2">  - </th>
 
         </tr>
@@ -197,12 +200,24 @@
                     <td class="center "><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/wifi/id/<?php echo $item['id'] ?>/val/<?php echo $item['wifi'] ?>"><?php echo $item['wifi']; ?></a></td>
                     <td class="center borderr2"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/parra/id/<?php echo $item['id'] ?>/val/<?php echo $item['parra'] ?>"><?php echo $item['parra']; ?></a></td>
 
-                    <td class="center borderr2" style="padding: 2px">
+                    <td class="center borderr2"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/visible/id/<?php echo $item['id'] ?>/val/<?php echo $item['visible'] ?>"><?php echo $item['visible']; ?></a></td>
 
+                    <td class="center borderr2" style="width: 5%">
+
+                        <form action="/admin/filtreimprimante/post" method="POST">
+                            <input name="id_" type="hidden" value="<?php echo $item['id'] ?>">
+                            <input name="page_" type="hidden" value="<?php echo $this->current ?>">
+                            <input  type="number" name="pertinence" value="<?php  echo $item['pertinence']?>">
+                        </form>
+                        <!--<a href="/admin/filtreimprimante/update/p/--><?php //echo $this->current ?><!--/n/pertinence/id/--><?php //echo $item['id'] ?><!--/val/--><?php //echo $item['pertinence'] ?><!--">-->
+                        <!--    --><?php //echo $item['pertinence']; ?>
+                        <!--</a>-->
+                    </td>
+
+                    <td class="center borderr2" style="padding: 2px">
                             <a style="color:white;" href="/admin/filtreimprimante/edit/id/<?php echo $item['id'] ?>/page/<?php echo $this->current ?>">
                                 <button  class="btn btn-primary">    edit</button>
                             </a>
-
                     </td>
                    
                 </tr>

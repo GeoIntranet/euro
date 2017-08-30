@@ -34,7 +34,7 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
 
         $printers = Genius_Model_Filtre::all();
 
-        $paginator = Zend_Paginator::factory($printers)->setItemCountPerPage(18);
+        $paginator = Zend_Paginator::factory($printers)->setItemCountPerPage(15);
         $paginator->setCurrentPageNumber($this->_getParam('page'));
         //var_dump($paginator);
 
@@ -57,10 +57,20 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
     public function postAction()
     {
         global $db;
-        $id = $_POST['id'];
-        $page = $_POST['page'];
+
+        if( isset($_POST['id'])) $id = $_POST['id'];
+        if( isset($_POST['page'])) $page = $_POST['page'];
+
+        if( isset($_POST['id_'])) $id = $_POST['id_'];
+        if( isset($_POST['page_'])) $page = $_POST['page_'];
+
+        //$id = $_POST['id'];
+        //$page = $_POST['page'];
         unset($_POST['id']);
+        unset($_POST['id_']);
         unset($_POST['page']);
+        unset($_POST['page_']);
+
 
         //on recherche la ligne a update avec une condition where
         $where['ec_filtres.id = ?'] = $id;

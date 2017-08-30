@@ -56,6 +56,20 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
 
     public function postAction()
     {
+        global $db;
+        $id = $_POST['id'];
+        $page = $_POST['page'];
+        unset($_POST['id']);
+        unset($_POST['page']);
+
+        //on recherche la ligne a update avec une condition where
+        $where['ec_filtres.id = ?'] = $id;
+
+        $result = $db->update('ec_filtres',$_POST,$where);
+
+        $baseUrl = new Zend_View_Helper_BaseUrl();
+        $url = '/admin/filtreimprimante/all/page/'.$page;
+        $this->getResponse()->setRedirect($baseUrl->baseUrl().$url);
 
     }
 
@@ -64,11 +78,13 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
         global $db;
         $id = $this->_getParam('id');
 
+
         $request = Genius_Model_Filtre::find($id);
 
         $printer = $db->query($request)->fetch();
 
         $this->view->printer = $printer;
+        $this->view->page = $this->_getParam('page');;
 
     }
 
@@ -79,6 +95,7 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
         $champ = $this->_getParam('n');
         $id = $this->_getParam('id');
         $val = $this->_getParam('val');
+        $page = $this->_getParam('p');
 
         //On inverse la valeur enregistre en bdd actuel soit 1 ou 0
         $value = $val == TRUE ? 0 : 1;
@@ -92,7 +109,8 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
         $result = $db->update('ec_filtres',$data,$where);
 
         $baseUrl = new Zend_View_Helper_BaseUrl();
-        $this->getResponse()->setRedirect($baseUrl->baseUrl().'/admin/filtreimprimante/all');
+        $url = '/admin/filtreimprimante/all/page/'.$page;
+        $this->getResponse()->setRedirect($baseUrl->baseUrl().$url);
     }
 
 }

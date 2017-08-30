@@ -4,6 +4,18 @@
 .cpink{color:$pink}
 .cblue{color:$blue}
 .white{color:white}
+
+div{
+  &.pt {
+    border-bottom:dashed 1px lightgray;
+    padding: 10px;
+  }
+}
+
+.br{
+  border-right: solid 1px lightgray;
+}
+
 a{
   &.link-blue{
     color:$blue

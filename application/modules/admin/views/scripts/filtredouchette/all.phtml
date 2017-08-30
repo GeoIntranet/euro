@@ -6,7 +6,7 @@
     <!-- Page header -->
     <div class="page-header">
         <div class="page-title">
-            <h2><?php echo $this->translate('IMPRIMANTES DANS BASE DE DONNEE'); ?></h2>
+            <h2><?php echo $this->translate('DOUCHETTES DANS BASE DE DONNEE'); ?></h2>
         </div>
     </div>
     <!-- /page header -->
@@ -111,111 +111,81 @@
     <?php } ?>
     <br>
     <?php if (count($this->paginator)): ?>
-    <table  class="table table-bordered " style="font-size: 0.90em">
+    <table class="table table-bordered " style="font-size: 0.90em">
+        <thead>
+        <tr>
+            <th class="borderr2" colspan="2">-</th>
+            <th class="borderr2" colspan="4">Type materiel</th>
+            <th class="borderr2" colspan="5">Scanner</th>
+            <th class="borderr2" colspan="2">Gamme</th>
+            <th class="borderr2" colspan="2">Connectique</th>
+            <th class="borderr2" colspan="3">Visibilité</th>
+            <th >-</th>
+        </tr>
+        </thead>
         <thead>
         <tr class="tr-hover">
             <th class="center " >id</th>
             <th class="center borderr2" >Nom</th>
-            <th class="center borderr2"  colspan="5">Largeur impression</th>
-            <th class="center borderr2"  colspan="3">Resolution</th>
-            <th class="center borderr2"  colspan="4">Gamme</th>
-            <th class="center borderr2"  colspan="3">Option</th>
-            <th class="center borderr2"  colspan="2">DT/TT</th>
-            <th class="center borderr2"  colspan="5">connection</th>
-            <th class="center "  colspan="5"> </th>
+            <th class="center "  >Filaire</th>
+            <th class="center "  >Wireless</th>
+            <th class="center "  >Fixe</th>
+            <th class="center borderr2"  >Divers</th>
+            <th class="center "  >1std</th>
+            <th class="center "  >1ext</th>
+            <th class="center "  >1lg</th>
+            <th class="center "  >2std</th>
+            <th class="center borderr2"  >2lg</th>
+            <th class="center "  >s_indu</th>
+            <th class="center borderr2 "  >indu</th>
+            <th class="center "  >bluetooh</th>
+            <th class="center borderr2"  >radio</th>
+            <th class="center "  >top</th>
+            <th class="center "  >visibilité</th>
+            <th class="center borderr2"  >pertinence</th>
+            <th class="center "  >Edit</th>
         </tr>
         </thead>
-        <thead>
-        <tr>
-            <th class="borderr2" colspan="2"></th>
 
-            <th class="center ">2"</th>
-            <th class="center ">4"</th>
-            <th class="center ">5"</th>
-            <th class="center ">6"</th>
-            <th class="center borderr2">8"</th>
-
-            <th class="center ">200</th>
-            <th class="center ">300</th>
-            <th class="center borderr2">600</th>
-
-            <th class="center ">port</th>
-            <th class="center ">bureau</th>
-            <th class="center ">s_indu</th>
-            <th class="center borderr2">indu</th>
-
-            <th class="center ">peelof</th>
-            <th class="center ">cutter</th>
-            <th class="center borderr2">tear</th>
-
-            <th class="center ">dt</th>
-            <th class="center borderr2">tt</th>
-
-            <th class="center"> eth</th>
-            <th class="center">usb</th>
-            <th class="center"> serie</th>
-            <th class="center"> wifi</th>
-            <th class="center borderr2"> parra</th>
-
-            <th class="center "> visible</th>
-            <th class="center " > pertinence</th>
-            <th class="center " > edit</th>
-
-
-        </tr>
-        </thead>
         <tbody>
             <?php foreach ($this->paginator as $index => $item): ?>
                 <tr>
-
                     <td class="center">   <?php echo $item['product_id']?></td>
-
                     <td class="center borderr2"> <?php echo $item['name']; ?></td>
 
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/2p/id/<?php echo $item['id'] ?>/val/<?php echo $item['2p'] ?>"><?php echo $item['2p']; ?></a></td>
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/4p/id/<?php echo $item['id'] ?>/val/<?php echo $item['4p'] ?>"><?php echo $item['4p']; ?></a></td>
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/5p/id/<?php echo $item['id'] ?>/val/<?php echo $item['5p'] ?>"><?php echo $item['5p']; ?></a></td>
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/6p/id/<?php echo $item['id'] ?>/val/<?php echo $item['6p'] ?>"><?php echo $item['6p']; ?></a></td>
-                    <td class="center borderr2"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/8p/id/<?php echo $item['8p'] ?>/val/<?php echo $item['8p'] ?>"><?php echo $item['8p']; ?></a></td>
+                    <td class="center"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/filaire/id/<?php echo $item['id'] ?>/val/<?php echo $item['filaire'] ?>"><?php echo $item['filaire']; ?></a></td>
+                    <td class="center"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/nofilaire/id/<?php echo $item['id'] ?>/val/<?php echo $item['nofilaire'] ?>"><?php echo $item['nofilaire']; ?></a></td>
+                    <td class="center"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/fixe/id/<?php echo $item['id'] ?>/val/<?php echo $item['fixe'] ?>"><?php echo $item['fixe']; ?></a></td>
+                    <td class="center borderr2"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/divers/id/<?php echo $item['id'] ?>/val/<?php echo $item['divers'] ?>"><?php echo $item['divers']; ?></a></td>
 
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/200dpi/id/<?php echo $item['id'] ?>/val/<?php echo $item['200dpi'] ?>"><?php echo $item['200dpi']; ?></a></td>
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/300dpi/id/<?php echo $item['id'] ?>/val/<?php echo $item['300dpi'] ?>"><?php echo $item['300dpi']; ?></a></td>
-                    <td class="center borderr2"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/600dpi/id/<?php echo $item['id'] ?>/val/<?php echo $item['600dpi'] ?>"><?php echo $item['600dpi']; ?></a></td>
+                    <td class="center "><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/1std/id/<?php echo $item['1std'] ?>/val/<?php echo $item['1std'] ?>"><?php echo $item['1std']; ?></a></td>
+                    <td class="center"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/1ext/id/<?php echo $item['id'] ?>/val/<?php echo $item['1ext'] ?>"><?php echo $item['1ext']; ?></a></td>
+                    <td class="center"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/1lg/id/<?php echo $item['id'] ?>/val/<?php echo $item['1lg'] ?>"><?php echo $item['1lg']; ?></a></td>
+                    <td class="center "><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/2std/id/<?php echo $item['id'] ?>/val/<?php echo $item['2std'] ?>"><?php echo $item['2std']; ?></a></td>
+                    <td class="center borderr2"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/2lg/id/<?php echo $item['id'] ?>/val/<?php echo $item['2lg'] ?>"><?php echo $item['2lg']; ?></a></td>
 
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/portable/id/<?php echo $item['id'] ?>/val/<?php echo $item['portable'] ?>"><?php echo $item['portable']; ?></a></td>
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/bureau/id/<?php echo $item['id'] ?>/val/<?php echo $item['bureau'] ?>"><?php echo $item['bureau']; ?></a></td>
-                    <td class="center"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/s_indu/id/<?php echo $item['id'] ?>/val/<?php echo $item['s_indu'] ?>"><?php echo $item['s_indu']; ?></a></td>
-                    <td class="center borderr2"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/indu/id/<?php echo $item['id'] ?>/val/<?php echo $item['indu'] ?>"><?php echo $item['indu']; ?></a></td>
+                    <td class="center"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/s_indu/id/<?php echo $item['id'] ?>/val/<?php echo $item['s_indu'] ?>"><?php echo $item['s_indu']; ?></a></td>
+                    <td class="center borderr2"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/indu/id/<?php echo $item['id'] ?>/val/<?php echo $item['indu'] ?>"><?php echo $item['indu']; ?></a></td>
 
-                    <td class="center "><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/peel/id/<?php echo $item['id'] ?>/val/<?php echo $item['peel'] ?>"><?php echo $item['peel']; ?></a></td>
-                    <td class="center "><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/cutter/id/<?php echo $item['id'] ?>/val/<?php echo $item['cutter'] ?>"><?php echo $item['cutter']; ?></a></td>
-                    <td class="center borderr2"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/tear/id/<?php echo $item['id'] ?>/val/<?php echo $item['tear'] ?>"><?php echo $item['tear']; ?></a></td>
+                    <td class="center "><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/bluetooh/id/<?php echo $item['id'] ?>/val/<?php echo $item['bluetooh'] ?>"><?php echo $item['bluetooh']; ?></a></td>
+                    <td class="center borderr2"><a href="/admin/filtredouchette/update/p/<?php echo $this->current ?>/n/radio/id/<?php echo $item['id'] ?>/val/<?php echo $item['radio'] ?>"><?php echo $item['radio']; ?></a></td>
 
-                    <td class="center "><a href="/admin/filtreimprimante/update/n/dt/id/<?php echo $item['id'] ?>/val/<?php echo $item['dt'] ?>"><?php echo $item['dt']; ?></a></td>
-                    <td class="center borderr2"><a href="/admin/filtreimprimante/update/n/tt/id/<?php echo $item['id'] ?>/val/<?php echo $item['tt'] ?>"><?php echo $item['tt']; ?></a></td>
+                    <td class="center "><a href="/admin/filtredouchette/update/n/top/id/<?php echo $item['id'] ?>/val/<?php echo $item['top'] ?>"><?php echo $item['top']; ?></a></td>
+                    <td class="center "><a href="/admin/filtredouchette/update/n/visible/id/<?php echo $item['id'] ?>/val/<?php echo $item['visible'] ?>"><?php echo $item['visible']; ?></a></td>
+                    <td class="center borderr2" style="width: 5%">
 
-                    <td class="center "><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/eth/id/<?php echo $item['id'] ?>/val/<?php echo $item['eth'] ?>"><?php echo $item['eth']; ?></a></td>
-                    <td class="center "><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/usb/id/<?php echo $item['id'] ?>/val/<?php echo $item['usb'] ?>"><?php echo $item['usb']; ?></a></td>
-                    <td class="center "><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/serie/id/<?php echo $item['id'] ?>/val/<?php echo $item['serie'] ?>"><?php echo $item['serie']; ?></a></td>
-                    <td class="center "><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/wifi/id/<?php echo $item['id'] ?>/val/<?php echo $item['wifi'] ?>"><?php echo $item['wifi']; ?></a></td>
-                    <td class="center borderr2"><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/parra/id/<?php echo $item['id'] ?>/val/<?php echo $item['parra'] ?>"><?php echo $item['parra']; ?></a></td>
-
-                    <td class="center "><a href="/admin/filtreimprimante/update/p/<?php echo $this->current ?>/n/visible/id/<?php echo $item['id'] ?>/val/<?php echo $item['visible'] ?>"><?php echo $item['visible']; ?></a></td>
-
-                    <td class="center " style="width: 5%">
-
-                        <form action="/admin/filtreimprimante/post" method="POST">
+                        <form action="/admin/filtredouchette/post" method="POST">
                             <input name="id_" type="hidden" value="<?php echo $item['id'] ?>">
                             <input name="page_" type="hidden" value="<?php echo $this->current ?>">
                             <input  type="number" name="pertinence" value="<?php  echo $item['pertinence']?>">
                         </form>
-                        <!--<a href="/admin/filtreimprimante/update/p/--><?php //echo $this->current ?><!--/n/pertinence/id/--><?php //echo $item['id'] ?><!--/val/--><?php //echo $item['pertinence'] ?><!--">-->
+                        <!--<a href="/admin/filtredouchette/update/p/--><?php //echo $this->current ?><!--/n/pertinence/id/--><?php //echo $item['id'] ?><!--/val/--><?php //echo $item['pertinence'] ?><!--">-->
                         <!--    --><?php //echo $item['pertinence']; ?>
                         <!--</a>-->
                     </td>
 
-                    <td class=" center " style="padding: 2px">
-                            <a class="hide" style="color:white;" href="/admin/filtreimprimante/edit/id/<?php echo $item['id'] ?>/page/<?php echo $this->current ?>">
+                    <td class="center " style="padding: 2px">
+                            <a class="hide" style="color:white;" href="/admin/filtredouchette/edit/id/<?php echo $item['id'] ?>/page/<?php echo $this->current ?>">
                                 <button  class="btn btn-primary">    edit</button>
                             </a>
                     </td>
@@ -235,7 +205,7 @@
 <div class="right">
     <div class="paginate">
         <?php if($i == $this->previous < 1) : ?>
-            <a href="/admin/filtreimprimante/all/page/<?php echo $this->previous ?>" aria-label="Previous">
+            <a href="/admin/filtredouchette/all/page/<?php echo $this->previous ?>" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
             </a>
         <?php else :?>
@@ -250,12 +220,12 @@
             <?php if($i == $this->current) : ?>
                 <a href="#" class="active" ><?php echo $i ?></a>
             <?php else :?>
-                <a href="/admin/filtreimprimante/all/page/<?php echo $i ?>" ><?php echo $i ?></a>
+                <a href="/admin/filtredouchette/all/page/<?php echo $i ?>" ><?php echo $i ?></a>
             <?php endif ?>
         <?php endfor ?>
 
         <?php if($i == $this->next <= $this->total) : ?>
-            <a href="/admin/filtreimprimante/all/page/<?php echo $this->next ?>" aria-label="Previous">
+            <a href="/admin/filtredouchette/all/page/<?php echo $this->next ?>" aria-label="Previous">
                 <span aria-hidden="true">&raquo;</span>
             </a>
         <?php else :?>

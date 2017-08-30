@@ -16,6 +16,24 @@ class Genius_Model_FiltreTerminal
         return $data;
     }
 
+    public static function find($id) {
+
+        global $db;
+        $sql = $db
+            ->select()
+            ->from('ec_filtres_terminal')
+            ->where("ec_filtres_terminal.id = $id")
+        ;
+        return $sql;
+    }
+
+    public static function all() {
+
+        global $db;
+        $sql = " SELECT * FROM ec_filtres_terminal  ";
+        $data = $db->fetchAll($sql);
+        return $data;
+    }
     public function select(){
 
         global $db ;
@@ -35,7 +53,8 @@ class Genius_Model_FiltreTerminal
             ->joinLeft('ec_images', 'ec_images_relations.id_image = ec_images.id',['id_img' => 'id','filename','path_folder','format'])
             ->where('ec_images_relations.id_module=7')
             ->where('ec_images_relations.image_cover =1')
-            ->order('ec_filtres_terminal.top DESC')
+            ->where('ec_filtres_terminal.visible = 1')
+            ->order('ec_filtres_terminal.pertinence DESC')
         ;
 
         return  $sql;

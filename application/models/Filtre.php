@@ -46,6 +46,7 @@ class Genius_Model_Filtre
         ;
         return $sql;
     }
+
     public function select(){
         global $db ;
         

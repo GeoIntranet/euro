@@ -6,8 +6,11 @@
  * Time: 16:26
  */
 
-class Admin_FiltreimprimanteController extends Genius_AbstractController
+class Admin_FiltreterminalController extends Genius_AbstractController
 {
+
+
+
     public function init()
     {
 
@@ -16,27 +19,18 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
     public function indexAction()
     {
         $baseUrl = new Zend_View_Helper_BaseUrl();
-        $this->getResponse()->setRedirect($baseUrl->baseUrl().'/admin/filtreimprimante/all');
+        $this->getResponse()->setRedirect($baseUrl->baseUrl().'/admin/filtreterminal/all');
     }
 
-    public function imprimanteAction()
-    {
-        $do = $this->_getParam('do');
-        $id = $this->_getParam('id');
 
-        if($do == 'post'){
-            var_dump($_POST);
-        }
-    }
 
     public function allAction()
     {
 
-        $printers = Genius_Model_Filtre::all();
+        $terminal = Genius_Model_FiltreTerminal::all();
 
-        $paginator = Zend_Paginator::factory($printers)->setItemCountPerPage(12);
+        $paginator = Zend_Paginator::factory($terminal)->setItemCountPerPage(12);
         $paginator->setCurrentPageNumber($this->_getParam('page'));
-        //var_dump($paginator);
 
 
         $current = $paginator->getCurrentPageNumber();
@@ -50,7 +44,7 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
         $this->view->next = $next;
         $this->view->previous = $prev;
 
-        $this->view->printers = $printers;
+        $this->view->terminal = $terminal;
         $this->view->paginator = $paginator;
     }
 
@@ -64,8 +58,6 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
         if( isset($_POST['id_'])) $id = $_POST['id_'];
         if( isset($_POST['page_'])) $page = $_POST['page_'];
 
-        //$id = $_POST['id'];
-        //$page = $_POST['page'];
         unset($_POST['id']);
         unset($_POST['id_']);
         unset($_POST['page']);
@@ -73,12 +65,12 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
 
 
         //on recherche la ligne a update avec une condition where
-        $where['ec_filtres.id = ?'] = $id;
+        $where['ec_filtres_terminal.id = ?'] = $id;
 
-        $result = $db->update('ec_filtres',$_POST,$where);
+        $result = $db->update('ec_filtres_terminal',$_POST,$where);
 
         $baseUrl = new Zend_View_Helper_BaseUrl();
-        $url = '/admin/filtreimprimante/all/page/'.$page;
+        $url = '/admin/filtreterminal/all/page/'.$page;
         $this->getResponse()->setRedirect($baseUrl->baseUrl().$url);
 
     }
@@ -88,14 +80,11 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
         global $db;
         $id = $this->_getParam('id');
 
+        $request = Genius_Model_FiltreTerminal::find($id);
+        $douchette = $db->query($request)->fetch();
 
-        $request = Genius_Model_Filtre::find($id);
-
-        $printer = $db->query($request)->fetch();
-
-        $this->view->printer = $printer;
+        $this->view->douchette = $douchette;
         $this->view->page = $this->_getParam('page');;
-
     }
 
     public function updateAction()
@@ -111,15 +100,15 @@ class Admin_FiltreimprimanteController extends Genius_AbstractController
         $value = $val == TRUE ? 0 : 1;
 
         //on recherche la ligne a update avec une condition where
-        $where['ec_filtres.id = ?'] = $id;
+        $where['ec_filtres_terminal.id = ?'] = $id;
 
         //on passe en tableau le / les parametre a update
         $data[ $champ ] = $value;
 
-        $result = $db->update('ec_filtres',$data,$where);
+        $result = $db->update('ec_filtres_terminal',$data,$where);
 
         $baseUrl = new Zend_View_Helper_BaseUrl();
-        $url = '/admin/filtreimprimante/all/page/'.$page;
+        $url = '/admin/filtreterminal/all/page/'.$page;
         $this->getResponse()->setRedirect($baseUrl->baseUrl().$url);
     }
 

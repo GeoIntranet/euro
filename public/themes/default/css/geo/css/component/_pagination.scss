@@ -18,9 +18,9 @@
     margin: 0 4px;
   }
   a.active{
-    background-color: indianred;
+    background-color: $blue;
     color: white;
-    border: 1px solid indianred;
+    border: 1px solid $blue;
   }
 }
 

@@ -111,7 +111,7 @@
     <?php } ?>
     <br>
     <?php if (count($this->paginator)): ?>
-    <table  class="table table-bordered " style="font-size: 0.90em">
+    <table  id="all" class="table table-bordered " style="font-size: 0.90em">
         <thead>
         <tr class="tr-hover">
             <th class="center " >id</th>
@@ -207,7 +207,7 @@
                         <form action="/admin/filtreimprimante/post" method="POST">
                             <input name="id_" type="hidden" value="<?php echo $item['id'] ?>">
                             <input name="page_" type="hidden" value="<?php echo $this->current ?>">
-                            <input  type="number" name="pertinence" value="<?php  echo $item['pertinence']?>">
+                            <input id="small" type="number" name="pertinence" value="<?php  echo $item['pertinence']?>">
                         </form>
                         <!--<a href="/admin/filtreimprimante/update/p/--><?php //echo $this->current ?><!--/n/pertinence/id/--><?php //echo $item['id'] ?><!--/val/--><?php //echo $item['pertinence'] ?><!--">-->
                         <!--    --><?php //echo $item['pertinence']; ?>

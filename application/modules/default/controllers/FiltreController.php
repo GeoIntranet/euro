@@ -24,6 +24,7 @@ class FiltreController extends Genius_AbstractController
 
         // Instance de la session
         $session = new Zend_Session_Namespace('filtre');
+        $session->setExpirationSeconds( 600);
 
         // Instance de la classe qui vas gerer a tout filtrer et faire
         // La recherche dans la base de donnée

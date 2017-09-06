@@ -12,7 +12,6 @@ class Genius_Class_FilteringPrinter
     public function __construct($post)
     {
         $this->post = $post;
-
         $this->result = [];
     }
 

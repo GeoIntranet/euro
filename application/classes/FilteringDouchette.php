@@ -84,9 +84,7 @@ class Genius_Class_FilteringDouchette
         if(isset($this->session->inputDouchette['interface']['bluetooh']))  $model = $model->where('bluetooh = 1') ;
         if(isset($this->session->inputDouchette['interface']['radio']))  $model = $model->where('radio = 1') ;
 
-        $result = $db->query($model)->fetchAll();
-
-        $this->result = $result;
+        $this->result = $db->query($model)->fetchAll();
         
         return $this;
     }

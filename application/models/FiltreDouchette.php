@@ -51,6 +51,9 @@ class Genius_Model_FiltreDouchette
             ->order('ec_filtres_douchettes.pertinence DESC')
         ;
 
+        //
+        //print_r($sql->__ToString());
+        //die();
         return  $sql;
     }
 }

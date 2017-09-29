@@ -557,7 +557,15 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         ), array(), 'filtreDelete'
         );
 
+        $route_home = new Zend_Controller_Router_Route_Regex(
+            'reparation', array(
+            'module' => 'gv'
+        , 'controller' => 'home'
+        , 'action' => 'index'
+        ), array(), 'home'
+        );
 
+        $router->addRoute('routeMakeHome', $route_home);
         $router->addRoute('routeDeleteFiltreArticle', $route_delete_filtre_article);
         $router->addRoute('routemakeFiltreForm', $route_make_filtre_form);
         $router->addRoute('routeMakeFiltreArticle', $route_make_filtre_article);

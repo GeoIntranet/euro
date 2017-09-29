@@ -61,7 +61,11 @@ $uri = '<?php echo PROJECTS?>';
     <link rel="stylesheet" href="<?php echo URL_DEFAULT_CSS; ?>geo/geo.css" type="text/css" media="all">
 </head>
 <body class="<?php echo $this->active; ?>">
-<?php echo $this->render('default/header-mega.phtml'); ?> <?php echo $this->layout()->content; ?> <?php echo $this->render('default/footer.phtml'); ?>
+
+<?php echo $this->render('default/header-mega.phtml'); ?>
+<?php echo $this->layout()->content; ?>
+<?php echo $this->render('default/footer.phtml'); ?>
+
 <?php Zend_Registry::get('hooks')->trigger('view_footer', $this); ?>
  <?php echo $this->inlineScript(); ?>
 
@@ -128,4 +132,12 @@ $uri = '<?php echo PROJECTS?>';
 
 
 </body>
+
+<script type='text/javascript'>
+
+    $(window).load(function(){
+
+    });
+
+</script>
 </html>

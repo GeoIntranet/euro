@@ -4,31 +4,46 @@ $seo = new Genius_Class_Seo();
 $frontController = Zend_Controller_Front::getInstance();
 $controller_name = $frontController->getRequest()->getControllerName();
 ?>
+
+
 <section class="sliderControls">
     <div> <span class="slider-prev"></span> <span class="slider-next"></span> </div>
 </section>
-<?php echo $this->render($this->slider); ?> 
-<section class="bigMessage">
+
+
+    <section class="margin-top-clean">
+        <div class="col-lg-3 " style="padding-top:5px "
+        >
+            <?php echo $this->render($this->filter); ?>
+        </div>
+        <div class="col-lg-9 ">
+            <?php echo $this->render($this->slider); ?>
+        </div>
+    </section>
+
+
+
+<section class="bigMessage ">
     <div class="container">
-        <h2 class="title_light"><?php echo $this->translate("NOS <strong>SOLUTIONS</strong>") ?></h2>
+              <h2 class="title_light"><?php echo $this->translate("NOS <strong>SOLUTIONS</strong>") ?></h2>
         <div class="row feature_section1">
             <?php
 			$i = 0;
             foreach ($menus as $k => $item):
                 if ($k != 0 && $k != 1 ):
                     ?>
-                    <div class="col-lg-2b col-md-2d col-sm-2d one_fourth color_<?php echo $i; ?>"> 
+                    <div class="col-lg-2b col-md-2d col-sm-2d one_fourth color_<?php echo $i; ?>">
                         <a href="<?php echo $item['link']; ?>" title="<?php echo $item['title'] ?>">
                             <div class="arrow_box"><i class="fa_bloc"></i></div>
                             <h5 class="caps"><?php echo $item['title'] ?></h5>
                             <?php
-							//echo Genius_Class_String::text_cut($item['text'],5); 
+							//echo Genius_Class_String::text_cut($item['text'],5);
 							?>
-                        </a> 
+                        </a>
                     </div>
                     <?php
 					$i++;
-			   	endif;		
+			   	endif;
             endforeach;
             ?>
         </div>
@@ -37,7 +52,7 @@ $controller_name = $frontController->getRequest()->getControllerName();
 <section class="services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 tab_onglet"> 
+            <div class="col-lg-2 col-md-2 col-sm-2 tab_onglet">
                 <?php
                 $videotheques = Genius_Model_Page::getVideothequeRandom(11);
 				if (!empty($videotheques)){
@@ -46,8 +61,8 @@ $controller_name = $frontController->getRequest()->getControllerName();
                     $image_path = UPLOAD_PATH . 'video/' . $videotheque['thumb'];
                     if (file_exists($image_path) && is_file($image_path)):
                     ?>
-                    <a class="tab_onglet" href="/video" target="_self"><div class="box_interne"><img width="184" height="103" src="<?php echo $image;?>" alt="<?php echo $videotheque['title']?>" title="<?php echo $videotheque['seo_title']?>" /> <span class="bt_play"></span></div> </a> 
-                <?php 
+                    <a class="tab_onglet" href="/video" target="_self"><div class="box_interne"><img width="184" height="103" src="<?php echo $image;?>" alt="<?php echo $videotheque['title']?>" title="<?php echo $videotheque['seo_title']?>" /> <span class="bt_play"></span></div> </a>
+                <?php
                 endif;
                 endforeach;
 				}
@@ -79,7 +94,7 @@ $controller_name = $frontController->getRequest()->getControllerName();
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </section>
 <div class="divider_line10"> <a class="buttonColor right_bouton big_size" href="/video"><?php echo $this->translate("VOIR LA VIDEOTHEQUE")?></a>
     <div class="spacer"></div>
@@ -95,7 +110,7 @@ $products = Genius_Model_Product::getProductsPromotions();
                 <h2 class="heading2"><?php echo $this->translate("FLASH <span>PROMO</span>") ?></h2>
                 <div class="border_gris">
                     <?php
-                    
+
                     $i = 1;
                     foreach ($products as $product):
 					    $id_product = $product['id_product'];
@@ -113,7 +128,7 @@ $products = Genius_Model_Product::getProductsPromotions();
 							$is_image_marque_avalaible = true;
 						}
                         ?>
-                        <div class="recentBlogPost"> 
+                        <div class="recentBlogPost">
                             <?php
                             $image = UPLOAD_URL . 'images/' . $product['path_folder'] . '/' . $product['filename'] . '-small-' . $product['id_image'] . '.' . $product['format'];
                             $image_path = UPLOAD_PATH . 'images/' . $product['path_folder'] . '/' . $product['filename'] . '-small-' . $product['id_image'] . '.' . $product['format'];
@@ -141,7 +156,7 @@ $products = Genius_Model_Product::getProductsPromotions();
             </div>
             <div class="col-lg-4">
               <?php echo $this->render('statics/tops.html');?>
-            </div>  
+            </div>
         </div>
     </div>
 </section>
@@ -153,7 +168,9 @@ $products = Genius_Model_Product::getProductsPromotions();
     </div>
     <?php echo $this->render('statics/carousel.phtml');?>
 </section>
+
 <style>
+
 .texte_video ul li{list-style:inherit!important}
 .btn_video{display:inline-block;margin-top:20px!important;font-size:16px;}
 #h1_home{font-weight:bold;line-height:160%;margin-bottom:15px;font-family:'Open Sans',sans-serif,Arial;text-align:left;font-size:15px;color:#464646;}

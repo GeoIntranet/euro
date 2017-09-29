@@ -3,7 +3,9 @@
 class IndexController extends Genius_AbstractController {
 
     public function indexAction() {
-        $this->view->slider = "statics/slider.phtml";
+        //Zend_Layout::getMvcInstance()->setLayout('geo');
+        $this->view->slider = "statics/geo/slider.phtml";
+        $this->view->filter = "statics/geo/filter.phtml";
         $this->view->active = 'index';
     }
 	

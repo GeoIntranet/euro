@@ -1,0 +1,21 @@
+.cont{
+    margin-top:134px ;
+    margin-right:100px ;
+
+}
+.borderr{ border:solid red 1px; }
+
+.slider{
+    padding: 0;
+    color:green;
+}
+
+.margin-top-clean{
+    margin-top:134px ;
+}
+
+
+.euro-search input[type="text"] {
+    border-radius: 5px;
+    border:solid 2px #c55ac0;
+}

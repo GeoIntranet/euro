@@ -23,32 +23,33 @@ $controller_name = $frontController->getRequest()->getControllerName();
 
 
 
-<section class="bigMessage ">
-    <div class="container">
-              <h2 class="title_light"><?php echo $this->translate("NOS <strong>SOLUTIONS</strong>") ?></h2>
-        <div class="row feature_section1">
-            <?php
-			$i = 0;
-            foreach ($menus as $k => $item):
-                if ($k != 0 && $k != 1 ):
-                    ?>
-                    <div class="col-lg-2b col-md-2d col-sm-2d one_fourth color_<?php echo $i; ?>">
-                        <a href="<?php echo $item['link']; ?>" title="<?php echo $item['title'] ?>">
-                            <div class="arrow_box"><i class="fa_bloc"></i></div>
-                            <h5 class="caps"><?php echo $item['title'] ?></h5>
-                            <?php
-							//echo Genius_Class_String::text_cut($item['text'],5);
-							?>
-                        </a>
-                    </div>
-                    <?php
-					$i++;
-			   	endif;
-            endforeach;
-            ?>
-        </div>
-    </div>
-</section>
+<!--<section class="bigMessage ">-->
+<!--    <div class="container">-->
+<!--              <h2 class="title_light">--><?php //echo $this->translate("NOS <strong>SOLUTIONS</strong>") ?><!--</h2>-->
+<!--        <div class="row feature_section1">-->
+<!--            --><?php
+//			$i = 0;
+//            foreach ($menus as $k => $item):
+//                if ($k != 0 && $k != 1 ):
+//                    ?>
+<!--                    <div class="col-lg-2b col-md-2d col-sm-2d one_fourth color_--><?php //echo $i; ?><!--">-->
+<!--                        <a href="--><?php //echo $item['link']; ?><!--" title="--><?php //echo $item['title'] ?><!--">-->
+<!--                            <div class="arrow_box"><i class="fa_bloc"></i></div>-->
+<!--                            <h5 class="caps">--><?php //echo $item['title'] ?><!--</h5>-->
+<!--                            --><?php
+//							//echo Genius_Class_String::text_cut($item['text'],5);
+//							?>
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    --><?php
+//					$i++;
+//			   	endif;
+//            endforeach;
+//            ?>
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
 <section class="services">
     <div class="container">
         <div class="row">

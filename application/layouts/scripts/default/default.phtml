@@ -138,10 +138,11 @@ $uri = '<?php echo PROJECTS?>';
 <!-- Javascript -->
 <script>
     var j = jQuery.noConflict();
-
-
-    // Do something with jQuery
-    j(function() {
+    j(function () {
+        j('[data-toggle="tooltip"]').tooltip()
+    })
+   // Do something with jQuery
+   j(function() {
 
         j("#euro-search").autocomplete({
             minLength: 2,
@@ -170,41 +171,7 @@ $uri = '<?php echo PROJECTS?>';
                 .append(inner_html)
                 .appendTo(ul);
         };
-
-
-//
-//        j( "#euro-search" ).autocomplete(
-//            {
-//            source: "/search/auto",
-//            minLength: 2,
-//            autoFocus:true
-//                select: function (event, ui) {
-//                    $("#project").val(ui.item.label);
-//                    $("#project-id").val(ui.item.value);
-//                    $("#project-description").html(ui.item.desc);
-//                    $("#project-icon").attr("src", "images/" + ui.item.icon);
-//
-//                    return false;
-//                }
-//            })
-//            .data("ui-autocomplete")._renderItem = function (ul, item)
-//            {
-//                var inner_html = '<a href="' + item.label.h + '\">' +
-//                    '<div class="list_item_container">' +
-//                        '<div class="image-autocomplete">' +
-//                            '<img src="' + item.desc + '"></div>' +
-//                            '<div class="title-autocomplete">' + item.value + '</div>' +
-//                            '<div class="description-autocomplete">' + item.label.label + '</div>' +
-//                        '</div>' +
-//                    '</div>' +
-//                    '</a>' ;
-//                return $("<li></li>")
-//                    .data("ui-autocomplete-item", item)
-//                    .append(inner_html)
-//                    .appendTo(ul);
-//            };
-
-    });
+   });
 </script>
 </body>
 

@@ -157,8 +157,43 @@
 
 }
 
-.second-nested-panel-h{
-  padding: 8px 3px 3px 3px;
+
+.second-nested-panel-{
+  &:hover{
+    .second-nested-panel-h{
+      .second-nested-panel-t{
+        a{
+          color:$pink;
+        }
+      }
+    }
+  }
 }
 
+.second-nested-panel-h{
+  padding: 8px 3px 3px 3px;
+  :hover{
+    color:$pink;
+  }
+}
+.second-nested-panel-b{
+  padding: 0px 10px 10px 10px ;
+  border-bottom: solid 3px lighten($pink,20%)
+}
+
+.bb3pink{
+  border-bottom: solid 3px lighten($pink,20%)
+
+}
+
+#image_configurateur{
+  img{
+    width: 80%;
+    max-width: 120px;
+    height: auto;
+    &:hover{
+      border:dashed 1px lighten($pink,25%);
+    }
+  }
+}
 

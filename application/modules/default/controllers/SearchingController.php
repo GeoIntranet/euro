@@ -14,7 +14,7 @@ class SearchingController extends Genius_AbstractController
                        "label" => 'Imprimante thermique' ,
                        'h' => 'http://sky.walker/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
                    ],
-                   "desc" => "http://sky.walker/upload/images/geo/zm400_.jpg",
+                                   "desc" => PROJECT.'/upload/images/geo/zm400_.jpg',
                ],
             [
                 "value" => "Zebra GX420",
@@ -22,7 +22,7 @@ class SearchingController extends Genius_AbstractController
                     "label" => 'Imprimante thermique' ,
                     'h' => 'http://sky.walker/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
                 ],
-                "desc" => "http://sky.walker/upload/images/geo/zm400_.jpg",
+                                "desc" => PROJECT.'/upload/images/geo/zm400_.jpg',
             ],
             [
                 "value" => "Zebra LP2844",
@@ -30,7 +30,7 @@ class SearchingController extends Genius_AbstractController
                     "label" => 'Imprimante thermique' ,
                     'h' => 'http://sky.walker/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
                 ],
-                "desc" => "http://sky.walker/upload/images/geo/zm400_.jpg",
+                                "desc" => PROJECT.'/upload/images/geo/zm400_.jpg',
             ],
             [
                 "value" => "Zebra ZT220",
@@ -38,7 +38,7 @@ class SearchingController extends Genius_AbstractController
                     "label" => 'Imprimante thermique' ,
                     'h' => 'http://sky.walker/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
                 ],
-                "desc" => "http://sky.walker/upload/images/geo/zm400_.jpg",
+                "desc" => PROJECT.'/upload/images/geo/zm400_.jpg',
             ],
             ];
 

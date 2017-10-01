@@ -1,0 +1,164 @@
+.panel-g {
+  font-family: 'Lato', sans-serif;
+  //border: solid 1px lightgrey;
+
+  a {
+    color: #3F3F3F;
+  }
+
+  .first-panel- {
+    //border: solid 1px lightgrey;
+    &:hover {
+      background-color: $pink;
+      .panel-h {
+        .panel-t {
+          padding: 5px;
+          i.fa-stack-2x {
+            color: $pink;
+          }
+
+          .badge-euro {
+            background-color: lighten($pink, 10%);
+          }
+          background-color: $pink;
+          i.fa-stack-2x {
+            color: lighten($pink, 10%);
+          }
+          i.fa-stack-1x {
+            color: white;
+          }
+          a {
+            border-bottom: dashed 2px whitesmoke;
+            color: white;
+          }
+        }
+
+      }
+
+    }
+
+    .panel-h {
+      .panel-t {
+        padding: 5px;
+        i.fa-stack-2x {
+          color: lighten(#3F3F3F,10%);
+        }
+
+        &:hover {
+          .badge-euro {
+            background-color: lighten($pink, 10%);
+          }
+          background-color: $pink;
+          i.fa-stack-2x {
+            color: lighten($pink, 10%);
+          }
+          i.fa-stack-1x {
+            color: white;
+          }
+          a {
+            &:hover {
+
+            }
+            border-bottom: dashed 2px whitesmoke;
+            color: white;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .panel- {
+    font-family: 'Lato', sans-serif;
+
+    //border: solid 1px lightgrey;
+    border-top: solid 1px lighten($pink,30%);
+    &:hover {
+      background-color: $pink;
+      .panel-h {
+        .panel-t {
+          i.fa-stack-2x {
+            color: $pink;
+          }
+
+          .badge-euro {
+            background-color: lighten($pink, 10%);
+          }
+          background-color: $pink;
+          i.fa-stack-2x {
+            color: lighten($pink, 10%);
+          }
+          i.fa-stack-1x {
+            color: white;
+          }
+          a {
+            border-bottom: dashed 2px whitesmoke;
+            color: white;
+          }
+        }
+
+      }
+
+    }
+
+    .panel-h {
+      .panel-t {
+        padding: 5px;
+        i.fa-stack-2x {
+          color: lighten(#3F3F3F,10%);
+        }
+
+        &:hover {
+          .badge-euro {
+            background-color: lighten($pink, 10%);
+          }
+          background-color: $pink;
+          i.fa-stack-2x {
+            color: lighten($pink, 10%);
+          }
+          i.fa-stack-1x {
+            color: white;
+          }
+          a {
+            &:hover {
+
+            }
+            border-bottom: dashed 2px whitesmoke;
+            color: white;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+.first-panel- {
+  font-family: 'Lato', sans-serif;
+  :hover {
+    .panel-h {
+      .panel-t {
+        .euro-stack {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.panel-b {
+  font-family: 'Lato', sans-serif;
+  padding: 7px 7px 7px 20px;
+  margin: 0;
+  background-color: white;
+
+}
+
+.second-nested-panel-h{
+  padding: 8px 3px 3px 3px;
+}
+
+

@@ -5,53 +5,94 @@ $frontController = Zend_Controller_Front::getInstance();
 $controller_name = $frontController->getRequest()->getControllerName();
 
 $page = Genius_Model_Page::getPageByCategoryAndIdOptimize(1);
-$images_home = Genius_Model_Image::getHomeImageCoverById(18,1);
+$images_home = Genius_Model_Image::getHomeImageCoverById(18, 1);
 $menus_ = Genius_Class_Seo::getMetasMenu(1);
 ?>
 
-    <section class="margin-top-clean ">
-        <div class="col-lg-3 " style="padding-top:5px "
-        >
-            <?php echo $this->render($this->filter); ?>
+<section class="margin-top-clean ">
+    <div class="col-lg-3 " style="padding-top:5px ">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <?php echo $this->render($this->filter); ?>
+            </div>
         </div>
-        <div class="col-lg-9 ">
-            <?php echo $this->render($this->slider); ?>
 
-<!--            <section >-->
-<!--                <div class="col-md-12  infotel">-->
-<!--                    --><?php //echo $this->render($this->infotel); ?>
-<!--                </div>-->
-<!--            </section>-->
+        <br><br>
+        <br><br>
 
-            <section class="" >
-                <div class="col-md-12 ">
-                    <div class="row">
-                        <div class="col-lg-7" style="padding-top: 10px">
-                            <h4 class="caps"><?php echo $page['title']; ?></h4>
-                            <h1 id="h1_home"><?php echo $menus_['h1_noscript']?></h1>
-                            <p style="font-size: 0.75em">
-                                <?php echo $page['text']; ?>
-                            </p>
-                        </div>
-
-                        <div class="col-lg-5 ">
-                            <div class="video-container">
-                                <iframe width="854" height="480" src="https://www.youtube.com/embed/XOZYtCMt80k" frameborder="0" allowfullscreen></iframe>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class='card-wrapper'>
+                    <a href="/content/42-nos-competences" class="" title="Services Codeo">
+                        <div class='card-euro' >
+                            <div class='card-content'  style='background-image:url(http://sky.walker/upload/images/geo/zt600.jpg)'>
+                                <h3 class="imgtitlebox"><i class="fa fa-gear"> </i>&nbsp;&nbsp;Services Eurocomputer</h3>
+                                <div class="card-overlay">&nbsp;</div>
                             </div>
                         </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-9 ">
+
+        <?php echo $this->render($this->slider); ?>
+
+        <!--            <section >-->
+        <!--                <div class="col-md-12  infotel">-->
+        <!--                    --><?php //echo $this->render($this->infotel); ?>
+        <!--                </div>-->
+        <!--            </section>-->
+
+        <section class="">
+            <div class="col-md-12 ">
+                <div class="row">
+                    <div class="col-lg-7" style="padding-top: 10px">
+                        <h4 class="caps"><?php echo $page['title']; ?></h4>
+                        <h1 id="h1_home"><?php echo $menus_['h1_noscript'] ?></h1>
+                        <p style="">
+                            <?php echo $page['text']; ?>
+                        </p>
                     </div>
 
-
+                    <div class="col-lg-5 ">
+                        <div class="video-container">
+                            <iframe width="854" height="480" src="https://www.youtube.com/embed/XOZYtCMt80k"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-        </div>
-    </section>
+
+            </div>
+        </section>
+
+    </div>
+</section>
 
 <style>
-.texte_video ul li{list-style:inherit!important}
-.btn_video{display:inline-block;margin-top:20px!important;font-size:16px;}
-#h1_home{font-weight:bold;line-height:160%;margin-bottom:15px;font-family:'Open Sans',sans-serif,Arial;text-align:left;font-size:15px;color:#464646;}
+    .texte_video ul li {
+        list-style: inherit !important
+    }
+
+    .btn_video {
+        display: inline-block;
+        margin-top: 20px !important;
+        font-size: 16px;
+    }
+
+    #h1_home {
+        font-weight: bold;
+        line-height: 160%;
+        margin-bottom: 15px;
+        font-family: 'Open Sans', sans-serif, Arial;
+        text-align: left;
+        font-size: 15px;
+        color: #464646;
+    }
 </style>
 
 

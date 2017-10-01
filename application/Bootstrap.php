@@ -565,6 +565,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         ), array(), 'home'
         );
 
+        $search_auto = new Zend_Controller_Router_Route_Regex(
+            'search/auto', array(
+            'module' => 'default'
+        , 'controller' => 'searching'
+        , 'action' => 'autocomplete'
+        ), array(), 'searchauto'
+        );
+        $router->addRoute('searchauto', $search_auto);
         $router->addRoute('routeMakeHome', $route_home);
         $router->addRoute('routeDeleteFiltreArticle', $route_delete_filtre_article);
         $router->addRoute('routemakeFiltreForm', $route_make_filtre_form);

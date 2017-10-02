@@ -12,33 +12,57 @@ class SearchingController extends Genius_AbstractController
                    "value" => "Zebra ZM600",
                    "label" => [
                        "label" => 'Imprimante thermique' ,
-                       'h' => 'http://sky.walker/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
+                       'h' => PROJECTS.'/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
                    ],
-                                   "desc" => PROJECT.'/upload/images/geo/zm400_.jpg',
+                                   "desc" => PROJECTS.'/upload/images/geo/zt600_.jpg',
                ],
             [
                 "value" => "Zebra GX420",
                 "label" => [
                     "label" => 'Imprimante thermique' ,
-                    'h' => 'http://sky.walker/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
+                    'h' => PROJECTS.'/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
                 ],
-                                "desc" => PROJECT.'/upload/images/geo/zm400_.jpg',
+                                "desc" => PROJECTS.'/upload/images/geo/zt600_.jpg',
             ],
             [
                 "value" => "Zebra LP2844",
                 "label" => [
                     "label" => 'Imprimante thermique' ,
-                    'h' => 'http://sky.walker/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
+                    'h' => PROJECTS.'/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
                 ],
-                                "desc" => PROJECT.'/upload/images/geo/zm400_.jpg',
+                                "desc" => PROJECTS.'/upload/images/geo/zt600_.jpg',
             ],
             [
                 "value" => "Zebra ZT220",
                 "label" => [
                     "label" => 'Imprimante thermique' ,
-                    'h' => 'http://sky.walker/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
+                    'h' => PROJECTS.'/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
                 ],
-                "desc" => PROJECT.'/upload/images/geo/zm400_.jpg',
+                "desc" => PROJECTS.'/upload/images/geo/zt600_.jpg',
+            ],
+            [
+                "value" => "Zebra ZT220",
+                "label" => [
+                    "label" => 'Imprimante thermique' ,
+                    'h' => PROJECTS.'/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
+                ],
+                "desc" => PROJECTS.'/upload/images/geo/zt600_.jpg',
+            ],
+            [
+                "value" => "Zebra ZT220",
+                "label" => [
+                    "label" => 'Imprimante thermique' ,
+                    'h' => PROJECTS.'/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
+                ],
+                "desc" => PROJECTS.'/upload/images/geo/zt600_.jpg',
+            ],
+            [
+                "value" => "Zebra ZT220",
+                "label" => [
+                    "label" => 'Imprimante thermique' ,
+                    'h' => PROJECTS.'/imprimantes-etiquettes/zebra/petits-modeles/lp-tlp2844-15.html'
+                ],
+                "desc" => PROJECTS.'/upload/images/geo/zt600_.jpg',
             ],
             ];
 

@@ -15,9 +15,10 @@ class ResultsController extends Zend_Controller_Action
 
         $seo = new Genius_Class_Seo();
         $results = new Genius_Model_Search($search);
-        $results = $results->protoSearch();
+        //$results = $results->protoSearch();
+        $results = [];
 
-        var_dump($results);
+        //var_dump($results);
 
 
 

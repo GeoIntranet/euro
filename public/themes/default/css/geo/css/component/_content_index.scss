@@ -56,3 +56,30 @@
 
   }
 }
+
+.wrapper-col-configurator{
+  padding-top:5px ;
+  background-color: #f4f4f4;
+}
+
+.margin-top-clean{
+  margin-top:134px ;
+}
+
+.wrapper-configurator{
+  padding: 15px;
+  margin-bottom: -18px;
+
+  .configurator{
+    padding-top: 15px;
+    background-color: $blue;
+    h3{
+      font-size: 1.2em;
+      color : white;
+      border:none;
+      font-weight: bolder;
+    }
+  }
+
+
+}

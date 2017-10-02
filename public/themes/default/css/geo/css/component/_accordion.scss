@@ -7,22 +7,23 @@
   }
 
   .first-panel- {
+    background-color: white;
     //border: solid 1px lightgrey;
     &:hover {
-      background-color: $pink;
+      background-color: $blue;
       .panel-h {
         .panel-t {
           padding: 5px;
           i.fa-stack-2x {
-            color: $pink;
+            color: $blue;
           }
 
           .badge-euro {
-            background-color: lighten($pink, 10%);
+            background-color: lighten($blue, 10%);
           }
-          background-color: $pink;
+          background-color: $blue;
           i.fa-stack-2x {
-            color: lighten($pink, 10%);
+            color: lighten($blue, 10%);
           }
           i.fa-stack-1x {
             color: white;
@@ -46,11 +47,11 @@
 
         &:hover {
           .badge-euro {
-            background-color: lighten($pink, 10%);
+            background-color: lighten($blue, 10%);
           }
-          background-color: $pink;
+          background-color: $blue;
           i.fa-stack-2x {
-            color: lighten($pink, 10%);
+            color: lighten($blue, 10%);
           }
           i.fa-stack-1x {
             color: white;
@@ -69,26 +70,28 @@
     }
 
   }
-
+  .panel-:last-child{
+    border-bottom: solid 3px $blue;
+  }
   .panel- {
     font-family: 'Lato', sans-serif;
-
+    background-color: white;
     //border: solid 1px lightgrey;
-    border-top: solid 1px lighten($pink,30%);
+    border-top: solid 1px lighten($blue,30%);
     &:hover {
-      background-color: $pink;
+      background-color: $blue;
       .panel-h {
         .panel-t {
           i.fa-stack-2x {
-            color: $pink;
+            color: $blue;
           }
 
           .badge-euro {
-            background-color: lighten($pink, 10%);
+            background-color: lighten($blue, 10%);
           }
-          background-color: $pink;
+          background-color: $blue;
           i.fa-stack-2x {
-            color: lighten($pink, 10%);
+            color: lighten($blue, 10%);
           }
           i.fa-stack-1x {
             color: white;
@@ -112,11 +115,11 @@
 
         &:hover {
           .badge-euro {
-            background-color: lighten($pink, 10%);
+            background-color: lighten($blue, 10%);
           }
-          background-color: $pink;
+          background-color: $blue;
           i.fa-stack-2x {
-            color: lighten($pink, 10%);
+            color: lighten($blue, 10%);
           }
           i.fa-stack-1x {
             color: white;
@@ -163,7 +166,7 @@
     .second-nested-panel-h{
       .second-nested-panel-t{
         a{
-          color:$pink;
+          color:$blue;
         }
       }
     }
@@ -173,16 +176,16 @@
 .second-nested-panel-h{
   padding: 8px 3px 3px 3px;
   :hover{
-    color:$pink;
+    color:$blue;
   }
 }
 .second-nested-panel-b{
   padding: 0px 10px 10px 10px ;
-  border-bottom: solid 3px lighten($pink,20%)
+  border-bottom: solid 3px lighten($blue,20%)
 }
 
 .bb3pink{
-  border-bottom: solid 3px lighten($pink,20%)
+  border-bottom: solid 3px lighten($blue,20%)
 
 }
 
@@ -192,7 +195,7 @@
     max-width: 120px;
     height: auto;
     &:hover{
-      border:dashed 1px lighten($pink,25%);
+      border:dashed 1px lighten($blue,25%);
     }
   }
 }

@@ -11,31 +11,28 @@
     color:green;
 }
 
-.margin-top-clean{
-    margin-top:134px ;
-}
 
 
-.euro-search input[type="text"] {
-    height: 40px;
-    border-radius: 0px;
-    border-left:solid 3px #c55ac0;
-    border-top:solid 3px #c55ac0;
-    border-bottom:solid 3px #c55ac0;
-    border-right:none;
-}
-.euro-search input[type=text]:focus, textarea:focus {
-    box-shadow: 0 0 2px rgba(197, 90, 192, 1);
-}
-.euro-search .input-group-addon{
-    color:white;
-    background-color: #c55ac0;
-    border-radius: 0px;
-    border-right:solid 3px #c55ac0;
-    border-top:solid 3px #c55ac0;
-    border-bottom:solid 3px #c55ac0;
-    border-left:none;
-}
+/*.euro-search input[type="text"] {*/
+    /*height: 40px;*/
+    /*border-radius: 0px;*/
+    /*border-left:solid 3px #c55ac0;*/
+    /*border-top:solid 3px #c55ac0;*/
+    /*border-bottom:solid 3px #c55ac0;*/
+    /*border-right:none;*/
+/*}*/
+/*.euro-search input[type=text]:focus, textarea:focus {*/
+    /*box-shadow: 0 0 2px rgba(197, 90, 192, 1);*/
+/*}*/
+/*.euro-search .input-group-addon{*/
+    /*color:white;*/
+    /*background-color: #c55ac0;*/
+    /*border-radius: 0px;*/
+    /*border-right:solid 3px #c55ac0;*/
+    /*border-top:solid 3px #c55ac0;*/
+    /*border-bottom:solid 3px #c55ac0;*/
+    /*border-left:none;*/
+/*}*/
 
 .infotel{
     padding-top: 4px;

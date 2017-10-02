@@ -1,2 +1,5 @@
-*
+
 !.gitignore
+/fiche_technique/
+/logo_marque/
+/video/

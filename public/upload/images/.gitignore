@@ -1,2 +1,10 @@
-*
+
 !.gitignore
+/categories
+/groups
+/home
+/marqueslogostransparent
+/multimedias
+/pages
+/products
+/slides/

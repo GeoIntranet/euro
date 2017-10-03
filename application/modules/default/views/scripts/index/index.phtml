@@ -8,43 +8,74 @@ $page = Genius_Model_Page::getPageByCategoryAndIdOptimize(1);
 $images_home = Genius_Model_Image::getHomeImageCoverById(18, 1);
 $menus_ = Genius_Class_Seo::getMetasMenu(1);
 ?>
+<!--COLONNE SIDE BAR CONFIGURATOR-->
+<div class="sidebar-container section">
+    <div class="col-lg-12  wrapper-col-configurator">
 
-<section class="margin-top-clean ">
-
-    <div class="col-lg-2 col-md-4 col-sm-12 wrapper-col-configurator" >
-
+        <!--CONFIGURATOR-->
         <div class="row">
             <div class="col-lg-12">
                 <?php echo $this->render($this->filter); ?>
             </div>
         </div>
+        <!--FIN CONFIGURATOR-->
 
-        <br><br>
-        <br><br>
-
+        <!--BOX EXPLICATION CONFIGURATOR-->
         <div class="row">
             <div class="col-lg-12 ">
-                <div class='card-wrapper'>
-                    <a href="/reparation" class="" title="">
-                        <div class='card-euro'>
-                            <div class='card-content'
-                                 style='background-image:url(<?php echo PROJECTS.'/upload/images/geo/zt600.jpg' ?>)'>
-                                <h3 class="imgtitlebox"><i class="fa fa-gear"> </i>&nbsp;&nbsp;Services Eurocomputer
-                                </h3>
-                                <div class="card-overlay">&nbsp;</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <?php include('explication_configurator.phtml') ?>
             </div>
         </div>
+        <!--FIN BOX EXPLICATION CONFIGURATOR-->
 
-        <br><br>
-        <br>
+        <div class="gradient"> </div>
+    </div>
+</div>
+<!--FIN COLONNE SIDE BAR CONFIGURATOR-->
+
+
+<!--COLONNE CONTENU PRINCIPAL-->
+<div class="section-container section">
+    <div class="col-lg-12 margin-top-clean ">
+
+        <!--SLIDER-->
+        <?php echo $this->render($this->slider); ?>
+        <!--FIN SLIDER-->
+
+        <!--BLOC CONTENT-->
+        <section class="">
+            <div class="row">
+                <div class="col-md-7 col-lg-7 ">
+                   <?php include('data.phtml') ?>
+                </div>
+                <div class="col-md-5 col-lg-5 ">
+                    <?php include('video.phtml') ?>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br>
+        </section>
+        <!-- FIN BLOC CONTENT-->
+
+        <!--BLOC BRAND-->
+        <div class="container-fluid">
+            <?php include('brand.phtml')?>
+            <br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <!-- FIN BLOC BRAND-->
+
+    </div>
+</div>
+<!--FIN COLONNE CONTENU PRINCIPAL-->
+
+
+<section class="margin-top-clean hidden">
+
+    <div class="col-lg-3 col-md-4 col-sm-12 wrapper-col-configurator" >
+
 
     </div>
 
-    <div class="col-lg-10 col-md-8 col-sm-12 ">
+    <div class="col-lg-9 col-md-8 col-sm-12 ">
 
         <?php echo $this->render($this->slider); ?>
 
@@ -85,7 +116,7 @@ $menus_ = Genius_Class_Seo::getMetasMenu(1);
                 </div>
                 <div class="col-md-5 col-lg-5 ">
                     <div class="wrapper-video " id="" >
-                        <div class="content-video js-modal-btn" data-video-id="XOZYtCMt80k"
+                        <div class="content-video js-modal-btn" data-video-id="zLr9TEK8D8I"
                              style='background-image:url(<?php echo PROJECTS.'/upload/images/geo/team__.jpg' ?>)'>
                             <div class="play-video">
                                 <i class="fa fa-play fa-3x"></i>

@@ -3,33 +3,19 @@
    border: 1px solid #555;
 }
 .card-wrapper{
+  margin-top: 100px;
+  border-top:solid 4px $blue;
   width: 100%;
   height: 250px;
   z-index: 800;
   a{
-    &:hover{
-      .card-euro{
-        .card-content{
-          .card-overlay{
-            position: absolute;
-            z-index: 4;
-            bottom: 0;
-            height: 75px;
-            background-color: $pink;
-            opacity: 0.8;
-            width: 100%;
-            transition: background-color .4s;
-          }
-          h3{
-            //border-bottom:dashed 1px whitesmoke;
-          }
-        }
-      }
-    }
+
+
     .card-euro{
       width: 100%;
       height: 100%;
       position: relative;
+
       .card-content{
 
         position: absolute;
@@ -41,13 +27,14 @@
         background-size: cover;
         background-repeat: no-repeat;
 
+
+
         h3{
           padding-left: 8px;
-
+          font-size:1.2em;
           position: absolute;
           z-index: 5;
-          bottom: 5px;
-          font-size: 1.5em;
+          bottom: 28px;
           color:white;
           text-transform: uppercase;
           font-weight: bolder;
@@ -55,13 +42,26 @@
           border: transparent;
         }
 
+        h4{
+          font-size:1em;
+          b{ border-bottom:dashed 2px white; }
+          padding-left:10px;
+          position: absolute;
+          z-index: 5;
+          bottom: 10px;
+          color:white;
+          text-decoration: none;
+          border: transparent;
+        }
+
         .card-overlay{
+
           position: absolute;
           z-index: 1;
           bottom: 0;
           height: 75px;
-          background-color: $dgray;
-          opacity: 0.8;
+          background-color: $blue;
+          opacity: 1;
           width: 100%;
         }
 

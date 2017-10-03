@@ -8,6 +8,7 @@
 
   .first-panel- {
     background-color: white;
+    padding-top: 5px;
     //border: solid 1px lightgrey;
     &:hover {
       background-color: $blue;
@@ -74,6 +75,7 @@
     border-bottom: solid 3px $blue;
   }
   .panel- {
+
     font-family: 'Lato', sans-serif;
     background-color: white;
     //border: solid 1px lightgrey;

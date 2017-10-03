@@ -14,3 +14,13 @@
   background-color: indianred;
   border:solid 1px red;
 }
+
+.video-fixed{
+  position: relative;
+  z-index: 100;
+  width: 600px;
+}
+
+.section-video-fixed{
+  margin-left:600px;
+}

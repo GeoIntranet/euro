@@ -14,9 +14,6 @@ class Genius_Class_dispatchFilter
     {
         $this->session = $session;
         $this->setDefaultFiltre();
-
-        var_dump($this->session->search);
-
     }
 
     /**

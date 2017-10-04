@@ -6,12 +6,11 @@ class FiltreController extends Genius_AbstractController
     {
         $session = new Zend_Session_Namespace('filtre');
 
+
         $dispatcher = new Genius_Class_dispatchFilter($session);
 
         $dispatcher->result();
-
         $this->view->result = $dispatcher->getResult();
-
         $this->view->input = $dispatcher->getInput();
 
 
@@ -22,6 +21,7 @@ class FiltreController extends Genius_AbstractController
     }
 
     /**
+     * route : filtre/apply
      * Applique le filtre en fonction de la section choisit et des inputs
      */
     public function makefiltreAction()
@@ -52,6 +52,7 @@ class FiltreController extends Genius_AbstractController
     }
 
     /**
+     * route : /filtre/form?f=xxxx
      * Change de section Imprimante / Douchette / Terminal
      */
     public function makefiltreformAction()

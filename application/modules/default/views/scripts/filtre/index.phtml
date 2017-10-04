@@ -19,38 +19,38 @@
                                 <div class="col-lg-12 col-xs-12">
                                    <?php if(isset($this->search)):?>
 
-                                        <?php if($this->search == 'p') : ?>
+                                        <?php if($this->search == 'search_thermique') : ?>
                                            <span class="wrapper-choice-selected ">
                                                <b > <i class="fa fa-print" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp; IMPRIMANTE</b>
                                            </span>
                                         <?php else : ?>
                                            <span class="wrapper-choice-unselected ">
-                                               <a href="/filtre/form?f=p" class="link-blue">
+                                               <a href="/filtre/form?f=search_thermique" class="link-blue">
                                                    <b><i class="fa fa-print" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;
                                                        IMPRIMANTE</b>
                                                </a>
                                            </span>
                                         <?php endif ?>
 
-                                       <?php if($this->search == 'd') : ?>
+                                       <?php if($this->search == 'search_douchette') : ?>
                                            <span class="wrapper-choice-selected ">
                                                <b> <i class="fa fa-qrcode" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp; DOUCHETTE</b>
                                            </span>
                                        <?php else : ?>
                                            <span class="wrapper-choice-unselected ">
-                                               <a href="/filtre/form?f=d" class="link-blue">
+                                               <a href="/filtre/form?f=search_douchette" class="link-blue">
                                                    <b><i class="fa fa-qrcode " style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp; DOUCHETTE</b>
                                                </a>
                                            </span>
                                        <?php endif ?>
 
-                                       <?php if($this->search == 't') : ?>
+                                       <?php if($this->search == 'search_terminal') : ?>
                                            <span class="wrapper-choice-selected ">
                                                <b> <i class="fa fa-mobile" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;  TERMINAL</b>
                                            </span>
                                        <?php else : ?>
                                            <span class="wrapper-choice-unselected ">
-                                               <a href="/filtre/form?f=t" class="link-blue"><b> <i class="fa fa-mobile" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;  TERMINAL</b></a>
+                                               <a href="/filtre/form?f=search_terminal" class="link-blue"><b> <i class="fa fa-mobile" style="font-size: 1.5em"> </i>&nbsp;&nbsp;&nbsp;  TERMINAL</b></a>
                                            </span>
 
                                        <?php endif ?>
@@ -63,9 +63,9 @@
                             </div>
                             <?php if(isset($this->search))
                                 {
-                                    if($this->search == 'p')  include("form_printer.phtml");
-                                    elseif($this->search == 'd')  include("form_douchette.phtml");
-                                    elseif($this->search == 't')  include("form_terminal.phtml");
+                                    if($this->search == 'search_thermique')  include("form_printer.phtml");
+                                    elseif($this->search == 'search_douchette')  include("form_douchette.phtml");
+                                    elseif($this->search == 'search_terminal')  include("form_terminal.phtml");
                                     else include("form_printer.phtml");
                                 }
                                 else

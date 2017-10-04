@@ -24,13 +24,13 @@ class Genius_Class_FilteringPrinter
     public function handle()
     {
         $int = array_flip($this->post['interfacep']);
-        $this->session->inputPrinter['interface'] = $int;
+        $this->session->inputThermique['interface'] = $int;
 
-        $this->session->inputPrinter['dpi'] = $this->post['dpi'];
-        $this->session->inputPrinter['gamme'] = $this->post['gamme'];
-        $this->session->inputPrinter['width'] = $this->post['width'];
-        $this->session->inputPrinter['opt'] = $this->post['opt'];
-        $this->session->inputPrinter['use'] = $this->post['use'];
+        $this->session->inputThermique['dpi'] = $this->post['dpi'];
+        $this->session->inputThermique['gamme'] = $this->post['gamme'];
+        $this->session->inputThermique['width'] = $this->post['width'];
+        $this->session->inputThermique['opt'] = $this->post['opt'];
+        $this->session->inputThermique['use'] = $this->post['use'];
 
         return $this;
     }
@@ -65,11 +65,11 @@ class Genius_Class_FilteringPrinter
         if($this->post['opt'] == 'peel') $model = $model->where('peel = 1');
         if($this->post['opt'] == 'cut') $model = $model->where('cutter = 1');
 
-        if(isset($this->session->inputPrinter['interface']['serie']))  $model = $model->where('serie = 1') ;
-        if(isset($this->session->inputPrinter['interface']['usb']))  $model = $model->where('usb = 1') ;
-        if(isset($this->session->inputPrinter['interface']['eth']))  $model = $model->where('eth = 1') ;
-        if(isset($this->session->inputPrinter['interface']['wifi']))  $model = $model->where('wifi = 1') ;
-        if(isset($this->session->inputPrinter['interface']['parra']))  $model = $model->where('parra = 1') ;
+        if(isset($this->session->inputThermique['interface']['serie']))  $model = $model->where('serie = 1') ;
+        if(isset($this->session->inputThermique['interface']['usb']))  $model = $model->where('usb = 1') ;
+        if(isset($this->session->inputThermique['interface']['eth']))  $model = $model->where('eth = 1') ;
+        if(isset($this->session->inputThermique['interface']['wifi']))  $model = $model->where('wifi = 1') ;
+        if(isset($this->session->inputThermique['interface']['parra']))  $model = $model->where('parra = 1') ;
 
         $this->result = $db->query($model)->fetchAll();
 
@@ -78,7 +78,7 @@ class Genius_Class_FilteringPrinter
 
     public function setResult()
     {
-        $this->session->resultPrinter = $this->result;
+        $this->session->resultThermique = $this->result;
     }
 
 

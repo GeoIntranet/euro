@@ -22,7 +22,7 @@
   margin: 0;
   display:block;
   width:250px;
- border:solid 1px lighten($pink,5%);
+ border:solid 1px lighten($blue,5%);
   box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 5px 5px -5px rgba(0, 0, 0, .05);
   background-color: white;
   border-bottom-left-radius: 4px;
@@ -40,7 +40,7 @@
 }
 
 .ui-menu .ui-menu-item a {
- border-bottom:dashed 1px lighten($pink,30%);
+ border-bottom:dashed 1px lighten($blue,15%);
   border-radius: 0;
   text-decoration:none;
   display:block;
@@ -65,7 +65,7 @@
 .ui-widget-content {
   border: 1px solid #dddddd;
   //background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
-  color: $pink;
+  color: $blue;
   font-weight: bolder;
 }
 
@@ -78,9 +78,9 @@
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
   border:none;
-  background-color: lighten($pink,35%);
+  background-color: lighten($blue,30%);
   font-weight: bold;
-  color: $pink;
+  color: $blue;
 }
 .wrapper-auto:after {
   padding: 0;
@@ -141,11 +141,11 @@ a{
 .ui-menu .ui-menu-item a {
   :hover{
     #title-autocomplete{
-      color:$pink;
+      color:$blue;
     }
   }
   #title-autocomplete{
-    color:lighten($pink,10%);
+    color:lighten($blue,10%);
     padding-top: 20px;
   }
   #description-autocomplete{
@@ -154,11 +154,11 @@ a{
   }
 }
 #title-autocomplete{
-  color:lighten($pink,20%);
+  color:lighten($blue,20%);
   padding-top: 20px;
 
   &:hover{
-    color:$pink;
+    color:$blue;
   }
 }
 
